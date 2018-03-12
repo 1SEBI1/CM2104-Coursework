@@ -1,9 +1,9 @@
 
 nav{
-    background-color: #3399ff;
-    padding: 10px;
-    padding-bottom: 70px;
-    min-width: 390px;
+  background-color: #3399ff;
+  padding: 10px;
+  padding-bottom: 70px;
+  min-width: 390px;
 }
 
 #homelogo {
@@ -14,8 +14,8 @@ nav{
 }
 
 ul {
-    list-style-type: none;
-    overflow: hidden;
+  list-style-type: none;
+  overflow: hidden;
 
 
 }
@@ -27,25 +27,25 @@ ul {
 }
 
 li {
-    float: left;
-    background-color: purple;
-    margin: 5px;
+  float: left;
+  background-color: purple;
+  margin: 5px;
 }
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 15px 20px;
-    text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
 }
 
 li a:hover {
-    background-color: #0066cc;
+  background-color: #0066cc;
 }
 
 .active {
-    background-color: #4CAF50;
+  background-color: #4CAF50;
 }
 
 
