@@ -3,7 +3,7 @@ nav{
   background-color: #3399ff;
   padding: 10px;
   padding-bottom: 70px;
-  min-width: 390px;
+  /*min-width: 190px;*/
 }
 
 #homelogo {
@@ -78,3 +78,84 @@ li a:hover {
   font-size:25px;
 
 }
+
+
+#mainbody{
+  background-color: yellow;
+  margin-top: 100px;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+.cookiejar{
+  float: left;
+  background-color: blue;
+  margin: 1px;
+  padding: 0px;
+  border: 0px;
+
+  /*width: 66%;*/
+}
+.lid{
+  background-color: green;
+}
+.cookieimg{
+  float: left;
+  background-color: white;
+
+  width:33.33%;
+}
+@media screen and (max-width:1200px) {
+  .cookieimg {
+    width:50%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+@media screen and (max-width:600px) {
+  .cookieimg {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  #search{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #mainbody{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10%;
+    width: 50%;
+    padding top: 75%;
+    background-color: purple;
+}
+
+/*
+#topcookie{
+  background-color: red;
+  justify-content: space-around;
+  width: 33%;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin 25%;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10%;
+    width: 50%;
+    padding top: 75%;
+    background-color: purple;
+}
+
+*/
