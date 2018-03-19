@@ -178,7 +178,7 @@ li a:hover {
 /* Account Dropdown */
 
 .accountDropdown {
-  float: left;
+  float: right;
   overflow: hidden;
 }
 
@@ -190,7 +190,7 @@ li a:hover {
   outline: none;
   color: white;
   background-color: green;
-  
+
   padding-top: 2px;
 
   padding: 10px;
