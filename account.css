@@ -182,7 +182,7 @@ li a:hover {
   overflow: hidden;
 }
 
-.accountDropdown .accountdw {
+.navlinks .accountdw {
   float: right;
   position:absolute;
   font-size: 20px;
@@ -195,9 +195,9 @@ li a:hover {
 
   padding: 10px;
   padding-bottom: 10px;
-  min-width: 300px;
+  min-width: 200px;
 
-  margin-left: 0%;
+  margin-left: -50%;
   margin-right: 10%;
 }
 
