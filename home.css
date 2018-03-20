@@ -219,6 +219,9 @@ aside{
   padding: 0px;
   border: 0px;
 }
+.cookiejar:hover{
+    opacity: 0.7;
+}
 
 .lid{
   background-color: #69DC9E;
@@ -255,14 +258,13 @@ aside{
 
 
 }
-.centered {
+.label {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     padding: 10% 5%;
     width: 50%;
-    /*padding top: 40%;*/
     background-color: #EFF1EA;
     border-radius: 10px;
     border-style: solid;
@@ -309,10 +311,10 @@ aside{
   #C2 .cookieimg {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
-  .centered {
+  .label {
     top: 33.33%;
   }
-  #C2 .centered {
+  #C2 .label {
     top: 15.5%;
     padding: 10% 25%;
   }
@@ -339,7 +341,7 @@ aside{
   #C2 .cookieimg {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
-  .centered {
+  .label {
     top: 15.5%;
     padding: 10% 25%;
   }
