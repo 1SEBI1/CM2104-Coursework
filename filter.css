@@ -77,7 +77,7 @@ li a:hover {
 /* Navbar container */
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #E59F71;
   float: right;
 }
 
@@ -109,9 +109,9 @@ li a:hover {
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
-/* Add a red background color to navbar links on hover */
+/* Add a background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: #E59F71;
 }
 
 /* Dropdown content (hidden by default) */
