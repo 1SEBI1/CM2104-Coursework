@@ -86,22 +86,31 @@ li a:hover {
 #mainbody{
   background-color: yellow;
   margin-top: 100px;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin 25%;
+  padding: 0px 10% 0px 10%;
 }
 
-/*COOKIE JAR CSS*/
-
+/*COOKIE JAR CSS*//*
+section.cookiejar{
+  width: 59%
+}
+aside{
+  width: 38%;
+  float: right;
+}*/
 .cookiejar{
   float: left;
-  background-color: blue;
-  margin: 0px;
+  margin: auto;
+  margin-bottom: 10px;
   padding: 0px;
   border: 0px;
 }
 
 .lid{
-  background-color: green;
+  background-color: #69DC9E;
+  margin: 0px 20px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 
@@ -111,35 +120,105 @@ li a:hover {
   float: left;
   padding: 0px;
   text-align: center;
-  background-color: red;
+  background-color: black;
+  border-radius: 50px;
+  overflow: hidden;
 }
 .cookieimg{
-  width:33.1%;
+  display: flex;
+  float: left;
+  width:33%;
+
+
 }
 .centered {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    padding: 100px;
+    padding: 10% 5%;
     width: 50%;
-    padding top: 40%;
+    /*padding top: 40%;*/
     background-color: purple;
 }
 
+#C1{
+  width: 68.5%;
+  float: left;
+}
+#C2{
+  width: 30.5%;
+  float: right;
+}
+#C3{
+  width: 100%;
+  float: left;
+}
+#C2 .cookieimg {
+  width:50%; /* The width is 100%, when the viewport is 800px or smaller */
+}
+
+
 
 @media screen and (max-width:1200px) {
-  .cookieimg {
-    width:49%; /* The width is 100%, when the viewport is 800px or smaller */
+  #C1{
+    width: 65%;
+  }
+  #C2{
+    width: 33.5%;
+  }
+  #C3{
+    width: 65%;
+  }
+
+  #C1 .cookieimg {
+    width:50%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  #C3 .cookieimg {
+    width:50%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  #C2 .cookieimg {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
   .centered {
+    top: 33.33%;
+  }
+  #C2 .centered {
+    top: 15.5%;
+    padding: 10% 25%;
+  }
+  #mainbody{
+    padding: 0px 5% 0px 5%;
   }
 }
 @media screen and (max-width:600px) {
-  .cookieimg {
+  #C1{
+    width: 100%;
+  }
+  #C2{
+    width: 100%;
+  }
+  #C3{
+    width: 100%;
+  }
+  #C1 .cookieimg {
     width:100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
+  #C3 .cookieimg {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  #C2 .cookieimg {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
   .centered {
+    top: 15.5%;
+    padding: 10% 25%;
+  }
+  #mainbody{
+    padding: 0px;
+  }
+  #C1 .cookieimg + #C2 .cookieimg + #C3 .cookieimg{
+    width:100; /* The width is 100%, when the viewport is 800px or smaller */
   }
 }
 
