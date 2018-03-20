@@ -10,19 +10,19 @@ body {
 
 
 /*Colour Scheme/*
-  - RED: #ED6A5A
-  - DARKER RED: #B75245
+
+  - GREEN: #69DC9E
   - CREAM: #FCEAD1
-  - LIGHT BROWN: #8A6552
-  - DARK BROWN: #462521
-  - LIGHT BLUE: #9BC1BC
-  - DARKER BLUE: #80A09C
+  - OFF WHITE: #EFF1EA
+  - ORANGE: #E59F71
+  - ORANGE BROWN: #BA5A31
+  - BRWON: #723215
 
 
 /*Nav Bar*/
 
 nav{
-    background-color: #8A6552;
+    background-color: #BA5A31;
     padding: 10px;
     padding-bottom: 70px;
     min-width: 390px;
@@ -30,8 +30,8 @@ nav{
 }
 
 #homelogo {
-  color: white;
-  background-color:#8A6552 ;
+  color: #EFF1EA;
+  background-color:#BA5A31;
   float: left;
   margin: 0px;
   padding: 0px;
@@ -44,7 +44,7 @@ ul {
 
 }
 #tabs{
-  background-color:#8A6552 ;
+  background-color:#BA5A31 ;
   float:right;
   margin: 0px;
   padding: 0px;
@@ -52,24 +52,24 @@ ul {
 
 li {
     float: left;
-    background-color: #8A6552;
+    background-color: #BA5A31;
     margin: 5px;
 }
 
 li a {
     display: block;
-    color: white;
+    color: #EFF1EA;
     text-align: center;
     padding: 15px 20px;
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: #462521;
+    background-color: #E59F71;
 }
 
 .active {
-    background-color: #462521;
+    background-color: #E59F71;
 }
 
 
@@ -78,7 +78,7 @@ li a:hover {
 /*Searchbar*/
 
 #search {
-  background-color: #8A6552;
+  background-color: #BA5A31;
   height: 50px;
   margin-top: 100px;
   margin-left: 25%;
@@ -93,7 +93,7 @@ li a:hover {
 }
 
 #searchbutton{
-  background-color: #8A6552;
+  background-color: #BA5A31;
   margin-right: 5px;
 
   border-radius: 5px;
@@ -101,7 +101,7 @@ li a:hover {
 }
 
 #searchbar{
-  background-color: WHITE;
+  background-color: #EFF1EA;
   padding: 0px;
   width: 100%;
   text-align: left;
@@ -113,29 +113,30 @@ li a:hover {
 
 
 
+
+
+
 /*Filter Bar*/
 
 #filter {
-  background-color: #9BC1BC;
+  background-color: #BA5A31;
   height: 30px;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-left: 25%;
   margin-right: 25%;
   display: flex;
   justify-content: center;
-
   border-radius: 15px;
   padding: 10px;
 }
 
 
 #filterbar{
-  background-color: WHITE;
+  background-color: #EFF1EA;
   padding: 0px;
   width: 100%;
   text-align: left;
   font-size:25px;
-
   border-radius: 5px;
   padding: 5px;
 }
@@ -145,7 +146,7 @@ li a:hover {
 
 /* Style The Dropdown Button */
 .dropbtn {
-    background-color: #80A09C;
+    background-color: #723215;
     color: white;
     padding: 15px;
     margin-left: 5px;
@@ -183,7 +184,7 @@ li a:hover {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #80A09C
+  background-color: #E59F71;
 
 
 }
@@ -196,5 +197,5 @@ li a:hover {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    background-color: #80A09C;
+    background-color: #E59F71;
 }
