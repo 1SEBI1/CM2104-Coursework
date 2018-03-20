@@ -26,14 +26,12 @@ nav{
     padding: 10px;
     padding-bottom: 70px;
     min-width: 340px;
-
 }
 
 #homelogo {
-  color: #EFF1EA;
-  background-color:#BA5A31;
+  background-color:;
   float: left;
-  margin: 0px;
+  margin-left: 10px;
   padding: 0px;
 }
 
@@ -162,7 +160,7 @@ li a {
   margin-top: 100px;
   margin-left: 25%;
   margin-right: 25%;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   padding: 5px;
   display: flex;
   justify-content: center;
@@ -209,6 +207,7 @@ li a {
   margin-top: 10px;
   margin-left: 25%;
   margin-right: 25%;
+  margin-bottom: 100px;
   display: flex;
   justify-content: center;
   border-radius: 15px;
@@ -239,3 +238,194 @@ li a {
     margin: 5px 0px 5px 0px;
   }
 }
+
+
+/*MAINBODY*/
+
+#mainbody{
+  /*background-color: yellow;*/
+  /*margin-top: 100px;*/
+  margin 25%;
+  padding: 0px 10% 0px 10%;
+}
+
+/*COOKIE JAR CSS*//*
+section.cookiejar{
+  width: 59%
+}
+aside{
+  width: 38%;
+  float: right;
+}*/
+.cookiejar{
+  float: left;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 0px;
+  border: 0px;
+}
+
+.cookiejar:hover{
+  opacity: 0.7;
+}
+
+.lid{
+  background-color: #69DC9E;
+  margin: 0px 30px;
+  padding: 20px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 5px 0px 5px 0px;
+  border-color: #4db57d;
+  border-top-color: #7af4b2;
+  box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.5);
+
+}
+
+
+
+.container {
+  position: relative;
+  float: left;
+  padding: 0px;
+  text-align: center;
+  background-color: black;
+  border-radius: 30px 30px 15px 15px;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #EFF1EA;
+  box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.5);
+}
+.cookieimg{
+  display: flex;
+  float: left;
+  width:33%;
+
+
+}
+.label {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10% 5%;
+    width: 50%;
+    /*padding top: 40%;*/
+    background-color: #EFF1EA;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #69DC9E;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+
+#C2 .label {
+  top:33.33%
+}
+
+#C1{
+  width: 68.5%;
+  float: left;
+}
+#C2{
+  width: 30.5%;
+  float: right;
+}
+#C3{
+  width: 100%;
+  float: left;
+}
+#C2 .cookieimg {
+  width:50%; /* The width is 100%, when the viewport is 800px or smaller */
+}
+
+
+
+@media screen and (max-width:1200px) {
+  #C1{
+    width: 65%;
+  }
+  #C2{
+    width: 33.5%;
+  }
+  #C3{
+    width: 65%;
+  }
+
+  #C1 .cookieimg {
+    width:50%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  #C3 .cookieimg {
+    width:50%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  #C2 .cookieimg {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .label {
+    top: 33.33%;
+  }
+  #C2 .label {
+    top: 15.5%;
+    padding: 10% 25%;
+  }
+  #mainbody{
+    padding: 0px 5% 0px 5%;
+  }
+}
+@media screen and (max-width:600px) {
+  #C1{
+    width: 100%;
+  }
+  #C2{
+    width: 100%;
+  }
+  #C3{
+    width: 100%;
+  }
+  #C1 .cookieimg {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  #C3 .cookieimg {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  #C2 .cookieimg {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .label {
+    top: 15.5%;
+    padding: 10% 25%;
+  }
+  #mainbody{
+    padding: 0px;
+  }
+  #C1 .cookieimg + #C2 .cookieimg + #C3 .cookieimg{
+    width:100; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+
+
+
+
+  #mainbody{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+
+
+/*
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10%;
+    width: 50%;
+    padding top: 75%;
+    background-color: purple;
+}
+
+*/
