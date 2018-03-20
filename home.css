@@ -9,16 +9,6 @@ body {
 }
 
 
-/*Font*/
-* {
-      font-family: 'Montserrat', serif;
-
-    }
-
-body {
-  background-color: #FCEAD1;
-}
-
 /*Colour Scheme
 
   - GREEN: #69DC9E
@@ -87,7 +77,7 @@ li a:hover {
 /* Navbar container */
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #E59F71;
   float: right;
 }
 
@@ -121,7 +111,7 @@ li a:hover {
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: #E59F71;
 }
 
 /* Dropdown content (hidden by default) */
@@ -146,7 +136,7 @@ li a:hover {
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: ##E59F71;
 }
 
 /* Show the dropdown menu on hover */
