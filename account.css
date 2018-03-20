@@ -11,7 +11,7 @@ body {
 
 /*Nav Bar*/
 nav{
-    background-color: #3399ff;
+    background-color: #BA5A31;
     padding: 10px;
     padding-bottom: 70px;
     min-width: 390px;
@@ -19,7 +19,7 @@ nav{
 
 /*Home logo colour and positioning */
 #homelogo {
-  background-color:  #3399ff;
+  background-color: #BA5A31;
   float: left;
   margin: 0px;
   padding: 0px;
@@ -32,7 +32,7 @@ ul {
 
 }
 #tabs{
-  background-color: #3399ff;
+  background-color: #BA5A31;
   float:right;
   margin: 0px;
   padding: 0px;
@@ -107,7 +107,7 @@ li a:hover {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 106px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }

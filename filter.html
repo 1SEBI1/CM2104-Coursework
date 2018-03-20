@@ -3,6 +3,7 @@
 	<head>
       <link rel="stylesheet" type="text/css" href="filter.css">
 			<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
 		<title>Cookie Jar</title>
 	</head>
 	<body>
@@ -12,11 +13,21 @@
         <h1 id='site-title'>cookie jar</h1>
       </section>
 
-			<ul id="tabs">
-				<li class='navlinks'><a href="default.asp">home</a></li>
-				<li class='navlinks'><a href="default.asp">account</a></li>
-			</ul>
-		</nav>
+			<div class="navbar">
+				<section id = "tabs">
+  			<a href="#Home">home</a>
+  			<div class="dropdown">
+    			<button class="accountbtn">account
+      			<id class="fa fa-caret-down"></i>
+    			</button>
+    			<div class="dropdown-content">
+      			<a href="#">log in</a>
+      			<a href="#">sign up</a>
+					</section>
+    	</div>
+  	</div>
+	</div>
+</nav>
 
 		<section id="search">
       <input type="image" id = "searchbutton" name="submit" src="1392496925.png" height="50px" width="50px" alt="submit" >

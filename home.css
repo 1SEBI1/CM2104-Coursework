@@ -8,17 +8,10 @@ body {
   background-color: #FCEAD1;
 }
 
+<<<<<<< HEAD
+=======
 
-/*Font*/
-* {
-      font-family: 'Montserrat', serif;
-
-    }
-
-body {
-  background-color: #FCEAD1;
-}
-
+>>>>>>> 2172afb1b5a74e2377565fabbf3e2b6c60e605b4
 /*Colour Scheme
 
   - GREEN: #69DC9E
@@ -87,7 +80,7 @@ li a:hover {
 /* Navbar container */
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #E59F71;
   float: right;
 }
 
@@ -119,9 +112,9 @@ li a:hover {
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
-/* Add a red background color to navbar links on hover */
+/* Add a background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: #E59F71;
 }
 
 /* Dropdown content (hidden by default) */
@@ -129,7 +122,7 @@ li a:hover {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 106px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
