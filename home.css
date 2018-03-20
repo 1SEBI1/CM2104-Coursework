@@ -3,7 +3,7 @@ nav{
   background-color: #3399ff;
   padding: 10px;
   padding-bottom: 70px;
-  min-width: 390px;
+  /*min-width: 190px;*/
 }
 
 #homelogo {
@@ -78,3 +78,93 @@ li a:hover {
   font-size:25px;
 
 }
+
+#search{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#mainbody{
+  background-color: yellow;
+  margin-top: 100px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/*COOKIE JAR CSS*/
+
+.cookiejar{
+  float: left;
+  background-color: blue;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.lid{
+  background-color: green;
+}
+
+
+
+.container {
+  position: relative;
+  float: left;
+  padding: 0px;
+  text-align: center;
+  background-color: red;
+}
+.cookieimg{
+  width:33.1%;
+}
+.centered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100px;
+    width: 50%;
+    padding top: 40%;
+    background-color: purple;
+}
+
+
+@media screen and (max-width:1200px) {
+  .cookieimg {
+    width:49%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .centered {
+  }
+}
+@media screen and (max-width:600px) {
+  .cookieimg {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .centered {
+  }
+}
+
+
+
+
+
+  #mainbody{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+
+
+/*
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10%;
+    width: 50%;
+    padding top: 75%;
+    background-color: purple;
+}
+
+*/
