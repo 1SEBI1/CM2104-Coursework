@@ -18,19 +18,22 @@
 
 			<!--- Nav bar that allows the user to select where they wish to navigate to --->
 
-			<ul id="tabs">
-				<li class='navlinks'><a href="default.asp">Home</a></li>
-				<li class='navlinks'>
-					<button class= "navlinks">Account</button>
-						<li class="dropdown-content">
-							<a href="#">Sign In</a>
-							<a href="#">Sign Up</a>
-							<a href="#">Settings</a>
-						</li>
-					</li>
-        <li class='navlinks'><a href="default.asp">Sign in</a></li>
-			</ul>
-		</nav>
+			<div class="navbar">
+				<section id = "tabs">
+  			<a href="#Home">Home</a>
+  			<div class="dropdown">
+    			<button class="accountbtn">Account
+      			<id class="fa fa-caret-down"></i>
+    			</button>
+    			<div class="dropdown-content">
+      			<a href="#">Sign In</a>
+      			<a href="#">Register</a>
+      			<a href="#">Settings</a>
+					</section>
+    	</div>
+  	</div>
+	</div>
+</nav>
 
 		<!--- Current placeholder, will be changed to show a title image/text --->
 

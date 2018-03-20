@@ -1,14 +1,37 @@
+/*Font*/
+* {
+      font-family: 'Montserrat', serif;
+
+    }
+
+body {
+  background-color: #FCEAD1;
+}
+
+
+/*Colour Scheme/*
+
+  - GREEN: #69DC9E
+  - CREAM: #FCEAD1
+  - OFF WHITE: #EFF1EA
+  - ORANGE: #E59F71
+  - ORANGE BROWN: #BA5A31
+  - BRWON: #723215
+
+
 /*Nav Bar*/
 
 nav{
-    background-color: #3399ff;
+    background-color: #BA5A31;
     padding: 10px;
     padding-bottom: 70px;
     min-width: 390px;
+
 }
 
 #homelogo {
-  background-color: red;
+  color: #EFF1EA;
+  background-color:#BA5A31;
   float: left;
   margin: 0px;
   padding: 0px;
@@ -21,7 +44,7 @@ ul {
 
 }
 #tabs{
-  background-color: blue;
+  background-color:#BA5A31 ;
   float:right;
   margin: 0px;
   padding: 0px;
@@ -29,24 +52,24 @@ ul {
 
 li {
     float: left;
-    background-color: purple;
+    background-color: #BA5A31;
     margin: 5px;
 }
 
 li a {
     display: block;
-    color: white;
+    color: #EFF1EA;
     text-align: center;
     padding: 15px 20px;
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: #0066cc;
+    background-color: #E59F71;
 }
 
 .active {
-    background-color: #4CAF50;
+    background-color: #E59F71;
 }
 
 
@@ -55,79 +78,92 @@ li a:hover {
 /*Searchbar*/
 
 #search {
-  background-color: red;
+  background-color: #BA5A31;
   height: 50px;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-left: 25%;
   margin-right: 25%;
-
   padding: 5px;
   display: flex;
   justify-content: center;
+
+  border-radius: 15px;
+  padding: 10px;
+
 }
 
 #searchbutton{
-  background-color: green;
+  background-color: #BA5A31;
   margin-right: 5px;
+
+  border-radius: 5px;
+
 }
 
 #searchbar{
-  background-color: brown;
+  background-color: #EFF1EA;
   padding: 0px;
   width: 100%;
-
   text-align: left;
   font-size:25px;
+
+  border-radius: 5px;
+  padding: 5px;
 }
+
+
+
 
 
 
 /*Filter Bar*/
 
 #filter {
-  background-color: blue;
+  background-color: #BA5A31;
   height: 30px;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-left: 25%;
   margin-right: 25%;
-
-  padding: 5px;
   display: flex;
   justify-content: center;
+  border-radius: 15px;
+  padding: 10px;
 }
 
 
 #filterbar{
-  background-color: brown;
+  background-color: #EFF1EA;
   padding: 0px;
   width: 100%;
   text-align: left;
   font-size:25px;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 /*Dropdown Menu*/
 
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
 
-.dropdown .dropbtn {
-    font-size: 20px;
-    border: none;
-    outline: none;
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #723215;
     color: white;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    background-color: green;
-    margin-left: 10%;
-    margin-right: 10%;
+    padding: 15px;
+    margin-left: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: purple;
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
+/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -137,19 +173,29 @@ li a:hover {
     z-index: 1;
 }
 
+/* Links inside the dropdown */
 .dropdown-content a {
-    float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: left;
+    border-radius: 5px;
 }
 
+/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: #ddd;
+  background-color: #E59F71;
+
+
 }
 
+/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
+    border-radius: 5px;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #E59F71;
 }
