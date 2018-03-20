@@ -210,6 +210,10 @@ aside{
   border: 0px;
 }
 
+.cookiejar:hover{
+  opacity: 0.7;
+}
+
 .lid{
   background-color: #69DC9E;
   margin: 0px 30px;
@@ -245,7 +249,7 @@ aside{
 
 
 }
-.centered {
+.label {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -259,6 +263,10 @@ aside{
     border-width: 5px;
     border-color: #69DC9E;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+
+#C2 .label {
+  top:33.33%
 }
 
 #C1{
@@ -299,10 +307,10 @@ aside{
   #C2 .cookieimg {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
-  .centered {
+  .label {
     top: 33.33%;
   }
-  #C2 .centered {
+  #C2 .label {
     top: 15.5%;
     padding: 10% 25%;
   }
@@ -329,7 +337,7 @@ aside{
   #C2 .cookieimg {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
-  .centered {
+  .label {
     top: 15.5%;
     padding: 10% 25%;
   }
