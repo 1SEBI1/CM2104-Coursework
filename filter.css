@@ -212,3 +212,12 @@ li a:hover {
   border-radius: 5px;
   padding: 5px;
 }
+
+.dropdown .dropbtn{
+  background-color: #EFF1EA;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding:10px;
+  border-radius: 5px;
+
+}
