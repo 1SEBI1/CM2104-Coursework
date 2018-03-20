@@ -1,5 +1,15 @@
-/*Nav Bar*/
+/*Font that will be used through the whole website*/
+* {
+      font-family: 'Montserrat', serif;
 
+    }
+/*Body colour that will be used through the whole wesbite*/
+body {
+  background-color: #FCEAD1;
+}
+
+
+/*Nav Bar*/
 nav{
     background-color: #3399ff;
     padding: 10px;
@@ -7,8 +17,9 @@ nav{
     min-width: 390px;
 }
 
+/*Home logo colour and positioning */
 #homelogo {
-  background-color: red;
+  background-color:  #3399ff;
   float: left;
   margin: 0px;
   padding: 0px;
