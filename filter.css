@@ -1,9 +1,10 @@
-/*Font*/
+/*Font that will be used through the whole website*/
 * {
       font-family: 'Montserrat', serif;
 
     }
 
+/*Body colour that will be used through the whole wesbite*/
 body {
   background-color: #FCEAD1;
 }
@@ -19,8 +20,7 @@ body {
   - BRWON: #723215
 
 
-/*Nav Bar*/
-
+/*Nav bar that is used throughout */
 nav{
     background-color: #BA5A31;
     padding: 10px;
@@ -28,6 +28,7 @@ nav{
     min-width: 340px;
 }
 
+/*logo formatting that is used for all pages*/
 #homelogo {
   background-color:;
   float: left;
@@ -35,12 +36,13 @@ nav{
   padding: 0px;
 }
 
+/*tab formatting*/
 ul {
     list-style-type: none;
     overflow: hidden;
-
-
 }
+
+/*tab formatting*/
 #tabs{
   background-color:#BA5A31 ;
   float:right;
@@ -48,12 +50,14 @@ ul {
   padding: 0px;
 }
 
+/*tab formatting*/
 li {
     float: left;
     background-color: #BA5A31;
     margin: 5px;
 }
 
+/*tab formatting*/
 li a {
     display: block;
     color: #EFF1EA;
@@ -62,10 +66,12 @@ li a {
     text-decoration: none;
 }
 
+/*account button hover formatting colour*/
 #navbutton:hover {
     background-color: #E59F71;
 }
 
+/*account button hover formatting colour*/
 .active {
     background-color: #E59F71;
 }
@@ -123,6 +129,7 @@ li a {
   z-index: 1;
 }
 
+/*helps to ensure the wesbite moves dynamically when changed size*/
 @media screen and (max-width:600px) {
   .dropdown-content{
     right: 0;
@@ -150,10 +157,9 @@ li a {
   display: block;
 }
 
-
-
 /*Searchbar*/
 
+/*formatting for the searchbar*/
 #search {
   background-color: #BA5A31;
   height: 50px;
@@ -168,20 +174,22 @@ li a {
   border-radius: 15px;
   padding: 10px;
 }
+
+/*helps to ensure the wesbite moves dynamically when changed size*/
 @media screen and (max-width:600px) {
   #search{
     margin: 5px 0px 5px 0px;
   }
 }
 
+/*formatting code for the search button*/
 #searchbutton{
   background-color: #BA5A31;
   margin-right: 5px;
-
   border-radius: 5px;
-
 }
 
+/*formatting for the search bar*/
 #searchbar{
   background-color: #EFF1EA;
   padding: 0px;
@@ -193,14 +201,9 @@ li a {
   padding: 5px;
 }
 
-
-
-
-
-
-
 /*Filter Bar*/
 
+/*formatting for the filter bar*/
 #filter {
   background-color: #BA5A31;
   height: 30px;
@@ -214,7 +217,7 @@ li a {
   padding: 10px;
 }
 
-
+/*formatting for the filter bar*/
 #filterbar{
   background-color: #EFF1EA;
   padding: 0px;
@@ -225,6 +228,7 @@ li a {
   padding: 5px;
 }
 
+/*formatting for the dropdown menu button*/
 .dropdown .dropbtn{
   background-color: #EFF1EA;
   margin-right: 5px;
@@ -233,12 +237,12 @@ li a {
   border-radius: 5px;
 }
 
+/*helps to ensure the wesbite moves dynamically when changed size*/
 @media screen and (max-width:600px) {
   #filter{
     margin: 5px 0px 5px 0px;
   }
 }
-
 
 /*MAINBODY*/
 
