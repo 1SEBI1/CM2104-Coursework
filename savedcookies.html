@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+	<head>
+      <link rel="stylesheet" type="text/css" href="savedcookies.css">
+			<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<title>Cookie Jar</title>
+	</head>
+	<body>
+		<!-- primary navigation area -->
+		<nav>
+			<section id="homelogo">
+				<a href="home.html" id = "homelogo" name="submit" alt="submit">
+				<img src="logo_cookie.png" height="120px" alt="submit" ></a>
+			</section>
+
+			<div class="navbar">
+				<section id = "tabs">
+					<a id="navbutton" href="home.html">home</a>
+					<div class="dropdown">
+						<button id="navbutton" class="accountbtn">account</button>
+						<div class="dropdown-content">
+							<a href="#">log in</a>
+							<a href="#">sign up</a>
+						</div>
+					</div>
+				</section>
+			</div>
+		</nav>
+
+		<section id="search">
+			<a href="filter.html" id = "searchbutton" name="submit" alt="submit">
+				<img src="search_cookie.png" height="50px" alt="cookie_search"></a>
+			<input type="text"id = "searchbar" name="search" placeholder=" search"></input>
+		</section>
+
+		<section id="saved">
+			<h1 id='saved-title'>saved cookies</h1>
+		</section>
+
+		<section id="account_image">
+			<script>
+var imgSrc = 'account_cookie.png';
+
+function generateImage() {
+	var img = document.createElement('img')
+	img.style.marginTop = '5px';
+	img.style.marginLeft = '5px';
+	img.style.width = '300px';
+	img.style.background = 'green';
+	img.src = imgSrc;
+
+	return img;
+}
+
+for (var i = 0; i < 9; i++ ) {
+	document.body.appendChild(generateImage());
+}
+
+
+</script>
+		</section>
+
+		<section id ="footer">
+			<footer>
+				<a id="footer_link1" href="home.html">home</a>
+				<h1 id='footer_content'>cookie jar 2018</h1>
+				<a id="footer_link2" href="account.html">account</a>
+			</footer>
+		</section>
+
+	</body>
+</html>
