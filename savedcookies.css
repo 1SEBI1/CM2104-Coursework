@@ -182,10 +182,9 @@ li a {
   margin-right: 5px;
 
   border-radius: 5px;
-
 }
 
-/*formatting for the search bar*/
+/*formatting code for the search button*/
 #searchbar{
   background-color: #EFF1EA;
   padding: 0px;
@@ -221,8 +220,6 @@ li a {
   font-size:25px;
 }
 
-
-
 /* Footer */
 
 /*footer formatting*/
@@ -255,7 +252,7 @@ li a {
 
 }
 
-/*first footer link formatting*/
+/*second footer link formatting*/
 #footer_link2 {
   text-align: right;
   color: #EFF1EA;
