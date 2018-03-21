@@ -209,6 +209,20 @@ li a {
   font-size:25px;
 }
 
+#saved2 {
+  background-color: #BA5A31;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+
+  border-radius: 15px;
+  padding: 5px;
+}
+
 /* Footer */
 
 #footer {
