@@ -3,6 +3,7 @@
       font-family: 'Montserrat', serif;
 
     }
+
 /*Body colour that will be used through the whole wesbite*/
 body {
   background-color: #FCEAD1;
@@ -19,8 +20,7 @@ body {
   io
 */
 
-/*Nav Bar*/
-
+/*Nav bar that is used throughout */
 nav{
     background-color: #BA5A31;
     padding: 10px;
@@ -29,6 +29,7 @@ nav{
 
 }
 
+/*logo formatting that is used for all pages*/
 #homelogo {
   background-color:;
   float: left;
@@ -36,12 +37,13 @@ nav{
   padding: 0px;
 }
 
+/*tab formatting*/
 ul {
     list-style-type: none;
     overflow: hidden;
-
-
 }
+
+/*tab formatting*/
 #tabs{
   background-color:#BA5A31 ;
   float:right;
@@ -49,12 +51,14 @@ ul {
   padding: 0px;
 }
 
+/*tab formatting*/
 li {
     float: left;
     background-color: #BA5A31;
     margin: 5px;
 }
 
+/*tab formatting*/
 li a {
     display: block;
     color: #EFF1EA;
@@ -63,10 +67,12 @@ li a {
     text-decoration: none;
 }
 
+/*account button hover formatting colour*/
 #navbutton:hover {
     background-color: #E59F71;
 }
 
+/*account button hover formatting colour*/
 .active {
     background-color: #E59F71;
 }
@@ -144,10 +150,9 @@ li a {
   display: block;
 }
 
-
-
 /*Searchbar*/
 
+/*formatting for the searchbar*/
 #search {
   background-color: #BA5A31;
   height: 50px;
@@ -162,20 +167,23 @@ li a {
   border-radius: 15px;
   padding: 10px;
 }
+
+/*helps to ensure the wesbite moves dynamically when changed size*/
 @media screen and (max-width:600px) {
   #search{
     margin: 5px 0px 5px 0px;
   }
 }
 
+/*formatting code for the search button*/
 #searchbutton{
   background-color: #BA5A31;
   margin-right: 5px;
 
   border-radius: 5px;
-
 }
 
+/*formatting for the search bar*/
 #searchbar{
   background-color: #EFF1EA;
   padding: 0px;
@@ -187,11 +195,9 @@ li a {
   padding: 5px;
 }
 
-
-
-
 /*MAINBODY*/
 
+/*mainbody formatting*/
 #mainbody{
   /*background-color: yellow;*/
   /*margin-top: 100px;*/
@@ -207,6 +213,8 @@ aside{
   width: 38%;
   float: right;
 }*/
+
+/*cookiejar formatting*/
 .cookiejar{
   float: left;
   margin: auto;
@@ -215,10 +223,12 @@ aside{
   border: 0px;
 }
 
+/*code for the opacity feature when the mouse is hovered over a cookiejar*/
 .cookiejar:hover{
   opacity: 0.7;
 }
 
+/*formatting for the cookiejar lids*/
 .lid{
   background-color: #69DC9E;
   margin: 0px 30px;
@@ -229,11 +239,9 @@ aside{
   border-color: #4db57d;
   border-top-color: #7af4b2;
   box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.5);
-
 }
 
-
-
+/*formatting and positioning for the white boxes over cookie jars*/
 .container {
   position: relative;
   float: left;
@@ -247,13 +255,15 @@ aside{
   border-color: #EFF1EA;
   box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.5);
 }
+
+/*code to format the images inside cookiejar*/
 .cookieimg{
   display: flex;
   float: left;
   width:33%;
-
-
 }
+
+/*formatting and positioning for the white boxes over cookie jars*/
 .label {
     position: absolute;
     left: 50%;
@@ -269,95 +279,129 @@ aside{
     border-color: #69DC9E;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
 }
-
+/*cookiejar formatting*/
 #C2 .label {
   top:33.33%
 }
 
+/*cookiejar formatting*/
 #C1{
   width: 68.5%;
   float: left;
 }
+
+/*cookiejar formatting*/
 #C2{
   width: 30.5%;
   float: right;
 }
+
+/*cookiejar formatting*/
 #C3{
   width: 100%;
   float: left;
 }
+
+/*cookiejar formatting*/
 #C2 .cookieimg {
   width:50%; /* The width is 100%, when the viewport is 800px or smaller */
 }
 
-
-
+/*helps to ensure the wesbite moves dynamically when changed size*/
 @media screen and (max-width:1200px) {
   #C1{
     width: 65%;
   }
+
+  /*cookiejar formatting*/
   #C2{
     width: 33.5%;
   }
+
+  /*cookiejar formatting*/
   #C3{
     width: 65%;
   }
 
+  /*cookiejar formatting*/
   #C1 .cookieimg {
     width:50%; /* The width is 100%, when the viewport is 800px or smaller */
   }
+
+  /*cookiejar formatting*/
   #C3 .cookieimg {
     width:50%; /* The width is 100%, when the viewport is 800px or smaller */
   }
+
+  /*cookiejar formatting*/
   #C2 .cookieimg {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
+
+  /*cookiejar formatting*/
   .label {
     top: 33.33%;
   }
+
+  /*cookiejar formatting*/
   #C2 .label {
     top: 15.5%;
     padding: 10% 25%;
   }
+  /*mainbody formatting*/
   #mainbody{
     padding: 0px 5% 0px 5%;
   }
 }
+
+/*helps to ensure the wesbite moves dynamically when changed size*/
 @media screen and (max-width:600px) {
   #C1{
     width: 100%;
   }
+
+  /*cookiejar formatting*/
   #C2{
     width: 100%;
   }
+
+  /*cookiejar formatting*/
   #C3{
     width: 100%;
   }
+
+  /*cookiejar formatting*/
   #C1 .cookieimg {
     width:100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
+
+  /*cookiejar formatting*/
   #C3 .cookieimg {
     width:100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
+
+  /*cookiejar formatting*/
   #C2 .cookieimg {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
+
+  /*cookiejar formatting*/
   .label {
     top: 15.5%;
     padding: 10% 25%;
   }
+
+  /*mainbody formatting*/
   #mainbody{
     padding: 0px;
   }
+  /*cookiejar formatting*/
   #C1 .cookieimg + #C2 .cookieimg + #C3 .cookieimg{
     width:100; /* The width is 100%, when the viewport is 800px or smaller */
   }
 }
 
-
-
-
-
+  /*mainbody formatting*/
   #mainbody{
     margin-left: 0px;
     margin-right: 0px;
@@ -365,8 +409,9 @@ aside{
 }
 
 
-/* Foooter */ 
+/* Foooter */
 
+/*footer formatting*/
 #footer {
   background-color: #BA5A31;
   height: 30px;
@@ -377,6 +422,7 @@ aside{
   justify-content: center;
 }
 
+/*content of the footer formatting*/
 #footer-content {
   color: #EFF1EA;
   padding: 5px;

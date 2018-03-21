@@ -246,6 +246,7 @@ li a {
 
 /*MAINBODY*/
 
+/*mainbody formatting*/
 #mainbody{
   /*background-color: yellow;*/
   /*margin-top: 100px;*/
@@ -253,14 +254,19 @@ li a {
   padding: 0px 10% 0px 10%;
 }
 
-/*COOKIE JAR CSS*//*
+/*COOKIE JAR CSS*/
+
+/*
 section.cookiejar{
   width: 59%
 }
 aside{
   width: 38%;
   float: right;
-}*/
+}
+*/
+
+/*cookiejar formatting*/
 .cookiejar{
   float: left;
   margin: auto;
@@ -269,10 +275,12 @@ aside{
   border: 0px;
 }
 
+/*code for the opacity feature when the mouse is hovered over a cookiejar*/
 .cookiejar:hover{
   opacity: 0.7;
 }
 
+/*formatting for the cookiejar lids*/
 .lid{
   background-color: #69DC9E;
   margin: 0px 30px;
@@ -283,11 +291,9 @@ aside{
   border-color: #4db57d;
   border-top-color: #7af4b2;
   box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.5);
-
 }
 
-
-
+/*formatting and positioning for the white boxes over cookie jars*/
 .container {
   position: relative;
   float: left;
@@ -301,13 +307,15 @@ aside{
   border-color: #EFF1EA;
   box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.5);
 }
+
+/*code to format the images inside cookiejar*/
 .cookieimg{
   display: flex;
   float: left;
   width:33%;
-
-
 }
+
+/*formatting and positioning for the white boxes over cookie jars*/
 .label {
     position: absolute;
     left: 50%;
@@ -324,101 +332,138 @@ aside{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
 }
 
+/*cookiejar formatting*/
 #C2 .label {
   top:33.33%
 }
 
+/*cookiejar formatting*/
 #C1{
   width: 68.5%;
   float: left;
 }
+
+/*cookiejar formatting*/
 #C2{
   width: 30.5%;
   float: right;
 }
+
+/*cookiejar formatting*/
 #C3{
   width: 100%;
   float: left;
 }
+
+/*cookiejar formatting*/
 #C2 .cookieimg {
   width:50%; /* The width is 100%, when the viewport is 800px or smaller */
 }
 
-
-
+/*helps to ensure the wesbite moves dynamically when changed size*/
 @media screen and (max-width:1200px) {
   #C1{
     width: 65%;
   }
+
+  /*cookiejar formatting*/
   #C2{
     width: 33.5%;
   }
+
+  /*cookiejar formatting*/
   #C3{
     width: 65%;
   }
 
+  /*cookiejar formatting*/
   #C1 .cookieimg {
     width:50%; /* The width is 100%, when the viewport is 800px or smaller */
   }
+
+  /*cookiejar formatting*/
   #C3 .cookieimg {
     width:50%; /* The width is 100%, when the viewport is 800px or smaller */
   }
+
+  /*cookiejar formatting*/
   #C2 .cookieimg {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
+
+  /*cookiejar formatting*/
   .label {
     top: 33.33%;
   }
+
+  /*cookiejar formatting*/
   #C2 .label {
     top: 15.5%;
     padding: 10% 25%;
   }
+
+  /*mainbody formatting*/
   #mainbody{
     padding: 0px 5% 0px 5%;
   }
 }
+
+/*helps to ensure the wesbite moves dynamically when changed size*/
 @media screen and (max-width:600px) {
   #C1{
     width: 100%;
   }
+
+  /*cookiejar formatting*/
   #C2{
     width: 100%;
   }
+
+  /*cookiejar formatting*/
   #C3{
     width: 100%;
   }
+
+  /*cookiejar formatting*/
   #C1 .cookieimg {
     width:100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
+
+  /*cookiejar formatting*/
   #C3 .cookieimg {
     width:100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
+
+  /*cookiejar formatting*/
   #C2 .cookieimg {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
+
+  /*cookiejar formatting*/
   .label {
     top: 15.5%;
     padding: 10% 25%;
   }
+
+  /*mainbody formatting*/
   #mainbody{
     padding: 0px;
   }
+
+  /*cookiejar formatting*/
   #C1 .cookieimg + #C2 .cookieimg + #C3 .cookieimg{
     width:100; /* The width is 100%, when the viewport is 800px or smaller */
   }
 }
 
-
-
-
-
+  /*mainbody formatting*/
   #mainbody{
     margin-left: 0px;
     margin-right: 0px;
   }
 }
 
-
+/*we are unsure if we will need this code, so will stay commented out for now*/
 
 /*
 .centered {
