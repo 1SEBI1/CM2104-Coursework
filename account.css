@@ -3,7 +3,7 @@
       font-family: 'Montserrat', serif;
 
     }
-    
+
 /*Body colour that will be used through the whole wesbite*/
 body {
   background-color: #FCEAD1;
@@ -167,6 +167,9 @@ li a {
   padding: 10px;
 }
 
+
+
+
 /*my account title formatting*/
 #account-title {
   color: #EFF1EA;
@@ -176,34 +179,98 @@ li a {
   font-size:25px;
 }
 
+
+
  /*grid formatting*/
 #account_options {
   padding-top: 100px;
   padding-left: 10%;
   padding-right: 10%;
-
 }
 
-/*grid container formatting*/
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 140px 200px;
-  grid-gap: 10px;
+  grid-template-rows: auto auto auto ;
+  grid-gap: 0px;
   background-color: #69DC9E;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 5px;
+  padding: 10px;
 }
 
-/*grid container formatting*/
-.grid-container > div {
-  height:300px;
-
-  background-color: #EFF1EA;
-  text-align: center;
-  padding: 20px;
-  font-size: 30px;
+.grid-container  {
+  background-color: #EFF1EA
+  border: 2px solid #4db57d;
   border-radius: 5px;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+#grid-container_text {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #EFF1EA;
+  border-radius: 5px 5px 0px 0px;
+  padding:10px;
+
+}
+
+#grid-container_text > div {
+  background-color:;
+  text-align: center;
+  font-size: 18px;
+}
+
+#grid-container_logo {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #EFF1EA;
+  padding:10px;
+  border-radius: 0px 0px 5px 5px ;
+
+}
+#grid-container_logo > div {
+  background-color:;
+
+}
+
+
+
+/* Footer */
+
+#footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #BA5A31;
+   color: white;
+   text-align: center;
+   padding: 10px;
+
+}
+
+#footer_content {
+  color: #EFF1EA;
+  padding: 5px;
+  margin: auto;
+  text-align: center;
+  font-size:18px;
+  padding: 10px;
+}
+
+
+#footer_link1 {
+  text-align: left;
+  color: #EFF1EA;
+  font-size:18px;
+
+}
+
+#footer_link2 {
+  text-align: right;
+  color: #EFF1EA;
+  font-size:18px;
+
 }
