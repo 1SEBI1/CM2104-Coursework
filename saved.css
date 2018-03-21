@@ -8,53 +8,67 @@ body {
   background-color: #FCEAD1;
 }
 
+/*Colour Scheme
+
+  - GREEN: #69DC9E
+  - CREAM: #FCEAD1
+  - OFF WHITE: #EFF1EA
+  - ORANGE: #E59F71
+  - ORANGE BROWN: #BA5A31
+  - BROWN: #723215
+  io
+*/
+
+/*Nav Bar*/
+
 nav{
-  background-color: #3399ff;
-  padding: 10px;
-  padding-bottom: 70px;
-  min-width: 390px;
+    background-color: #BA5A31;
+    padding: 10px;
+    padding-bottom: 70px;
+    min-width: 340px;
+
 }
 
 #homelogo {
-  background-color: red;
+  background-color:;
   float: left;
-  margin: 0px;
+  margin-left: 10px;
   padding: 0px;
 }
 
 ul {
-  list-style-type: none;
-  overflow: hidden;
+    list-style-type: none;
+    overflow: hidden;
 
 
 }
 #tabs{
-  background-color: blue;
+  background-color:#BA5A31 ;
   float:right;
   margin: 0px;
   padding: 0px;
 }
 
 li {
-  float: left;
-  background-color: purple;
-  margin: 5px;
+    float: left;
+    background-color: #BA5A31;
+    margin: 5px;
 }
 
 li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 15px 20px;
-  text-decoration: none;
+    display: block;
+    color: #EFF1EA;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
 }
 
-li a:hover {
-  background-color: #0066cc;
+#navbutton:hover {
+    background-color: #E59F71;
 }
 
 .active {
-  background-color: #4CAF50;
+    background-color: #E59F71;
 }
 
 /*Dropdown Menu*/
@@ -62,7 +76,7 @@ li a:hover {
 /* Navbar container */
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #E59F71;
   float: right;
 }
 
@@ -84,6 +98,7 @@ li a:hover {
 
 /* Dropdown button */
 .dropdown .accountbtn {
+  border-radius: 0px;
   font-size: 16px;
   border: none;
   outline: none;
@@ -94,9 +109,9 @@ li a:hover {
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
-/* Add a red background color to navbar links on hover */
+/* Add a background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: #E59F71;
 }
 
 /* Dropdown content (hidden by default) */
@@ -130,29 +145,66 @@ li a:hover {
 }
 
 
+/*Searchbar*/
+
 #search {
-  background-color: red;
+  background-color: #BA5A31;
   height: 50px;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-left: 25%;
   margin-right: 25%;
-  margin-bottom: 20px;
-
+  margin-bottom: 100px;
   padding: 5px;
   display: flex;
   justify-content: center;
+
+  border-radius: 15px;
+  padding: 10px;
+}
+@media screen and (max-width:600px) {
+  #search{
+    margin: 5px 0px 5px 0px;
+  }
 }
 
 #searchbutton{
-  background-color: green;
+  background-color: #BA5A31;
   margin-right: 5px;
+
+  border-radius: 5px;
+
 }
 
 #searchbar{
-  background-color: brown;
+  background-color: #EFF1EA;
   padding: 0px;
   width: 100%;
-
   text-align: left;
+  font-size:25px;
+
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
+#saved {
+  background-color: #BA5A31;
+  height: 50px;
+  margin-top: 100px;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+
+  border-radius: 15px;
+  padding: 10px;
+}
+
+#saved-title {
+  color: #EFF1EA;
+  padding: 0px;
+  margin: 10px;
+  text-align: center;
   font-size:25px;
 }
