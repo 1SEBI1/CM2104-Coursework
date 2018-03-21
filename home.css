@@ -365,17 +365,22 @@ aside{
 }
 
 
+/* Foooter */ 
 
-/*
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10%;
-    width: 50%;
-    padding top: 75%;
-    background-color: purple;
+#footer {
+  background-color: #BA5A31;
+  height: 30px;
+  margin-top: 100px;
+
+  padding: 5px;
+  display: flex;
+  justify-content: center;
 }
 
-*/
+#footer-content {
+  color: #EFF1EA;
+  padding: 5px;
+  margin: auto;
+  text-align: center;
+  font-size:18px;
+}
