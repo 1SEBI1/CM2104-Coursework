@@ -37,12 +37,13 @@ nav{
   padding: 0px;
 }
 
+/*tab formatting*/
 ul {
     list-style-type: none;
     overflow: hidden;
-
-
 }
+
+/*tab formatting*/
 #tabs{
   background-color:#BA5A31 ;
   float:right;
@@ -50,12 +51,14 @@ ul {
   padding: 0px;
 }
 
+/*tab formatting*/
 li {
     float: left;
     background-color: #BA5A31;
     margin: 5px;
 }
 
+/*tab formatting*/
 li a {
     display: block;
     color: #EFF1EA;
@@ -64,10 +67,12 @@ li a {
     text-decoration: none;
 }
 
+/*account button hover formatting colour*/
 #navbutton:hover {
     background-color: #E59F71;
 }
 
+/*account button hover formatting colour*/
 .active {
     background-color: #E59F71;
 }
@@ -148,6 +153,7 @@ li a {
 
 /*Searchbar*/
 
+/*formatting for the searchbar*/
 #search {
   background-color: #BA5A31;
   height: 50px;
@@ -162,12 +168,15 @@ li a {
   border-radius: 15px;
   padding: 10px;
 }
+
+/*helps to ensure the wesbite moves dynamically when changed size*/
 @media screen and (max-width:600px) {
   #search{
     margin: 5px 0px 5px 0px;
   }
 }
 
+/*formatting code for the search button*/
 #searchbutton{
   background-color: #BA5A31;
   margin-right: 5px;
@@ -176,6 +185,7 @@ li a {
 
 }
 
+/*formatting for the search bar*/
 #searchbar{
   background-color: #EFF1EA;
   padding: 0px;
@@ -187,7 +197,7 @@ li a {
   padding: 5px;
 }
 
-
+/*container for saved cookies*/
 #saved {
   background-color: #BA5A31;
   height: 50px;
@@ -202,6 +212,7 @@ li a {
   padding: 10px;
 }
 
+/*text formatting for the main title*/
 #saved-title {
   color: #EFF1EA;
   padding: 0px;
@@ -214,6 +225,7 @@ li a {
 
 /* Footer */
 
+/*footer formatting*/
 #footer {
    position: fixed;
    left: 0;
@@ -223,9 +235,9 @@ li a {
    color: white;
    text-align: center;
    padding: 10px;
-
 }
 
+/*content of the footer formatting*/
 #footer_content {
   color: #EFF1EA;
   padding: 5px;
@@ -235,7 +247,7 @@ li a {
   padding: 10px;
 }
 
-
+/*first footer link formatting*/
 #footer_link1 {
   text-align: left;
   color: #EFF1EA;
@@ -243,6 +255,7 @@ li a {
 
 }
 
+/*first footer link formatting*/
 #footer_link2 {
   text-align: right;
   color: #EFF1EA;
