@@ -19,8 +19,7 @@ body {
   io
 */
 
-/*Nav Bar*/
-
+/*Nav bar that is used throughout */
 nav{
     background-color: #BA5A31;
     padding: 10px;
@@ -29,6 +28,7 @@ nav{
 
 }
 
+/*logo formatting that is used for all pages*/
 #homelogo {
   background-color:;
   float: left;
@@ -36,12 +36,13 @@ nav{
   padding: 0px;
 }
 
+/*tab formatting*/
 ul {
     list-style-type: none;
     overflow: hidden;
-
-
 }
+
+/*tab formatting */
 #tabs{
   background-color:#BA5A31 ;
   float:right;
@@ -49,12 +50,14 @@ ul {
   padding: 0px;
 }
 
+/*tab formatting*/
 li {
     float: left;
     background-color: #BA5A31;
     margin: 5px;
 }
 
+/*tab formatting*/
 li a {
     display: block;
     color: #EFF1EA;
@@ -63,10 +66,12 @@ li a {
     text-decoration: none;
 }
 
+/*account button hover formatting colour*/
 #navbutton:hover {
     background-color: #E59F71;
 }
 
+/*account button hover formatting colour*/
 .active {
     background-color: #E59F71;
 }
@@ -144,10 +149,9 @@ li a {
   display: block;
 }
 
-
-
 /* Account CSS */
 
+/*my account title formatting*/
 #account {
   background-color: #BA5A31;
   height: 50px;
@@ -162,6 +166,7 @@ li a {
   padding: 10px;
 }
 
+/*my account title formatting*/
 #account-title {
   color: #EFF1EA;
   padding: 0px;
@@ -170,9 +175,7 @@ li a {
   font-size:25px;
 }
 
-
- /* Grid*/
-
+ /*grid formatting*/
 #account_options {
   padding-top: 100px;
   padding-left: 10%;
@@ -180,8 +183,7 @@ li a {
 
 }
 
-
-
+/*grid container formatting*/
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -193,6 +195,8 @@ li a {
   padding-right: 10px;
   border-radius: 5px;
 }
+
+/*grid container formatting*/
 .grid-container > div {
   height:300px;
 
