@@ -3,6 +3,7 @@
       font-family: 'Montserrat', serif;
 
     }
+
 /*Body colour that will be used through the whole wesbite*/
 body {
   background-color: #FCEAD1;
@@ -19,8 +20,7 @@ body {
   io
 */
 
-/*Nav Bar*/
-
+/*Nav bar that is used throughout */
 nav{
     background-color: #BA5A31;
     padding: 10px;
@@ -29,6 +29,7 @@ nav{
 
 }
 
+/*logo formatting that is used for all pages*/
 #homelogo {
   background-color:;
   float: left;
