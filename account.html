@@ -10,37 +10,42 @@
 		<!--- primary navigation area --->
 
 		<nav>
-      <section id="homelogo">
-        <h1 id='site-title'>cookie jar</h1>
-      </section>
+			<section id="homelogo">
+				<a href="home.html" id = "homelogo" name="submit" alt="submit">
+				<img src="logo_cookie.png" height="120px" alt="submit" ></a>
+			</section>
+
+			<div class="navbar">
+				<section id = "tabs">
+					<a id="navbutton" href="home.html">home</a>
+					<div class="dropdown">
+						<button id="navbutton" class="accountbtn">account</button>
+						<div class="dropdown-content">
+							<a href="#">log in</a>
+							<a href="#">sign up</a>
+						</div>
+					</div>
+				</section>
+			</div>
+		</nav>
 
 			<!--- This is the dropdown section, which allows the user to select various account options --->
 
 
-			<!--- Nav bar that allows the user to select where they wish to navigate to --->
-
-			<div class="navbar">
-				<section id = "tabs">
-  			<a href="#Home">home</a>
-  			<div class="dropdown">
-    			<button class="accountbtn">account
-      			<id class="fa fa-caret-down"></i>
-    			</button>
-    			<div class="dropdown-content">
-      			<a href="#">settings</a>
-      			<a href="#">log out</a>
-					</section>
-    	</div>
-  	</div>
-	</div>
-</nav>
-
 		<!--- Current placeholder, will be changed to show a title image/text --->
 
 		<section id="account">
-      <h1 id='account-title'>TITLE</h1>
+      <h1 id='account-title'>my account</h1>
     </section>
+
+		<section id="account_options">
+			<div class="grid-container">
+					<div>saved cookies</div>
+					<div>saved jars</div>
+					<div>log out</div>
+			</div>
 
 
 	</body>
+	</section>
 </html>
