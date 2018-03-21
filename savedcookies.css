@@ -234,3 +234,18 @@ li a {
   font-size:18px;
   padding: 10px;
 }
+
+
+#footer_link1 {
+  text-align: left;
+  color: #EFF1EA;
+  font-size:18px;
+
+}
+
+#footer_link2 {
+  text-align: right;
+  color: #EFF1EA;
+  font-size:18px;
+
+}

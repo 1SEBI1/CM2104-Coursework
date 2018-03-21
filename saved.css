@@ -208,3 +208,41 @@ li a {
   text-align: center;
   font-size:25px;
 }
+
+/* Footer */
+
+#footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #BA5A31;
+   color: white;
+   text-align: center;
+   padding: 10px;
+
+}
+
+#footer_content {
+  color: #EFF1EA;
+  padding: 5px;
+  margin: auto;
+  text-align: center;
+  font-size:18px;
+  padding: 10px;
+}
+
+
+#footer_link1 {
+  text-align: left;
+  color: #EFF1EA;
+  font-size:18px;
+
+}
+
+#footer_link2 {
+  text-align: right;
+  color: #EFF1EA;
+  font-size:18px;
+
+}
