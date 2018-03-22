@@ -12,6 +12,7 @@
 	</head>
 	<body>
 
+
 		<nav>
 			<!---putting the logo image on the home page--->
 			<section id="homelogo">
@@ -39,55 +40,63 @@
 			<input type="text"id = "searchbar" name="search" placeholder=" search"></input>
 		</section>
 
-		<!---heading section for saved cookies and jars--->
-		<section id="saved">
-      <h1 id='saved-title'>saved cookies and jars</h1>
-    </section>
-
-		<!---heading section for the saved cookies--->
-		<section id="saved2">
-			<a id="saved-title" href="savedcookies.html">saved cookies</a>
-		</section>
-
 		<!---heading section for saved jars--->
-		<section id="saved2">
-			<a id="saved-title" href="savedjars.html">saved jars</a>
+		<section id="saved">
+      <h1 id='saved-title'>saved page</h1>
     </section>
 
-		<!---heading section for saved cookies and jars--->
-		<section id="account_image">
-			<script>
-var imgSrc = 'account_cookie.png';
-
-function generateImage() {
-  var img = document.createElement('img')
-	img.style.marginTop = '5px';
-	img.style.marginLeft = '5px';
-	img.style.width = '300px';
-	img.style.background = 'green';
-  img.src = imgSrc;
-
-  return img;
-}
-
-for (var i = 0; i < 9; i++ ) {
-  document.body.appendChild(generateImage());
-}
+		<!---code for the first cookie jar, including the images--->
+		<main id="mainbody">
+			<section class="cookiejar "href="#" id="C1">
+				<p class="lid">  </p>
+				<div class="container">
+					<h1 class="label">saved jar 1</h1>
+					<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+					<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+					<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+					<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+					<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+					<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+				</div>
+			</section>
 
 
-</script>
-    </section>
+			<aside class="cookiejar" href="#" id="C2">
+				<p class="lid"></p>
+				<div class="container">
+					<h1 class="label">saved jar 2</h1>
+					<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+					<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+					<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+					<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+					<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+					<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+				</div>
+			</aside>
+			<section class="cookiejar" href="#" id="C3">
+				<p class="lid"></p>
+				<div class="container">
+					<h1 class="label">saved jar 3</h1>
+					<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+					<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+					<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+					<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+					<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+					<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+				</div>
+			</section>
+
+		</main>
 
 		<!---footer section--->
 		<section id ="footer">
 			<footer>
-			<!---footer links--->
+				<!---footer links--->
 				<a id="footer_link1" href="home.html">home</a>
 				<h1 id='footer_content'>cookie jar 2018</h1>
 				<a id="footer_link2" href="account.html">account</a>
 			</footer>
 		</section>
-
 
 	</body>
 </html>

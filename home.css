@@ -25,7 +25,7 @@ nav{
     background-color: #BA5A31;
     padding: 10px;
     padding-bottom: 70px;
-    min-width: 340px;
+    min-width: 250px;
 
 }
 
@@ -34,7 +34,11 @@ nav{
   float: left;
   margin-left: 10px;
   padding: 0px;
-}
+}/*
+@media screen and (max-width:600px) {
+  #homelogo{
+    display: none;
+  }*/
 
 ul {
     list-style-type: none;
@@ -173,7 +177,7 @@ span.psw {
     background-color: #fefefe;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 500px; /* Could be more or less, depending on screen size */
 }
 
 
@@ -224,10 +228,13 @@ span.psw {
   border-radius: 15px;
   padding: 10px;
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:500px) {
   #search{
     margin: 5px 0px 5px 0px;
   }
+    #homelogo{
+      display: none;
+    }
 }
 
 #searchbutton{
