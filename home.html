@@ -4,6 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="home.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 	<title>Cookie Jar</title>
@@ -18,94 +19,167 @@
 
 			<div class="navbar">
 				<section id = "tabs">
-					<a id="navbutton" href="home.html">home</a>
-							<!-- Button to open the modal login form -->
-							<a id="navbuton" class="accoutbtn" onclick="document.getElementById('id01').style.display='block'">Login</a>
-							<!-- The Modal -->
-							<div id="id01" class="modal">
-								<span onclick="document.getElementById('id01').style.display='block'"
+					<a id="navbutton" href="home.html">Home</a>
 
-								<!-- Modal Content -->
-								<form class="modal-content animate" action="/action_page.php">
 
-									<div class="container">
-										<label for="uname"><b>Username</b></label>
-										<input type="text" placeholder="Username" name="uname" required>
 
-										<label for="psw"><b>Password</b></label>
-										<input type="password" placeholder="Password" name="psw" required>
+					<!-- Button to open the modal login form -->
+					<a id="loginbutton" href="#" class="login" onclick="document.getElementById('login-popup').style.display='block'">Login</a>
+					<!-- The Modal -->
+					<div id="login-popup" class="modal">
+						<span onclick="document.getElementById('login-popup').style.display='block'"
 
-										<button type="submit">Login</button>
-									</div>
+						<!-- Modal Content -->
+						<form class="modal-content animate" action="/action_page.php">
 
-									<div class="login-container" style="background-color:#f1f1f1">
-										<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-										<span class="psw">Forgot <a href="#">password?</a></span>
-									</div>
-								</form>
+							<div class="log-container">
+								<label for="uname"><b>Username</b></label>
+								<input type="text" placeholder="Username" name="uname" required>
+
+								<label for="psw"><b>Password</b></label>
+								<input type="password" placeholder="Password" name="psw" required>
+
+								<button type="submit">Login</button>
 							</div>
-							<script src="popup_close.js"></script>
-							<a href="#">sign up</a>
-						</div>
+
+							<div class="login-container" style="background-color:#f1f1f1">
+								<button id="cancelbutton" type="button" class="cancelbtn">Cancel</button>
+								<span class="psw"> <a href="#" onclick="document.getElementById('forgotpass-popup').style.display='block'";"document.getElementById('login-popup').style.display='none'">Forgot password?</a></span>
+							</div>
+						</form>
 					</div>
-				</section>
+
+
+
+
+
+
+
+
+					<div id="forgotpass-popup" class="modal">
+						<span onclick="document.getElementById('forgotpass-popup').style.display='block'"
+
+						<!-- Modal Content -->
+						<form class="modal-content animate" action="/action_page.php">
+
+							<div class="forgotpass-container">
+								<label for="uname"><b>Username</b></label>
+								<input type="text" placeholder="Username" name="uname" required>
+
+								<label for="emaail"><b>Email</b></label>
+								<input type="email" placeholder="Email" name="email" required>
+
+								<button type="submit">Send Email</button>
+							</div>
+
+							<div class="forgotpassword-container" style="background-color:#f1f1f1">
+								<button id="cancelbutton3" type="button" class="cancelbtn">Cancel</button>
+							</div>
+						</form>
+					</div>
+
+
+
+
+
+
+
+
+					<!-- Button to open the modal login form -->
+					<a id="signupbutton" href="#" class="signup" onclick="document.getElementById('signup-popup').style.display='block'">Sign up</a>
+					<!-- The Modal -->
+					<div id="signup-popup" class="modal">
+						<span onclick="document.getElementById('signup-popup').style.display='block'"
+
+						<!-- Modal Content -->
+						<form class="modal-content animate" action="/action_page.php">
+
+							<div class="sign-container">
+								<label for="uname"><b>Username</b></label>
+								<input type="text" placeholder="Username" name="uname" required>
+
+								<label for="psw"><b>Password</b></label>
+								<input type="password" placeholder="Password" name="psw" required>
+
+								<label for="pswcheck"><b>Confirm Password</b></label>
+								<input type="password" placeholder="Password" name="pswcheck" required>
+
+								<label for="emaail"><b>Email</b></label>
+								<input type="email" placeholder="Email" name="email" required>
+
+								<button type="submit">Sign up</button>
+							</div>
+
+							<div class="signup-container" style="background-color:#f1f1f1">
+								<button id="cancelbutton2" type="button" class="cancelbtn">Cancel</button>
+							</div>
+						</form>
+					</div>
+
+
+
+					<script src="popup_close.js"></script>
+
+				</div>
 			</div>
-		</nav>
+		</section>
+	</div>
+</nav>
 
-		<section id="search">
-			<a href="filter.html" id = "searchbutton" name="submit" alt="submit">
-				<img src="search_cookie.png" height="50px" alt="cookie_search"></a>
-				<input type="text"id = "searchbar" name="search" placeholder=" search"></input>
-			</section>
+<section id="search">
+	<a href="filter.html" id = "searchbutton" name="submit" alt="submit">
+		<img src="search_cookie.png" height="50px" alt="cookie_search"></a>
+		<input type="text"id = "searchbar" name="search" placeholder=" search"></input>
+	</section>
 
-			<main id="mainbody">
-				<section class="cookiejar "href="#" id="C1">
-					<p class="lid">  </p>
-					<div class="container">
-						<h1 class="label">cookie jar 1</h1>
-						<img src="cookie.jpg" alt="cookie1" class="cookieimg">
-						<img src="cookie.jpg" alt="cookie1" class="cookieimg">
-						<img src="cookie.jpg" alt="cookie1" class="cookieimg">
-						<img src="cookie.jpg" alt="cookie1" class="cookieimg">
-						<img src="cookie.jpg" alt="cookie1" class="cookieimg">
-						<img src="cookie.jpg" alt="cookie1" class="cookieimg">
-					</div>
-				</section>
-
-
-				<aside class="cookiejar" href="#" id="C2">
-					<p class="lid"></p>
-					<div class="container">
-						<h1 class="label">cookie jar 2</h1>
-						<img src="cookie.jpg" alt="cookie1" class="cookieimg">
-						<img src="cookie.jpg" alt="cookie1" class="cookieimg">
-						<img src="cookie.jpg" alt="cookie1" class="cookieimg">
-						<img src="cookie.jpg" alt="cookie1" class="cookieimg">
-						<img src="cookie.jpg" alt="cookie1" class="cookieimg">
-						<img src="cookie.jpg" alt="cookie1" class="cookieimg">
-					</div>
-				</aside>
-				<section class="cookiejar" href="#" id="C3">
-					<p class="lid"></p>
-					<div class="container">
-						<h1 class="label">cookie jar 3</h1>
-						<img src="cookie.jpg" alt="cookie1" class="cookieimg">
-						<img src="cookie.jpg" alt="cookie1" class="cookieimg">
-						<img src="cookie.jpg" alt="cookie1" class="cookieimg">
-						<img src="cookie.jpg" alt="cookie1" class="cookieimg">
-						<img src="cookie.jpg" alt="cookie1" class="cookieimg">
-						<img src="cookie.jpg" alt="cookie1" class="cookieimg">
-					</div>
-				</section>
-
-			</main>
+	<main id="mainbody">
+		<section class="cookiejar "href="#" id="C1">
+			<p class="lid">  </p>
+			<div class="container">
+				<h1 class="label">cookie jar 1</h1>
+				<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+				<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+				<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+				<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+				<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+				<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+			</div>
+		</section>
 
 
-			<section id ="footer">
-				<footer>
-					<h1 id='footer-content'>cookie jar 2018</h1>
-				</footer>
-			</section>
+		<aside class="cookiejar" href="#" id="C2">
+			<p class="lid"></p>
+			<div class="container">
+				<h1 class="label">cookie jar 2</h1>
+				<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+				<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+				<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+				<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+				<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+				<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+			</div>
+		</aside>
+		<section class="cookiejar" href="#" id="C3">
+			<p class="lid"></p>
+			<div class="container">
+				<h1 class="label">cookie jar 3</h1>
+				<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+				<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+				<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+				<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+				<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+				<img src="cookie.jpg" alt="cookie1" class="cookieimg">
+			</div>
+		</section>
 
-		</body>
-		</html>
+	</main>
+
+
+	<section id ="footer">
+		<footer>
+			<h1 id='footer-content'>cookie jar 2018</h1>
+		</footer>
+	</section>
+
+</body>
+</html>
