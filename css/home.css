@@ -1,10 +1,8 @@
-<<<<<<< HEAD
-=======
 /*Font that will be used through the whole website*/
 * {
       font-family: 'Montserrat', serif;
-
     }
+
 /*Body colour that will be used through the whole wesbite*/
 body {
   /*Setting the background colour used for the page*/
@@ -302,38 +300,61 @@ span.psw {
   margin-bottom: 10px;
 }
 
+/*Setting the opacity for jars when they are hovered over*/
 .cookiejar:hover{
   opacity: 0.7;
 }
 
+/*Formatting for the jar lids*/
 .lid{
+  /*Setting the colour for the lids*/
   background-color: #69DC9E;
+  /*Setting the margins for the jar*/
   margin: 0px 30px;
+  /*Padding the jar lids, so that they are the right height, ie 20 pixels*/
   padding: 20px;
+  /*Setting the border radius to 5 pixels*/
   border-radius: 5px;
+  /*Setting the border to solid, so that it is visble and distinct*/
   border-style: solid;
+  /*Positioning for the border, and setting it's width*/
   border-width: 5px 0px 5px 0px;
+  /*Setting the colour for the border*/
   border-color: #4db57d;
+  /*Setting the top of the cookie jar to a slightly lighter colour from the rest of the jar*/
   border-top-color: #7af4b2;
+  /*Creating the shaddow for the cookie jar, and setting its colour*/
   box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.5);
+  /*Setting the margins*/
+  margin: 0px 30px;  margin: 0px 30px;
 
 }
 
-
-
+/*Containers for text on top of cookie jars*/
 .container {
+  /*Positioning the containers on top of the jars*/
   position: relative;
+  /*Ensuring that the containers have floated to the left*/
   float: left;
-  padding: 0px;
+  /*Aligning text to the centre of each container*/
   text-align: center;
+  /*Setting the background colour to black*/
   background-color: black;
+  /*Creating the border for the container*/
   border-radius: 30px 30px 15px 15px;
+  /*Setting any content that overflows an elements box to hidden*/
   overflow: hidden;
+  /*Setting the border style to solid*/
   border-style: solid;
+  /*Setting the width of the border to 5 pixels*/
   border-width: 5px;
+  /*Setting the colour of the border to white*/
   border-color: #EFF1EA;
+  /*Setting up the border properties*/
   box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.5);
 }
+
+/*Settings for the */
 .cookieimg{
   display: flex;
   float: left;
@@ -471,4 +492,3 @@ span.psw {
   text-align: center;
   font-size:18px;
 }
->>>>>>> 8d40306a00f366afb84d59d70d0b0301019aa842
