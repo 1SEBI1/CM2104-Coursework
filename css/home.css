@@ -212,18 +212,25 @@ span.psw {
        float: none;
     }
     .cancelbtn {
+      /*Ensuring the cancel button is full width*/
        width: 100%;
     }
 }
 
+/*UNSURE IF THIS DOES ANYTHING - CHECK WITH SEBI*/
 /*Searchbar*/
-
 #search {
+  /*Setting the background colour*/
   background-color: #BA5A31;
+  /*Setting the height of the search bar*/
   height: 50px;
+  /*Setting the position of the search bar to 100 pixels from the top of the screen*/
   margin-top: 100px;
+  /*Setting the position of the search bar 25% from the left*/
   margin-left: 25%;
+  /*Setting the position of the search bar 25% from the right*/
   margin-right: 25%;
+  /*Setting the position of the search bar 100 pixels from the bottom of the section*/
   margin-bottom: 100px;
   padding: 5px;
   display: flex;
