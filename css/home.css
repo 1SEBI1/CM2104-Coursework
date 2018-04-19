@@ -8,7 +8,8 @@ body {
   background-color: #FCEAD1;
 }
 
-/*Colour Scheme
+/*Colour Scheme that is used throughout the website,
+commented out as only for reference
 
   - GREEN: #69DC9E
   - CREAM: #FCEAD1
@@ -34,7 +35,9 @@ nav{
   float: left;
   margin-left: 10px;
   padding: 0px;
-}/*
+}
+
+/*
 @media screen and (max-width:600px) {
   #homelogo{
     display: none;
