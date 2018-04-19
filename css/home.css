@@ -5,6 +5,7 @@
     }
 /*Body colour that will be used through the whole wesbite*/
 body {
+  /*Setting the background colour used for the page*/
   background-color: #FCEAD1;
 }
 
@@ -20,104 +21,101 @@ commented out as only for reference
   io
 */
 
-/*Nav Bar*/
-
+/*Nav bar styling that is used throughout the website*/
 nav{
-    background-color: #BA5A31;
-    padding: 10px;
-    padding-bottom: 70px;
-    min-width: 250px;
+  /*Setting the background colour */
+  background-color: #BA5A31;
+  /*Adding padding to the nav bar, making it the correct height*/
+  padding: 10px;
+  /*Adding padding to the nav bar, making it the correct height and width*/
+  padding-bottom: 70px;
+  /*Setting the minimum width of the navigation bar*/
+  min-width: 250px;
 
 }
 
+/*logo formatting that is used for all pages*/
 #homelogo {
+
+  /*logo formatting that is used for all pages*/
   background-color:;
+  /*Ensuring the logo stays to the left, and correcting height of nav bar*/
   float: left;
+  /*Positioning the logo 10px to the right, ie, 10px away from right margin*/
   margin-left: 10px;
-  padding: 0px;
 }
 
-/*
-@media screen and (max-width:600px) {
-  #homelogo{
-    display: none;
-  }*/
-
+/*Formatting for the tabs used throughout our website*/
 ul {
-    list-style-type: none;
-    overflow: hidden;
-
-
+  /*Unsure as to what this does, will remove at end*/
+  list-style-type: none;
+  /*Setting any content that overflows an elements box to hidden*/
+  overflow: hidden;
 }
+
+/*Styling for the nav bar tabs*/
 #tabs{
+  /*Setting the background colour for the 'home', 'log in' and 'sign up' tabs*/
   background-color:#BA5A31 ;
+  /*Ensuring the nav bar tabs are floated to the right-most side of the page*/
   float:right;
-  margin: 0px;
-  padding: 0px;
 }
 
-li {
-    float: left;
-    background-color: #BA5A31;
-    margin: 5px;
-}
-
-li a {
-    display: block;
-    color: #EFF1EA;
-    text-align: center;
-    padding: 15px 20px;
-    text-decoration: none;
-}
-
+/*TO BE DELETED AT END*/
 #navbutton:hover {
     background-color: #E59F71;
 }
 
+/*TO BE DELETED AT END*/
 .active {
     background-color: #E59F71;
 }
 
 /*Dropdown Menu*/
 
-/* Navbar container */
+/*TO BE DELETED AT END*/
+/*Navbar container*/
 .navbar {
   overflow: hidden;
   background-color: #E59F71;
   float: right;
 }
 
-/* Links inside the navbar */
+/*'home', 'log in' and 'sign up' link formatting*/
 .navbar a {
+  /*Ensuring the links are floated to the left - also ensures positioning is correct*/
   float: left;
+  /*Setting the font size to 16px*/
   font-size: 16px;
+  /*Ensuring the colour of the text is the correct colour, ie, white*/
   color: white;
+  /*Ensuring that the text is centre aligned*/
   text-align: center;
+  /*Adding padding to the text/links, ensuring they are positioned correctly*/
   padding: 20px 15px;
+  /*Removing the underline underneath the links*/
   text-decoration: none;
 }
 
-/* Add a background color to navbar links on hover */
+/* Nav bar hover */
 .navbar a:hover{
+  /*Setting the background colour for the hover function*/
   background-color: #E59F71;
 }
 
-
-
-
-
-
-
-
-
-
 /* Full-width input fields */
 input[type=text], input[type=password], input[type=password], input[type=email] {
+    /*Setting the width for the log in input fields*/
     width: 100%;
+    /*Padding the input fields to be the correct width and height*/
     padding: 12px 20px;
+    /*Setting the margin to 8px*/
     margin: 8px 0;
+    /*CODE TO BE DELETED AT END*/
     display: inline-block;
+    /*Setting the border to 1px solid*/
     border: 1px solid #ccc;
+    /*Ensuring there is a border to surround the input fields*/
     box-sizing: border-box;
 }
 
@@ -211,10 +209,6 @@ span.psw {
     }
 }
 
-
-
-
-
 /*Searchbar*/
 
 #search {
@@ -258,8 +252,6 @@ span.psw {
   border-radius: 5px;
   padding: 5px;
 }
-
-
 
 
 /*MAINBODY*/
