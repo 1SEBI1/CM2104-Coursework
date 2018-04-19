@@ -263,8 +263,12 @@ aside{
   border: 0px;
 }
 
-.cookiejar:hover{
+.cookiejar{
   opacity: 0.7;
+}
+
+.cookiejar:hover{
+  opacity: 1;
 }
 
 .lid{

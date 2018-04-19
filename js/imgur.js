@@ -11,7 +11,7 @@ function arraysToJars(arrays) {
     console.log("htmlstring ; " + htmlstring);
   }
 
-  $('#imgurContainer').html(htmlstring);
+  $('#asdContainer').html(htmlstring);
   console.log("link ; " + htmlstring);
   return jars;
 }
