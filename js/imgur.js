@@ -3,18 +3,12 @@
 
 function arraysToJars(arrays) {
   var jars = new Array(5);
-<<<<<<< HEAD
   var htmlstring ="";
 	for(var i = 0; i < 5; i++) {
     jars[i] = arrays.data[i].images[0].link;
 
     htmlstring +="<img src='" + jars[i]+ "' alt='cookie1' class='cookieimg'>"
     console.log("htmlstring ; " + htmlstring);
-=======
-	for(var i = 0; i < 5; i++) {
-    jars[i] = arrays.data[i].images[0].link;
-    var htmlstring ="<img src='" + jars[i]+ "' alt='cookie1' class='cookieimg'>"
->>>>>>> 8d40306a00f366afb84d59d70d0b0301019aa842
   }
 
   $('#imgurContainer').html(htmlstring);
