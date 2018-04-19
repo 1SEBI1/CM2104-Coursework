@@ -121,17 +121,7 @@ input[type=text], input[type=password], input[type=password], input[type=email] 
     box-sizing: border-box;
 }
 
-/* Set a style for all buttons */
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-}
-
+/*TO BE DELETED AT END*/
 .psw a{
   width: auto;
   padding: 10px 18px;
@@ -139,10 +129,7 @@ button {
   background-color: #f44336;
 }
 
-button:hover {
-    opacity: 0.8;
-}
-
+/*TO BE DELTED AT END*/
 /* Extra styles for the cancel button */
 .cancelbtn {
     width: auto;
@@ -151,41 +138,59 @@ button:hover {
     background-color: #f44336;
 }
 
+/*Formatting for the login in options*/
 .log-container, .sign-container, .forgotpass-container {
+    /*Padding the log in input field*/
     padding: 16px;
 }
 
+/*TO BE DELETED AT END*/
 span.psw {
     float: right;
     padding-top: 16px;
 }
 
-/* The Modal (background) */
+
+/* The Modal (background), ie, the login box */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    /*This is hidden by default*/
+    display: none;
+    /*This ensures it stays in place*/
+    position: fixed;
+    /*This ensures it sits on top*/
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    /*This ensures the width is set to full*/
+    width: 100%;
+    /*This ensures the height is set to full*/
+    height: 100%;
+    /*The enables the box to become scrollable if required*/
+    overflow: auto;
+    /*This is the required 'fallback' colour that can be used*/
+    background-color: rgb(0,0,0);
+    /*This is the same colour that could be used, but with opacity*/
+    background-color: rgba(0,0,0,0.4);
+    /*This sets the top padding to 60px*/
     padding-top: 60px;
 }
 
 /* Modal Content/Box */
 .modal-content {
+    /*Setting the background colour for the log in box*/
     background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    /*Setting the margin 5% from the top, and 15% from the bottom and centered */
+    margin: 5% auto 15% auto;
+    /*Setting the border to 1 pixel width, being solid*/
     border: 1px solid #888;
-    width: 500px; /* Could be more or less, depending on screen size */
+    /*Setting the width to 500 pixels. Could be more or less, depending on screen size */
+    width: 500px;
 }
 
-
-/* Add Zoom Animation */
+/*UNSURE WHAT ALL THIS SECTION DOES - ASK SEBASTIAN (LINE 190-215)*/
+/* Adding zoom animation */
 .animate {
+  /*Setting the zoom animation, with its time*/
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
 }
@@ -227,6 +232,8 @@ span.psw {
   border-radius: 15px;
   padding: 10px;
 }
+
+
 @media screen and (max-width:500px) {
   #search{
     margin: 5px 0px 5px 0px;
