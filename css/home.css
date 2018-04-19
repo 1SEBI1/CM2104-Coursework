@@ -232,67 +232,74 @@ span.psw {
   margin-right: 25%;
   /*Setting the position of the search bar 100 pixels from the bottom of the section*/
   margin-bottom: 100px;
+  /*Adding 5 pixels of padding*/
   padding: 5px;
+  /*Ensuring the search bar is within its container*/
   display: flex;
+  /*This ensures that the content is aligned at the centre of the container*/
   justify-content: center;
-
+  /*This allows the container to be more rounded at the edge, rather than cornered*/
   border-radius: 15px;
+  /*Padding the container to be larger*/
   padding: 10px;
 }
 
-
+/*Condition for the screen size*/
 @media screen and (max-width:500px) {
   #search{
+    /*Setting the margins for the when the max width is 500px*/
     margin: 5px 0px 5px 0px;
   }
+  /*DELETE AT THE END*/
     #homelogo{
       display: none;
     }
 }
 
+/*Formatting for the search button*/
 #searchbutton{
+  /*Setting the colour for the sarch button*/
   background-color: #BA5A31;
+  /*Positioning the search bar 5 pixels from the search button*/
   margin-right: 5px;
-
+  /*Setting the border radius to 5 pixels*/
   border-radius: 5px;
-
 }
 
+/*Formatting for the search bar*/
 #searchbar{
+  /*Adding a colour for the search bar*/
   background-color: #EFF1EA;
-  padding: 0px;
+  /*Setting the width of the search bar to 100%*/
   width: 100%;
+  /*Ensuring that the text is aligned to the left*/
   text-align: left;
+  /*Setting the font size to 25 pixels*/
   font-size:25px;
-
+  /*Setting the border radius to 5 pixels*/
   border-radius: 5px;
+  /*Setting the padding to 5 pixels - moves the 'search' text 5 pixels to the left*/
   padding: 5px;
 }
 
-
 /*MAINBODY*/
 
+/*Formatting for the main body section of the website*/
 #mainbody{
-  /*background-color: yellow;*/
-  /*margin-top: 100px;*/
+  /*Setting the margins to 25%*/
   margin 25%;
+  /*Adding padding to the jars - ie so the jars don't fit to the entire page*/
   padding: 0px 10% 0px 10%;
 }
 
-/*COOKIE JAR CSS*//*
-section.cookiejar{
-  width: 59%
-}
-aside{
-  width: 38%;
-  float: right;
-}*/
+/*Formatting for the cookie jars*/
 .cookiejar{
+  /*Ensuring that they float to the left*/
   float: left;
+  /*The margin is used to create space around the elements*/
   margin: auto;
+  /*Creating some margin space of 10 pixels around the bottom of the jars*/
   margin-bottom: 10px;
-  padding: 0px;
-  border: 0px;
 }
 
 .cookiejar:hover{
