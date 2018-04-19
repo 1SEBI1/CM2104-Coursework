@@ -354,141 +354,213 @@ span.psw {
   box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.5);
 }
 
-/*Settings for the */
+/*Settings for the cookie images - WILL NEED REPLACED AT THE END*/
 .cookieimg{
+  /*Ensures that the images are the same size/length */
   display: flex;
+  /*Ensures that the images float to the left;*/
   float: left;
+  /*Allows there to be three images per row within the container*/
   width:33%;
-
-
 }
+
+/*Formatting for the labels within the containers of the cookie jars*/
 .label {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10% 5%;
-    width: 50%;
-    /*padding top: 40%;*/
-    background-color: #EFF1EA;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #69DC9E;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+  /*Ensures that the laels are positioned correctly, ie in the centre of the jar*/
+  position: absolute;
+  /*Positioning the labels half way into the cookie jar, ie centered*/
+  left: 50%;
+  /*Positioning the labels half way down the cookie jar, ie centered*/
+  top: 50%;
+  /*Positioning the labels correctly within the container*/
+  transform: translate(-50%, -50%);
+  /*Padding the label, ie making the correct size*/
+  padding: 10% 5%;
+  /*Setting the width of the label*/
+  width: 50%;
+  /*Setting the colour of the white*/
+  background-color: #EFF1EA;
+  /*Adding rounded borders to the  laels*/
+  border-radius: 10px;
+  /*Setting the border style to solid*/
+  border-style: solid;
+  /*Setting the border width to 5 pixels*/
+  border-width: 5px;
+  /*Setting the border colour*/
+  border-color: #69DC9E;
+  /*Setting up the border properties*/
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
 }
 
+/*Formatting the second label*/
 #C2 .label {
+  /*Positioning the label within the top 33.33% of the container*/
   top:33.33%
 }
 
+/*Container one formatting*/
 #C1{
+  /*Setting the width for the first cookie jar*/
   width: 68.5%;
+  /*Floating the cookie jar container to the left*/
   float: left;
 }
+
+/*Container two formatting*/
 #C2{
+  /*Setting the width for the second cookie jar*/
   width: 30.5%;
+  /*Floating the cookie jar container to the right*/
   float: right;
 }
+
+/*Container three formatiing*/
 #C3{
+  /*Setting the width for the third cookie jar*/
   width: 100%;
+  /*Floating the cookie jar to the left*/
   float: left;
 }
+
+/*Formatting the second cookie jars images*/
 #C2 .cookieimg {
-  width:50%; /* The width is 100%, when the viewport is 800px or smaller */
+  /* The width is 50%, when the viewport is 800px or smaller */
+  width:50%;
 }
 
-
-
+/*For screens that have a maximum width of 1,200 pixels or less, do the following:*/
 @media screen and (max-width:1200px) {
+  /*For the first cookie jar container:*/
   #C1{
+    /*Setting the width to 65%*/
     width: 65%;
   }
+  /*For the second cookie jar container:*/
   #C2{
+    /*Setting the width to 33.5%*/
     width: 33.5%;
   }
+  /*For the first cookie jar container:*/
   #C3{
+    /*Setting the width to 65%*/
     width: 65%;
   }
 
+  /*Formatting for the first cookie jars images*/
   #C1 .cookieimg {
-    width:50%; /* The width is 100%, when the viewport is 800px or smaller */
+    /* The width is 50%, when the viewport is 800px or smaller */
+    width:50%;
   }
+  /*Formatting for the third cookie jars images*/
   #C3 .cookieimg {
-    width:50%; /* The width is 100%, when the viewport is 800px or smaller */
+    /* The width is 50%, when the viewport is 800px or smaller */
+    width:50%;
   }
+  /*Formatting for the second cookie jars images*/
   #C2 .cookieimg {
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    /* The width is 100%, when the viewport is 800px or smaller */
+    width: 100%;
   }
+
+  /*Label formatting*/
   .label {
+    /*Setting the label to the top 33.33% of the container*/
     top: 33.33%;
   }
+  /*Container twos formatting*/
   #C2 .label {
+    /*Setting the label to the top 15.5*/
     top: 15.5%;
+    /*Padding the label*/
     padding: 10% 25%;
   }
+
+/*TO BE DELETED AT THE END*/
   #mainbody{
     padding: 0px 5% 0px 5%;
   }
 }
+
+/*For screens that have a maximum width of 600 pixels or less, do the following:*/
 @media screen and (max-width:600px) {
+  /*For the first cookie jar container:*/
   #C1{
+    /*Setting the width to 100%*/
     width: 100%;
   }
+  /*For the second cookie jar container:*/
   #C2{
+    /*Setting the width to 100%*/
     width: 100%;
   }
+  /*For the third cookie jar container:*/
   #C3{
+    /*Setting the width too 100%*/
     width: 100%;
   }
+  /*Formatting for the first cookie jars images*/
   #C1 .cookieimg {
-    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+    /* The width is 100%, when the viewport is 800px or smaller */
+    width:100%;
   }
+  /*Formatting for the third cookie jars images*/
   #C3 .cookieimg {
-    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+    /* The width is 100%, when the viewport is 800px or smaller */
+    width:100%;
   }
+  /*Formatting for the second cookie jars images*/
   #C2 .cookieimg {
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    /* The width is 100%, when the viewport is 800px or smaller */
+    width: 100%;
   }
-  .label {
-    top: 15.5%;
-    padding: 10% 25%;
-  }
+
+/*Label formatting*/
+.label {
+  /*Setting the label to the top 15.5*/
+  top: 15.5%;
+  /*Padding the label*/
+  padding: 10% 25%;
+}
+
+  /*TO BE DELETED AT THE END */
   #mainbody{
     padding: 0px;
   }
-  #C1 .cookieimg + #C2 .cookieimg + #C3 .cookieimg{
-    width:100; /* The width is 100%, when the viewport is 800px or smaller */
+
+/*Formatting for the containers plus images*/
+#C1 .cookieimg + #C2 .cookieimg + #C3 .cookieimg {
+  /*Setting the width to 100%*/
+  width:100;
   }
 }
-
-
-
-
-
-  #mainbody{
-    margin-left: 0px;
-    margin-right: 0px;
-  }
 }
 
-
-/* Foooter */
-
+/* Formatting for the footer */
 #footer {
+  /*Setting the colour*/
   background-color: #BA5A31;
+  /*Setting the height fot the footer*/
   height: 30px;
+  /*Setting the top margin value to 100 pixels*/
   margin-top: 100px;
-
+  /*Setting the padding for the footer to 5 pixels*/
   padding: 5px;
+  /*Letting the footer be the same length, no matter its contents*/
   display: flex;
+  /*Aligning the contents of the footer to the center*/
   justify-content: center;
 }
 
+/*Formatting the content of the footer*/
 #footer-content {
+  /*Setting the colour for the content*/
   color: #EFF1EA;
+  /*Padding the footer*/
   padding: 5px;
+  /*Setting the margin to automatic*/
   margin: auto;
+  /*Aligning the contents of the footer to the center*/
   text-align: center;
+  /*Setting the font size of the text to 18px*/
   font-size:18px;
 }
