@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 	<head>
 			<!---linking the style sheet to the html--->
       <link rel="stylesheet" type="text/css" href="../css/my.css">
@@ -9,7 +10,15 @@
 
 		<!---creating the title--->
 		<title>Cookie Jar</title>
+
+		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="../js/imgur.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.1/handlebars.min.js"></script>
+
 	</head>
+
+
+
 	<body>
 
 		<nav>
@@ -32,12 +41,12 @@
 			</div>
 		</nav>
 
-<!---this code implements the cookie image and text search bar--->
-    <section id="search">
-      <a href="filter.html" id = "searchbutton" name="submit" alt="submit">
+		<!---this code implements the cookie image and text search bar--->
+		<section id="search">
+			<a id="searchbutton" name="submit" alt="submit">
 				<img src="../images/search_cookie.png" height="50px" alt="cookie_search"></a>
-      <input type="text"id = "searchbar" name="search" placeholder=" search"></input>
-    </section>
+				<input type="text" id="searchbar" name="searchbar" placeholder=" search" onsubmit="" autocomplete="off"></input>
+			</section>
 
 
 		<!---this section is the filter bar, with drop down menu--->
@@ -59,7 +68,7 @@
 			<section class="cookiejar "href="#" id="C1">
 				<p class="lid">  </p>
 				<div class="container">
-					<h1 class="label">cookie jar 1</h1>
+					<h1 class="label" id=contents>cookie jar 1</h1>
 					<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
 					<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
 					<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
