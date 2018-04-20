@@ -23,7 +23,7 @@ $(function(){
         'Authorization' : 'Bearer ' + localStorage.getItem('access_token')
       },
       success: function() {
-        window.location = 'file:///C:/Users/1607145/Desktop/CM2104-Coursework/html/my.html';
+        window.location = 'http://zigzag-susan.codio.io/CM2104-Coursework/%2Fhtml/my.html';
       },
       error: function() {
         localStorage.clear();
@@ -33,7 +33,7 @@ $(function(){
     });
   } else if(localStorage.getItem(stateKey) == getHashParams().state && getHashParams().state) {
     localStorage.setItem('access_token', getHashParams().access_token);
-    window.location = 'file:///C:/Users/1607145/Desktop/CM2104-Coursework/html/my.html';
+    window.location = 'http://zigzag-susan.codio.io/CM2104-Coursework/%2Fhtml/my.html';
   } else {
     $('#loading').hide();
     $('#login-page').show();
@@ -43,7 +43,7 @@ $(function(){
 //Login function activated by pressing the login button
 $('#login-button').click(function(){
   var client_id = '8HTwhfqsM1aUSw';
-  var redirect_uri = 'file:///C:/Users/1607145/Desktop/CM2104-Coursework/html/my.html';
+  var redirect_uri = 'http://zigzag-susan.codio.io/CM2104-Coursework/%2Fhtml/my.html';
 
   /**
    * Generates a random string containing numbers and letters
