@@ -2,21 +2,19 @@
 
 
 function arraysToJars(arrays) {
-  var jars = new Array(5);
+  var jars = new Array(6);
   var htmlstring ="";
-	for(var i = 0; i < 5; i++) {
+	for(var i = 0; i < 6; i++) {
+
     jars[i] = arrays.data[i].images[0].link;
 
-    htmlstring +="<img src='" + jars[i]+ "' alt='cookie1' class='cookieimg'>"
-    console.log("htmlstring ; " + htmlstring);
+
+    htmlstring +="<img src='" + jars[i]+ "' alt='cookie1' class='cookieimg'>";
   }
 
-  $('#asdContainer').html(htmlstring);
-  console.log("link ; " + htmlstring);
-  return jars;
+  $('#imgurContainer').html(htmlstring);
+  //return jars;
 }
-
-	//$('#imgurContainer').html(cookieJar)
 
 
 
@@ -37,7 +35,7 @@ function searchbar(query) {
     });
 });
 	$.ajax({
-		url: 'https://api.imgur.com/3/gallery/search?q='+ query + '&type=images',
+		url: 'https://api.imgur.com/3/gallery/search?q='+ query,
 		headers: {
 			'Authorization' : 'Client-ID 2984ccc930c582a'
 		},

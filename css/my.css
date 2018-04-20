@@ -59,7 +59,7 @@ li {
 }
 
 /*tab formatting*/
-li a {
+li a, .navbar button {
     display: block;
     color: #EFF1EA;
     text-align: center;
@@ -87,7 +87,7 @@ li a {
 }
 
 /* Links inside the navbar */
-.navbar a {
+.navbar a, .navbar button {
   float: left;
   font-size: 16px;
   color: white;
@@ -116,7 +116,7 @@ li a {
 }
 
 /* Add a background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover .dropbtn, .navbar button {
   background-color: #E59F71;
 }
 
@@ -131,7 +131,7 @@ li a {
 }
 
 /* Links inside the dropdown */
-.dropdown-content a {
+.dropdown-content a{
   float: none;
   color: black;
   padding: 12px 16px;
@@ -141,7 +141,7 @@ li a {
 }
 
 /* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
+.dropdown-content a:hover{
   background-color: #ddd;
 }
 
@@ -149,6 +149,9 @@ li a {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+
+
 
 /*Searchbar*/
 
@@ -264,7 +267,7 @@ aside{
 }
 
 .cookiejar{
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .cookiejar:hover{
