@@ -47,8 +47,6 @@ nav{
 
 /*Formatting for the tabs used throughout our website*/
 ul {
-  /*Unsure as to what this does, will remove at end*/
-  list-style-type: none;
   /*Setting any content that overflows an elements box to hidden*/
   overflow: hidden;
 }
@@ -56,29 +54,9 @@ ul {
 /*Styling for the nav bar tabs*/
 #tabs{
   /*Setting the background colour for the 'home', 'log in' and 'sign up' tabs*/
-  background-color:#BA5A31 ;
+  background-color:#BA5A31;
   /*Ensuring the nav bar tabs are floated to the right-most side of the page*/
   float:right;
-}
-
-/*TO BE DELETED AT END*/
-#navbutton:hover {
-    background-color: #E59F71;
-}
-
-/*TO BE DELETED AT END*/
-.active {
-    background-color: #E59F71;
-}
-
-/*Dropdown Menu*/
-
-/*TO BE DELETED AT END*/
-/*Navbar container*/
-.navbar {
-  overflow: hidden;
-  background-color: #E59F71;
-  float: right;
 }
 
 /*'home', 'log in' and 'sign up' link formatting*/
@@ -127,7 +105,6 @@ input[type=text], input[type=password], input[type=password], input[type=email] 
   background-color: #f44336;
 }
 
-/*TO BE DELTED AT END*/
 /* Extra styles for the cancel button */
 .cancelbtn {
     width: auto;
