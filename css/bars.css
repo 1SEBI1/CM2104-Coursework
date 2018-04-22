@@ -12,7 +12,7 @@
 
 /*Searchbar*/
 
-/*formatting for the searchbar*/
+/*formatting for the searchbar outside*/
 #search {
   background-color: #BA5A31;
   height: 50px;
@@ -20,13 +20,19 @@
   margin-left: 25%;
   margin-right: 25%;
   margin-bottom: 30px;
-  padding: 5px;
   display: flex;
   justify-content: center;
-
   border-radius: 15px;
   padding: 10px;
 }
+
+#submitbutton{
+  background: url("../images/search_cookie.png");
+  background-color: #EFF1EA;
+  border-radius: 5px;
+  margin-left:5px;
+}
+
 
 /*helps to ensure the wesbite moves dynamically when changed size*/
 @media screen and (max-width:600px) {
@@ -35,29 +41,22 @@
   }
 }
 
-/*formatting code for the search button*/
-#searchbutton{
-  background-color: #BA5A31;
-  margin-right: 5px;
-  border-radius: 5px;
-}
 
-/*formatting for the search bar*/
+/*formatting for the search bar inside*/
 #searchbar{
   background-color: #EFF1EA;
-  padding: 0px;
+  padding: 10px;
   width: 100%;
   text-align: left;
   font-size:25px;
-
   border-radius: 5px;
-  padding: 5px;
 }
+
 
 
 /*Filter Bar*/
 
-/*formatting for the filter bar*/
+/*formatting for the filter bar outside*/
 #filter {
   background-color: #BA5A31;
   height: 30px;
@@ -71,13 +70,13 @@
   padding: 10px;
 }
 
-/*formatting for the filter bar*/
+/*formatting for the filter bar inside*/
 #filterbar{
   background-color: #EFF1EA;
   padding: 0px;
   width: 100%;
   text-align: left;
-  font-size:25px;
+  font-size:18px;
   border-radius: 5px;
   padding: 5px;
 }
