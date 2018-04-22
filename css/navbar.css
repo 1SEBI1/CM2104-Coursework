@@ -12,6 +12,7 @@
 * {
       font-family: 'Montserrat', serif;
 
+
     }
 
 /*Body colour that will be used through the whole wesbite*/
@@ -122,6 +123,7 @@ li a, .navbar button {
 /* Add a background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn, .navbar button {
   background-color: #E59F71;
+  border: none;
   border-radius: 15px
 }
 

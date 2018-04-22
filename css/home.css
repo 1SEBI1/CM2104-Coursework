@@ -8,24 +8,9 @@ commented out as only for reference
   - ORANGE: #E59F71
   - ORANGE BROWN: #BA5A31
   - BROWN: #723215
-  io
+
 */
 
-/*Font that will be used through the whole website*/
-* {
-      font-family: 'Montserrat', serif;
-
-    }
-
-/*Body colour that will be used through the whole wesbite*/
-body {
-  background: url("../images/cookie_wallpaper.png");
-  background-position: auto;
-  background-size:cover;
-
-  background-color: #FCEAD1;
-  background-color: linear-gradient(#FCEAD1, #e8c392, #FCEAD1);
-}
 
 /*Nav bar styling that is used throughout the website*/
 nav{
@@ -313,6 +298,13 @@ span.psw {
 
 /*Formatting for the jar lids*/
 .lid{
+
+  text-align: center;
+  font-size: 24px;
+  color: #EFF1EA;
+  text-shadow: 2px 2px #5dbf8a;
+  font-weight: bold;
+  
   /*Setting the colour for the lids*/
   background-color: #69DC9E;
   /*Setting the margins for the jar*/
@@ -371,32 +363,7 @@ span.psw {
 }
 
 /*Formatting for the labels within the containers of the cookie jars*/
-.label {
-  /*Ensures that the laels are positioned correctly, ie in the centre of the jar*/
-  position: absolute;
-  /*Positioning the labels half way into the cookie jar, ie centered*/
-  left: 50%;
-  /*Positioning the labels half way down the cookie jar, ie centered*/
-  top: 50%;
-  /*Positioning the labels correctly within the container*/
-  transform: translate(-50%, -50%);
-  /*Padding the label, ie making the correct size*/
-  padding: 10% 5%;
-  /*Setting the width of the label*/
-  width: 50%;
-  /*Setting the colour of the white*/
-  background-color: #EFF1EA;
-  /*Adding rounded borders to the  laels*/
-  border-radius: 10px;
-  /*Setting the border style to solid*/
-  border-style: solid;
-  /*Setting the border width to 5 pixels*/
-  border-width: 5px;
-  /*Setting the border colour*/
-  border-color: #69DC9E;
-  /*Setting up the border properties*/
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-}
+
 
 /*Formatting the second label*/
 #C2 .label {
