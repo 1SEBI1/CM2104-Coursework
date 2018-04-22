@@ -1,0 +1,37 @@
+/*Colour Scheme
+
+  - GREEN: #69DC9E
+  - CREAM: #FCEAD1
+  - OFF WHITE: #EFF1EA
+  - ORANGE: #E59F71
+  - ORANGE BROWN: #BA5A31
+  - BROWN: #723215
+*/
+
+/* Footer */
+
+/*footer formatting*/
+#footer {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   background-color: #BA5A31;
+   padding: 0px 0px;
+   opacity: 0.8;
+   text-align: center;
+   display:flex;
+   justify-content: center;
+
+}
+
+#footer h3 {
+  padding-left: 80px;
+  padding-right: 80px;
+  color: #EFF1EA;
+  font-size:14px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}

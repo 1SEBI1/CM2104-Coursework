@@ -1,7 +1,5 @@
-/*Font that will be used through the whole website*/
-* {
-      font-family: 'Montserrat', serif;
 
+<<<<<<< HEAD
     }
 
 /*Body colour that will be used through the whole wesbite*/
@@ -12,6 +10,9 @@ body {
 
 /*Colour Scheme that is used throughout the website,
 commented out as only for reference
+=======
+/*Colour Scheme
+>>>>>>> 641abcd985f767d6f22ee20b5e28e10e73a1df80
 
   - GREEN: #69DC9E
   - CREAM: #FCEAD1
@@ -19,9 +20,9 @@ commented out as only for reference
   - ORANGE: #E59F71
   - ORANGE BROWN: #BA5A31
   - BROWN: #723215
-  io
 */
 
+<<<<<<< HEAD
 /*Nav bar styling that is used throughout the website*/
 nav{
     /*Setting the background colour */
@@ -81,6 +82,11 @@ ul {
 }
 
 /*Account title container formatting*/
+=======
+/* Account CSS */
+
+/*my account title formatting*/
+>>>>>>> 641abcd985f767d6f22ee20b5e28e10e73a1df80
 #account {
   /*Setting the background colour of the title container*/
   background-color: #BA5A31;
@@ -103,7 +109,12 @@ ul {
   padding: 10px;
 }
 
+<<<<<<< HEAD
 /*Account title formatting*/
+=======
+
+/*my account title formatting*/
+>>>>>>> 641abcd985f767d6f22ee20b5e28e10e73a1df80
 #account-title {
   /*Setting the title colour*/
   color: #EFF1EA;
@@ -141,9 +152,13 @@ ul {
 
 /*Formatting for the grid container*/
 .grid-container  {
+<<<<<<< HEAD
   /*Setting the colour for the grid container*/
   background-color: #EFF1EA
   /*Setting the border colour and border width*/
+=======
+  background-color: #E59F71
+>>>>>>> 641abcd985f767d6f22ee20b5e28e10e73a1df80
   border: 2px solid #4db57d;
   /*Setting the border radius to 5 pixels, which rounds the edges*/
   border-radius: 5px;
@@ -189,42 +204,7 @@ ul {
 
 }
 
-
-
-/* Footer */
-
-#footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: #BA5A31;
-   color: white;
-   text-align: center;
-   padding: 10px;
-
-}
-
-#footer_content {
-  color: #EFF1EA;
-  padding: 5px;
-  margin: auto;
-  text-align: center;
-  font-size:18px;
-  padding: 10px;
-}
-
-
-#footer_link1 {
-  text-align: left;
-  color: #EFF1EA;
-  font-size:18px;
-
-}
-
-#footer_link2 {
-  text-align: right;
-  color: #EFF1EA;
-  font-size:18px;
-
+#grid-container_text div a {
+  color: black;
+  text-decoration: none;
 }

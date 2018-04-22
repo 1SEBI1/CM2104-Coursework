@@ -1,0 +1,158 @@
+/*Colour Scheme
+
+  - GREEN: #69DC9E
+  - CREAM: #FCEAD1
+  - OFF WHITE: #EFF1EA
+  - ORANGE: #E59F71
+  - ORANGE BROWN: #BA5A31
+  - BROWN: #723215
+*/
+
+/*Font that will be used through the whole website*/
+* {
+      font-family: 'Montserrat', serif;
+
+
+    }
+
+/*Body colour that will be used through the whole wesbite*/
+body {
+  background: url("../images/cookie_wallpaper.png");
+  background-position: auto;
+  background-size:cover;
+
+  background-color: #FCEAD1;
+  background-color: linear-gradient(#FCEAD1, #e8c392, #FCEAD1);
+}
+
+/*Nav bar that is used throughout */
+nav{
+    background-color: #BA5A31;
+    padding: 10px;
+    padding-bottom: 70px;
+    min-width: 340px;
+
+}
+
+/*logo formatting that is used for all pages*/
+#homelogo {
+  background-color:;
+  float: left;
+  margin-left: 10px;
+
+}
+
+/*tab formatting*/
+ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+/*tab formatting*/
+#tabs{
+  background-color:#BA5A31 ;
+  float:right;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*tab formatting*/
+li {
+    float: left;
+    background-color: #BA5A31;
+    margin: 5px;
+}
+
+/*tab formatting*/
+li a, .navbar button {
+    display: block;
+    color: #EFF1EA;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+/*account button hover formatting colour*/
+#navbutton:hover {
+    background-color: #E59F71;
+}
+
+/*account button hover formatting colour*/
+.active {
+    background-color: #E59F71;
+}
+
+/*Dropdown Menu*/
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #E59F71;
+  float: right;
+}
+
+/* Links inside the navbar */
+.navbar a, .navbar button {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 20px 15px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .accountbtn {
+  border-radius: 0px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 15px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn, .navbar button {
+  background-color: #E59F71;
+  border: none;
+  border-radius: 15px
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 106px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a{
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover{
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
