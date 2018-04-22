@@ -115,40 +115,58 @@ ul {
   font-size:25px;
 }
 
-
-
- /*grid formatting*/
+ /*Container formatting for main account page content*/
 #account_options {
+  /*xPositioning the container 100 pixels from the 'my account' title*/
   padding-top: 100px;
+  /*Ensuring the container starts 10 percent into the page from the left*/
   padding-left: 10%;
+  /*Ensuring the container starts 10 percent into the page from the right*/
   padding-right: 10%;
 }
 
+ /*Container formatting for main account page content*/
 .grid-container {
+  /*Displaying the contect in a grid*/
   display: grid;
-  grid-template-rows: auto auto auto ;
+  /*This defines the way the grid template is layed out*/
+  grid-template-rows: auto auto auto;
+  /*Specifies the gutters between grid rows and columns*/
   grid-gap: 0px;
+  /*Setting the colour for the grid*/
   background-color: #69DC9E;
+  /*Adding 10 pixels of padding to the container*/
   padding: 10px;
 }
 
+/*Formatting for the grid container*/
 .grid-container  {
+  /*Setting the colour for the grid container*/
   background-color: #EFF1EA
+  /*Setting the border colour and border width*/
   border: 2px solid #4db57d;
+  /*Setting the border radius to 5 pixels, which rounds the edges*/
   border-radius: 5px;
+  /*Aligning the cookie images to the center of the container*/
   text-align: center;
+  /*Setting the font size within the container to 25 pixels*/
   font-size: 25px;
 }
 
-
+/*Formatting the text within the container*/
 #grid-container_text {
+  /*Ensuring the text within the page is positioned correctly*/
   display: grid;
+  /*This defines the way the grid template is layed out*/
   grid-template-columns: auto auto auto;
+  /*Specifies the gutters between grid rows and columns*/
   grid-gap: 10px;
+  /*Setting the colour of the container*/
   background-color: #EFF1EA;
+  /*Setting the border radius to 5 pixels, which rounds the edges*/
   border-radius: 5px 5px 0px 0px;
+  /*Adding 10 pixels of padding to the container*/
   padding:10px;
-
 }
 
 #grid-container_text > div {
