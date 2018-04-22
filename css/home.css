@@ -1,13 +1,3 @@
-/*Font that will be used through the whole website*/
-* {
-      font-family: 'Montserrat', serif;
-    }
-
-/*Body colour that will be used through the whole wesbite*/
-body {
-  /*Setting the background colour used for the page*/
-  background-color: #FCEAD1;
-}
 
 /*Colour Scheme that is used throughout the website,
 commented out as only for reference
@@ -20,6 +10,22 @@ commented out as only for reference
   - BROWN: #723215
   io
 */
+
+/*Font that will be used through the whole website*/
+* {
+      font-family: 'Montserrat', serif;
+
+    }
+
+/*Body colour that will be used through the whole wesbite*/
+body {
+  background: url("../images/cookie_wallpaper.png");
+  background-position: auto;
+  background-size:cover;
+
+  background-color: #FCEAD1;
+  background-color: linear-gradient(#FCEAD1, #e8c392, #FCEAD1);
+}
 
 /*Nav bar styling that is used throughout the website*/
 nav{
@@ -533,34 +539,4 @@ span.psw {
   width:100;
   }
 }
-}
-
-/* Formatting for the footer */
-#footer {
-  /*Setting the colour*/
-  background-color: #BA5A31;
-  /*Setting the height fot the footer*/
-  height: 30px;
-  /*Setting the top margin value to 100 pixels*/
-  margin-top: 100px;
-  /*Setting the padding for the footer to 5 pixels*/
-  padding: 5px;
-  /*Letting the footer be the same length, no matter its contents*/
-  display: flex;
-  /*Aligning the contents of the footer to the center*/
-  justify-content: center;
-}
-
-/*Formatting the content of the footer*/
-#footer-content {
-  /*Setting the colour for the content*/
-  color: #EFF1EA;
-  /*Padding the footer*/
-  padding: 5px;
-  /*Setting the margin to automatic*/
-  margin: auto;
-  /*Aligning the contents of the footer to the center*/
-  text-align: center;
-  /*Setting the font size of the text to 18px*/
-  font-size:18px;
 }

@@ -1,0 +1,99 @@
+
+/*Colour Scheme
+
+  - GREEN: #69DC9E
+  - CREAM: #FCEAD1
+  - OFF WHITE: #EFF1EA
+  - ORANGE: #E59F71
+  - ORANGE BROWN: #BA5A31
+  - BROWN: #723215
+*/
+
+
+/*Searchbar*/
+
+/*formatting for the searchbar*/
+#search {
+  background-color: #BA5A31;
+  height: 50px;
+  margin-top: 100px;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 30px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+
+  border-radius: 15px;
+  padding: 10px;
+}
+
+/*helps to ensure the wesbite moves dynamically when changed size*/
+@media screen and (max-width:600px) {
+  #search{
+    margin: 5px 0px 5px 0px;
+  }
+}
+
+/*formatting code for the search button*/
+#searchbutton{
+  background-color: #BA5A31;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+/*formatting for the search bar*/
+#searchbar{
+  background-color: #EFF1EA;
+  padding: 0px;
+  width: 100%;
+  text-align: left;
+  font-size:25px;
+
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
+/*Filter Bar*/
+
+/*formatting for the filter bar*/
+#filter {
+  background-color: #BA5A31;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+/*formatting for the filter bar*/
+#filterbar{
+  background-color: #EFF1EA;
+  padding: 0px;
+  width: 100%;
+  text-align: left;
+  font-size:25px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/*formatting for the dropdown menu button*/
+.dropdown .dropbtn{
+  background-color: #EFF1EA;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding:10px;
+  border-radius: 5px;
+}
+
+/*helps to ensure the wesbite moves dynamically when changed size*/
+@media screen and (max-width:600px) {
+  #filter{
+    margin: 5px 0px 5px 0px;
+  }
+}
