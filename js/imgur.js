@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-function arraysToJars(post) {
-  var image;
-  var htmlstring ="";
-	for(var i = 0, j = 0; i < 20, j < 6; i++) {
-        if(post.data[i].images !== undefined){
-            image = post.data[i].images["0"].link;
-            if(image.includes(".mp4") == false){
-                console.log(image);
-                htmlstring +="<img src='" + image + "' alt='cookie1' class='cookieimg'>";
-                j++;
-            }
-=======
 $(function(){
   $('#searchbar').on("change", function(){
   searchbar($(this).context.value);
@@ -46,7 +33,6 @@ for(var i = 0; i < 4; i++) {
           console.log("mp4 detected1 =" + imglink);
           stopcrash +=1;
           if (stopcrash >50) { break; }
->>>>>>> 7dbf79422d0db0a401e758a931abb7daec2629ec
         }
 
     }else{
@@ -100,7 +86,6 @@ for(var i = 0; i < 4; i++) {
  * @param query the searching string
  */
 function searchbar(query) {
-<<<<<<< HEAD
 	/*$(document).ready(function(){
         $( document ).on( 'focus', ':input', function(){
             $( this ).attr( 'autocomplete', 'off' );
@@ -120,28 +105,5 @@ function searchbar(query) {
 		error: function(response) {
 			console.log(response);
 		}
-	})
-=======
-  $('#searchbar').val("");
-$(document).ready(function(){
-    $( document ).on( 'focus', ':input', function(){
-        $( this ).attr( 'autocomplete', 'off' );
-    });
-});
-$.ajax({
-url: 'https://api.imgur.com/3/gallery/search?q='+ query,
-headers: {
-'Authorization' : 'Client-ID 2984ccc930c582a'
-},
-type: 'GET',
-dataType: 'json',
-success: function(data) {
-console.log(data);
-      console.log(arraysToJars(data));
-},
-error: function(response) {
-console.log('not-cool');
->>>>>>> 7dbf79422d0db0a401e758a931abb7daec2629ec
-}
-});
+	});
 }
