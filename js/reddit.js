@@ -17,6 +17,10 @@ function getCode(currentURL) {
           },
           success: function() {
             console.log(localStorage);
+            /*searchbar("asd");
+            $.getScript('../js/imgur.js', function () {
+                searchbar("asd");
+            });*/
           },
           error: function() {
             localStorage.clear();
@@ -52,11 +56,12 @@ function getCode(currentURL) {
         var htmlstring ="";
           var image;
 
-        for(var i = 0; i < 6; i++) {
+        for(var i = 0, j = 0; i < 20, j < 6; i++) {
             if(post[i].preview !== undefined){
                 image = post[i].preview.images[0].source.url;
                 //console.log(post[i].preview.images[0].source.url);
                 htmlstring +="<img src='" + image + "' alt='cookie1' class='cookieimg'>";
+                j++;
         }
             }
           $('#redditContainer').html(htmlstring);

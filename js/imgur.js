@@ -1,14 +1,14 @@
-
-
-
 function arraysToJars(post) {
   var image;
   var htmlstring ="";
-	for(var i = 0; i < 6; i++) {
+	for(var i = 0, j = 0; i < 20, j < 6; i++) {
         if(post.data[i].images !== undefined){
             image = post.data[i].images["0"].link;
-            console.log(image);
-            htmlstring +="<img src='" + image + "' alt='cookie1' class='cookieimg'>";
+            if(image.includes(".mp4") == false){
+                console.log(image);
+                htmlstring +="<img src='" + image + "' alt='cookie1' class='cookieimg'>";
+                j++;
+            }
         }
 
   $('#imgurContainer').html(htmlstring);
@@ -20,11 +20,11 @@ function arraysToJars(post) {
  * @param query the searching string
  */
 function searchbar(query) {
-	$(document).ready(function(){
-    $( document ).on( 'focus', ':input', function(){
-        $( this ).attr( 'autocomplete', 'off' );
-    });
-});
+	/*$(document).ready(function(){
+        $( document ).on( 'focus', ':input', function(){
+            $( this ).attr( 'autocomplete', 'off' );
+        });
+    });*/
 	$.ajax({
 		url: 'https://api.imgur.com/3/gallery/search?q='+ query,
 		headers: {
