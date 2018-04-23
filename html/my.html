@@ -3,7 +3,10 @@
 
 	<head>
 			<!---linking the style sheet to the html--->
+			<link rel="stylesheet" type="text/css" href="../css/navbar.css">
+			<link rel="stylesheet" type="text/css" href="../css/bars.css">
       <link rel="stylesheet" type="text/css" href="../css/my.css">
+			<link rel="stylesheet" type="text/css" href="../css/footer.css">
 			<!---this code allows us to use our code throughout--->
 			<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,7 +34,7 @@
 			<!---nav bar code, with dropdown menu--->
 			<div class="navbar">
 				<section id = "tabs">
-					<a id="navbutton" href="my.html">home</a>
+					<a id="navbutton" href="home.html">home</a>
 
 					<a id="account_page" href="account.html">account</a>
 
@@ -44,30 +47,29 @@
 
 		<!---this code implements the cookie image and text search bar--->
 		<section id="search">
-			<a id="searchbutton" name="submit" alt="submit">
-				<img src="../images/search_cookie.png" height="50px" alt="cookie_search"></a>
-				<input type="text" id="searchbar" name="searchbar" placeholder=" search" onsubmit="" autocomplete="off"></input>
+				<input type="text" id="searchbar" name="searchbar" placeholder=" search here " onsubmit="" autocomplete="off"></input>
+				<input type="submit" value="search" id="submitbutton">
 			</section>
 
 
 		<!---this section is the filter bar, with drop down menu--->
+
 		<section id="filter">
-			<input type="text"id = "filterbar" name="filter" placeholder=" filter">
-				<div class="dropdown">
-					<button class="dropbtn"></button>
-						<div class="dropdown-content">
-							<!---drop down menu options--->
-							<a href="#">recent</a>
-							<a href="#">popular</a>
-							<a href="#">likes</a>
+			<div class="dropdown">
+				<button class="dropbtn">filter search</button>
+					<div class="dropdown-content">
+							<a href="#">imgur</a>
+							<a href="#">pinterest</a>
+							<a href="#">google</a>
 					</div>
 				</div>
-		</section>
+			</section>
+
 
 
 		<main id="mainbody">
 			<section class="cookiejar "href="#" id="C1">
-				<p class="lid">imgur</p>
+				<p class="lid"> imgur </p>
 				<div class="container" id=imgurContainer>
 					<h1 class="label" id=contents>cookie jar 1</h1>
 					<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
@@ -82,8 +84,13 @@
 
 
 			<aside class="cookiejar" href="#" id="C2">
+<<<<<<< HEAD
 				<p class="lid">reddit</p>
 				<div class="container" id=redditContainer>
+=======
+				<p class="lid"> pinterest </p>
+				<div class="container" id=asdContainer>
+>>>>>>> e3efa96275d284ddfd240a373642623c382cbe3f
 					<h1 class="label">cookie jar 2</h1>
 					<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
 					<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
@@ -94,7 +101,7 @@
 				</div>
 			</aside>
 			<section class="cookiejar" href="#" id="C3">
-				<p class="lid"></p>
+				<p class="lid"> google </p>
 				<div class="container">
 					<h1 class="label">cookie jar 3</h1>
 					<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
@@ -112,13 +119,13 @@
 
 		<!--footer section-->
 
-		<section id ="footer">
-			<footer>
-				<a id="footer_link1" href="home.html">home</a>
-				<h1 id='footer_content'>cookie jar 2018</h1>
-			 	<a id="footer_link2" href="account.html">account</a>
-			</footer>
-		</section>
+
+		<div id="footer">
+				<a href="home.html"> <h3 class="home">home</h3></a>
+				<h3 class="cookie">cookie jar</h3>
+				<a href="account.html"> <h3 class="account">account</h3></a>
+				<div style="clear: both"></div>
+		</div>
 
 
 	</body>

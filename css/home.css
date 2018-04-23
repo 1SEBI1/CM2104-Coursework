@@ -1,13 +1,3 @@
-/*Font that will be used through the whole website*/
-* {
-      font-family: 'Montserrat', serif;
-    }
-
-/*Body colour that will be used through the whole wesbite*/
-body {
-  /*Setting the background colour used for the page*/
-  background-color: #FCEAD1;
-}
 
 /*Colour Scheme that is used throughout the website,
 commented out as only for reference
@@ -18,8 +8,9 @@ commented out as only for reference
   - ORANGE: #E59F71
   - ORANGE BROWN: #BA5A31
   - BROWN: #723215
-  io
+
 */
+
 
 /*Nav bar styling that is used throughout the website*/
 nav{
@@ -47,8 +38,6 @@ nav{
 
 /*Formatting for the tabs used throughout our website*/
 ul {
-  /*Unsure as to what this does, will remove at end*/
-  list-style-type: none;
   /*Setting any content that overflows an elements box to hidden*/
   overflow: hidden;
 }
@@ -56,29 +45,9 @@ ul {
 /*Styling for the nav bar tabs*/
 #tabs{
   /*Setting the background colour for the 'home', 'log in' and 'sign up' tabs*/
-  background-color:#BA5A31 ;
+  background-color:#BA5A31;
   /*Ensuring the nav bar tabs are floated to the right-most side of the page*/
   float:right;
-}
-
-/*TO BE DELETED AT END*/
-#navbutton:hover {
-    background-color: #E59F71;
-}
-
-/*TO BE DELETED AT END*/
-.active {
-    background-color: #E59F71;
-}
-
-/*Dropdown Menu*/
-
-/*TO BE DELETED AT END*/
-/*Navbar container*/
-.navbar {
-  overflow: hidden;
-  background-color: #E59F71;
-  float: right;
 }
 
 /*'home', 'log in' and 'sign up' link formatting*/
@@ -127,7 +96,6 @@ input[type=text], input[type=password], input[type=password], input[type=email] 
   background-color: #f44336;
 }
 
-/*TO BE DELTED AT END*/
 /* Extra styles for the cancel button */
 .cancelbtn {
     width: auto;
@@ -307,6 +275,13 @@ span.psw {
 
 /*Formatting for the jar lids*/
 .lid{
+
+  text-align: center;
+  font-size: 24px;
+  color: #EFF1EA;
+  text-shadow: 2px 2px #5dbf8a;
+  font-weight: bold;
+  
   /*Setting the colour for the lids*/
   background-color: #69DC9E;
   /*Setting the margins for the jar*/
@@ -365,32 +340,7 @@ span.psw {
 }
 
 /*Formatting for the labels within the containers of the cookie jars*/
-.label {
-  /*Ensures that the laels are positioned correctly, ie in the centre of the jar*/
-  position: absolute;
-  /*Positioning the labels half way into the cookie jar, ie centered*/
-  left: 50%;
-  /*Positioning the labels half way down the cookie jar, ie centered*/
-  top: 50%;
-  /*Positioning the labels correctly within the container*/
-  transform: translate(-50%, -50%);
-  /*Padding the label, ie making the correct size*/
-  padding: 10% 5%;
-  /*Setting the width of the label*/
-  width: 50%;
-  /*Setting the colour of the white*/
-  background-color: #EFF1EA;
-  /*Adding rounded borders to the  laels*/
-  border-radius: 10px;
-  /*Setting the border style to solid*/
-  border-style: solid;
-  /*Setting the border width to 5 pixels*/
-  border-width: 5px;
-  /*Setting the border colour*/
-  border-color: #69DC9E;
-  /*Setting up the border properties*/
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-}
+
 
 /*Formatting the second label*/
 #C2 .label {
@@ -533,34 +483,4 @@ span.psw {
   width:100;
   }
 }
-}
-
-/* Formatting for the footer */
-#footer {
-  /*Setting the colour*/
-  background-color: #BA5A31;
-  /*Setting the height fot the footer*/
-  height: 30px;
-  /*Setting the top margin value to 100 pixels*/
-  margin-top: 100px;
-  /*Setting the padding for the footer to 5 pixels*/
-  padding: 5px;
-  /*Letting the footer be the same length, no matter its contents*/
-  display: flex;
-  /*Aligning the contents of the footer to the center*/
-  justify-content: center;
-}
-
-/*Formatting the content of the footer*/
-#footer-content {
-  /*Setting the colour for the content*/
-  color: #EFF1EA;
-  /*Padding the footer*/
-  padding: 5px;
-  /*Setting the margin to automatic*/
-  margin: auto;
-  /*Aligning the contents of the footer to the center*/
-  text-align: center;
-  /*Setting the font size of the text to 18px*/
-  font-size:18px;
 }

@@ -2,7 +2,10 @@
 <html>
 	<head>
 			<!---linking the style sheet to the html--->
+			<link rel="stylesheet" type="text/css" href="../css/navbar.css">
+			<link rel="stylesheet" type="text/css" href="../css/bars.css">
       <link rel="stylesheet" type="text/css" href="../css/saved.css">
+			<link rel="stylesheet" type="text/css" href="../css/footer.css">
 			<!---this code allows us to use our code throughout--->
 			<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,22 +26,20 @@
 			<!---nav bar code, with dropdown menu--->
 			<div class="navbar">
 				<section id = "tabs">
-					<a id="navbutton" href="my.html">Home</a>
-					<a id="account_page" href="account.html">Account</a>
-					<a id="filter_page" href="filter.html">Filter</a>
-					<a id="signout" href="home.html">Sign out</a>
+					<a id="navbutton" href="my.html">home</a>
+					<a id="account_page" href="account.html">account</a>
+					<a id="signout" href="home.html">sign out</a>
 						</div>
 					</div>
 				</section>
 			</div>
 		</nav>
 
+		<!---this code implements the cookie image and text search bar--->
 		<section id="search">
-			<!---this code implements the cookie image and text search bar--->
-			<a href="filter.html" id = "searchbutton" name="submit" alt="submit">
-				<img src="../images/search_cookie.png" height="50px" alt="cookie_search"></a>
-			<input type="text"id = "searchbar" name="search" placeholder=" search"></input>
-		</section>
+				<input type="text" id="searchbar" name="searchbar" placeholder=" search here " onsubmit="" autocomplete="off"></input>
+				<input type="submit" value="Search" id="submitbutton">
+			</section>
 
 		<!---heading section for saved jars--->
 		<section id="saved">
@@ -48,9 +49,9 @@
 		<!---code for the first cookie jar, including the images--->
 		<main id="mainbody">
 			<section class="cookiejar "href="#" id="C1">
-				<p class="lid">  </p>
+				<p class="lid"> saved jar: imgur </p>
 				<div class="container">
-					<h1 class="label">saved jar 1</h1>
+					<h1 class="label"></h1>
 					<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
 					<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
 					<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
@@ -62,9 +63,9 @@
 
 
 			<aside class="cookiejar" href="#" id="C2">
-				<p class="lid"></p>
+				<p class="lid"> saved jar: pinterest </p>
 				<div class="container">
-					<h1 class="label">saved jar 2</h1>
+					<h1 class="label"></h1>
 					<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
 					<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
 					<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
@@ -74,9 +75,9 @@
 				</div>
 			</aside>
 			<section class="cookiejar" href="#" id="C3">
-				<p class="lid"></p>
+				<p class="lid"> saved jar: google </p>
 				<div class="container">
-					<h1 class="label">saved jar 3</h1>
+					<h1 class="label"></h1>
 					<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
 					<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
 					<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
@@ -89,14 +90,12 @@
 		</main>
 
 		<!---footer section--->
-		<section id ="footer">
-			<footer>
-				<!---footer links--->
-				<a id="footer_link1" href="home.html">home</a>
-				<h1 id='footer_content'>cookie jar 2018</h1>
-				<a id="footer_link2" href="account.html">account</a>
-			</footer>
-		</section>
+		<div id="footer">
+				<a href="home.html"> <h3 class="home">home</h3></a>
+				<h3 class="cookie">cookie jar</h3>
+				<a href="account.html"> <h3 class="account">account</h3></a>
+				<div style="clear: both"></div>
+		</div>
 
 	</body>
 </html>

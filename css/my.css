@@ -1,14 +1,3 @@
-/*Font that will be used through the whole website*/
-* {
-      font-family: 'Montserrat', serif;
-
-    }
-
-/*Body colour that will be used through the whole wesbite*/
-body {
-  background-color: #FCEAD1;
-}
-
 /*Colour Scheme
 
   - GREEN: #69DC9E
@@ -17,228 +6,7 @@ body {
   - ORANGE: #E59F71
   - ORANGE BROWN: #BA5A31
   - BROWN: #723215
-  io
 */
-
-/*Nav bar that is used throughout */
-nav{
-    background-color: #BA5A31;
-    padding: 10px;
-    padding-bottom: 70px;
-    min-width: 340px;
-
-}
-
-/*logo formatting that is used for all pages*/
-#homelogo {
-  background-color:;
-  float: left;
-  margin-left: 10px;
-  padding: 0px;
-}
-
-/*tab formatting*/
-ul {
-    list-style-type: none;
-    overflow: hidden;
-}
-
-/*tab formatting*/
-#tabs{
-  background-color:#BA5A31 ;
-  float:right;
-  margin: 0px;
-  padding: 0px;
-}
-
-/*tab formatting*/
-li {
-    float: left;
-    background-color: #BA5A31;
-    margin: 5px;
-}
-
-/*tab formatting*/
-li a, .navbar button {
-    display: block;
-    color: #EFF1EA;
-    text-align: center;
-    padding: 15px 20px;
-    text-decoration: none;
-}
-
-/*account button hover formatting colour*/
-#navbutton:hover {
-    background-color: #E59F71;
-}
-
-/*account button hover formatting colour*/
-.active {
-    background-color: #E59F71;
-}
-
-/*Dropdown Menu*/
-
-/* Navbar container */
-.navbar {
-  overflow: hidden;
-  background-color: #E59F71;
-  float: right;
-}
-
-/* Links inside the navbar */
-.navbar a, .navbar button {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 20px 15px;
-  text-decoration: none;
-}
-
-/* The dropdown container */
-.dropdown {
-  float: right;
-  overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .accountbtn {
-  border-radius: 0px;
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 20px 15px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Add a background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn, .navbar button {
-  background-color: #E59F71;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 106px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a{
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover{
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-
-
-
-/*Searchbar*/
-
-/*formatting for the searchbar*/
-#search {
-  background-color: #BA5A31;
-  height: 50px;
-  margin-top: 100px;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-bottom: 30px;
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-
-  border-radius: 15px;
-  padding: 10px;
-}
-
-/*helps to ensure the wesbite moves dynamically when changed size*/
-@media screen and (max-width:600px) {
-  #search{
-    margin: 5px 0px 5px 0px;
-  }
-}
-
-/*formatting code for the search button*/
-#searchbutton{
-  background-color: #BA5A31;
-  margin-right: 5px;
-  border-radius: 5px;
-}
-
-/*formatting for the search bar*/
-#searchbar{
-  background-color: #EFF1EA;
-  padding: 0px;
-  width: 100%;
-  text-align: left;
-  font-size:25px;
-
-  border-radius: 5px;
-  padding: 5px;
-}
-
-/*Filter Bar*/
-
-/*formatting for the filter bar*/
-#filter {
-  background-color: #BA5A31;
-  height: 30px;
-  margin-top: 10px;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-bottom: 100px;
-  display: flex;
-  justify-content: center;
-  border-radius: 15px;
-  padding: 10px;
-}
-
-/*formatting for the filter bar*/
-#filterbar{
-  background-color: #EFF1EA;
-  padding: 0px;
-  width: 100%;
-  text-align: left;
-  font-size:25px;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-/*formatting for the dropdown menu button*/
-.dropdown .dropbtn{
-  background-color: #EFF1EA;
-  margin-right: 5px;
-  margin-left: 5px;
-  padding:10px;
-  border-radius: 5px;
-}
-
-/*helps to ensure the wesbite moves dynamically when changed size*/
-@media screen and (max-width:600px) {
-  #filter{
-    margin: 5px 0px 5px 0px;
-  }
-}
 
 
 /*MAINBODY*/
@@ -258,6 +26,7 @@ aside{
   width: 38%;
   float: right;
 }*/
+
 .cookiejar{
   float: left;
   margin: auto;
@@ -274,7 +43,13 @@ aside{
   opacity: 1;
 }
 
-.lid{
+.lid {
+  text-align: center;
+  font-size: 24px;
+  color: #EFF1EA;
+  text-shadow: 2px 2px #5dbf8a;
+  font-weight: bold;
+
   background-color: #69DC9E;
   margin: 0px 30px;
   padding: 20px;
@@ -302,6 +77,7 @@ aside{
   border-color: #EFF1EA;
   box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.5);
 }
+
 .cookieimg{
   display: flex;
   float: left;
@@ -309,21 +85,7 @@ aside{
 
 
 }
-.label {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10% 5%;
-    width: 50%;
-    /*padding top: 40%;*/
-    background-color: #EFF1EA;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #69DC9E;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-}
+
 
 #C2 .label {
   top:33.33%
@@ -409,55 +171,8 @@ aside{
   }
 }
 
-
-
-
-
   #mainbody{
     margin-left: 0px;
     margin-right: 0px;
   }
-}
-
-
-
-/* Footer */
-
-/*footer formatting*/
-#footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: #BA5A31;
-   color: white;
-   text-align: center;
-   padding: 10px;
-
-}
-
-/*content of the footer formatting*/
-#footer_content {
-  color: #EFF1EA;
-  padding: 5px;
-  margin: auto;
-  text-align: center;
-  font-size:18px;
-  padding: 10px;
-}
-
-/*first footer link formatting*/
-#footer_link1 {
-  text-align: left;
-  color: #EFF1EA;
-  font-size:18px;
-
-}
-
-/*second footer link formatting*/
-#footer_link2 {
-  text-align: right;
-  color: #EFF1EA;
-  font-size:18px;
-
 }

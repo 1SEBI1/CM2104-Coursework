@@ -2,7 +2,9 @@
 <html>
 	<head>
 			<!---linking the style sheet to the html--->
+			<link rel="stylesheet" type="text/css" href="../css/navbar.css">
       <link rel="stylesheet" type="text/css" href="../css/account.css">
+			<link rel="stylesheet" type="text/css" href="../css/footer.css">
 			<!---this code allows us to use our code throughout--->
 			<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<!---creating the title--->
@@ -21,8 +23,7 @@
 			<div class="navbar">
 				<section id = "tabs">
 					<a id="navbutton" href="my.html">home</a>
-					<a id="filter_page" href="my.html">filter</a>
-					<a id="signout" href="home.html">log out</a>
+					<a id="signout" href="">sign out</a>
 				</section>
 			</div>
 		</nav>
@@ -59,13 +60,16 @@
 				</div>
 			</section>
 
-			<section id ="footer">
-				<footer>
-					<a id="footer_link1" href="home.html">home</a>
-					<h1 id='footer_content'>cookie jar 2018</h1>
-				 	<a id="footer_link2" href="account.html">account</a>
-				</footer>
-			</section>
+
+			<!--footer section-->
+
+			<div id="footer">
+					<a href="home.html"> <h3 class="home">home</h3></a>
+					<h3 class="cookie">cookie jar</h3>
+					<a href="account.html"> <h3 class="account">account</h3></a>
+					<div style="clear: both"></div>
+			</div>
+
 
 	</body>
 </html>
