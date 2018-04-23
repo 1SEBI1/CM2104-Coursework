@@ -1,34 +1,25 @@
 
 
 
-function arraysToJars(arrays) {
-  var jars = new Array(6);
+function arraysToJars(post) {
+  var image;
   var htmlstring ="";
 	for(var i = 0; i < 6; i++) {
-
-    jars[i] = arrays.data[i].images[0].link;
-
-
-    htmlstring +="<img src='" + jars[i]+ "' alt='cookie1' class='cookieimg'>";
-  }
+        if(post.data[i].images !== undefined){
+            image = post.data[i].images["0"].link;
+            console.log(image);
+            htmlstring +="<img src='" + image + "' alt='cookie1' class='cookieimg'>";
+        }
 
   $('#imgurContainer').html(htmlstring);
-  //return jars;
+    }
 }
-
-
-
-
-
-
-
 
 /**
  * Search function
  * @param query the searching string
  */
 function searchbar(query) {
-  $('#searchbar').val("");
 	$(document).ready(function(){
     $( document ).on( 'focus', ':input', function(){
         $( this ).attr( 'autocomplete', 'off' );
@@ -43,10 +34,10 @@ function searchbar(query) {
 		dataType: 'json',
 		success: function(data) {
 			console.log(data);
-      console.log(arraysToJars(data));
+            console.log(arraysToJars(data));
 		},
 		error: function(response) {
-			console.log('not-cool');
+			console.log(response);
 		}
 	})
 }
