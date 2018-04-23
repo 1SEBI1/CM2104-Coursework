@@ -61,9 +61,18 @@ function getCode(currentURL) {
                 image = post[i].preview.images[0].source.url;
                 //console.log(post[i].preview.images[0].source.url);
                 htmlstring +="<img src='" + image + "' alt='cookie1' class='cookieimg'>";
+<<<<<<< HEAD
                 j++;
+=======
+        }/*
+        for(var i = 0; i < 4; i++) {
+          console.log("i ="+i);
+          htmlstring +="<div class='column'>";
+
+          for(var y = 0; y < 3; ) {}
+          */
+>>>>>>> 7dbf79422d0db0a401e758a931abb7daec2629ec
         }
-            }
           $('#redditContainer').html(htmlstring);
       }
 
