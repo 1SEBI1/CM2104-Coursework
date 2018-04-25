@@ -9,18 +9,16 @@ function getCode(currentURL) {
 
 //main function that runs everytime the page is accessed to check if the user is logged in or not
 $(function(){
-  if (localStorage.getItem('access_token')) {
+  if (localStorage.getItem('access_token') && localStorage.getItem('access_token') !== undefined) {
     $.ajax({
       url: 'https://oauth.reddit.com/api/v1/me',
       headers: {
         'Authorization' : 'Bearer ' + localStorage.getItem('access_token')
       },
       success: function(resp) {
-        $('#logout-button').click(function(){
-            localStorage.clear();
-          })
         console.log(localStorage);
         console.log(resp);
+        console.log("IT WORKED");
         /*searchbar("asd");
         $.getScript('../js/imgur.js', function () {
         searchbar("asd");
@@ -30,7 +28,7 @@ $(function(){
       localStorage.clear();
     }
   });
-} else {
+} else{
 
   $.ajax({
     url: 'https://www.reddit.com/api/v1/access_token',
@@ -43,6 +41,7 @@ $(function(){
 
       error: function(xhr) {
         console.log("access token request failed");
+        localStorage.clear();
       },
 
       success: function(resp) {
@@ -54,6 +53,7 @@ $(function(){
       }
     });
   }
+
 
 
   function redditToJars(post) {
