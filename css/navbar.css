@@ -39,7 +39,6 @@ nav{
   background-color:;
   float: left;
   margin-left: 10px;
-
 }
 
 /*tab formatting*/
@@ -62,6 +61,7 @@ li {
     background-color: #BA5A31;
     margin: 5px;
 }
+
 
 /*tab formatting*/
 li a, .navbar button {
