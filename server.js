@@ -1,7 +1,8 @@
 const MongoClient = require('mongodb').MongoClient;
 const url = "mongodb://localhost:27017/star_wars_quotes";
 const express = require('express');
-const bodyParser = require('body-parser')
+const session = require('express-session');
+const bodyParser = require('body-parser');
 const app = express();
 
 
@@ -36,3 +37,51 @@ app.get('/login', function(req, res) {
 app.get('/newaccount', function(req, res) {
   res.render('pages/newaccount');
 });
+
+app.post('/dologin', function(req, res) {
+  console.log(JSON.stringify(req.body))
+  var uname = req.body.username;
+  var pword = req.body.password;
+
+  db.collection('cookie_jar_users').findOne({"login.username":uname}, function(err, result) {
+    if (err) throw err;//if there is an error, throw the error
+    //if there is no result, redirect the user back to the login system as that username must not exist
+    if(!result){res.redirect('/login');return}
+    //if there is a result then check the password, if the password is correct set session loggedin to true and send the user to the index
+    if(result.login.password == pword){
+      req.session.loggedin = true;
+      req.session.username = uname;
+      res.redirect('/')
+      console.log("successfully logged in")}
+    //otherwise send them back to login
+    else{res.redirect('/login')}
+  });
+});
+
+/*
+app.get('/adduser', function(req, res) {
+  if(!req.session.loggedin){res.redirect('/login');return;}
+  res.render('pages/adduser')
+});
+
+app.post('/adduser', function(req, res) {
+  //check we are logged in
+  if(!req.session.loggedin){res.redirect('/login');return;}
+
+  //we create the data string from the form components that have been passed in
+
+var datatostore = {
+"name":{"first":req.body.first,"last":req.body.last},
+"login":{"username":req.body.username,"password":req.body.password},
+"email":req.body.email,
+"dob":req.body.dob,"registered":Date()}
+
+
+//once created we just run the data string against the database and all our new data will be saved/
+  db.collection('people').save(datatostore, function(err, result) {
+    if (err) throw err;
+    console.log('saved to database')
+    //when complete redirect to the index
+    res.redirect('/')
+  })
+});*/
