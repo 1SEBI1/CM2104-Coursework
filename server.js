@@ -35,6 +35,7 @@ app.get('/account', function(req, res) {
   res.render('pages/account');
 });
 app.get('/login', function(req, res) {
+  if(req.session.loggedin){res.redirect('/');return;}
   res.render('pages/login');
 });
 app.get('/newaccount', function(req, res) {
@@ -74,11 +75,6 @@ app.get('/logout', function(req, res) {
   res.redirect('/');
 });
 
-
-app.get('/newaccount', function(req, res) {
-  if(!req.session.loggedin){res.redirect('/login');return;}
-  res.render('pages/adduser')
-});
 
 app.post('/createaccount', function(req, res) {
 var newuserdata = {
