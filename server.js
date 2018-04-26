@@ -48,6 +48,8 @@ app.post('/dologin', function(req, res) {
     console.log("res: " + results);
     res.redirect('/')
     });
+    if(!result){res.redirect('/login');return}
+
 /*
   db.collection('users').findOne({"login.username":uname}, function(err, result) {
     if (err) throw err;//if there is an error, throw the error
