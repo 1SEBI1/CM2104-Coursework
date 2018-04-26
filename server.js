@@ -42,13 +42,14 @@ app.post('/dologin', function(req, res) {
   console.log(JSON.stringify(req.body));
   var uname = req.body.username;
   var pword = req.body.password;
+
+  if(!result){res.redirect('/login');return}
   db.collection('users').find().toArray(function(err, result) {
     if (err) throw err;
     //the result of the query is sent to the users page as the "users" array
     console.log("res: " + results);
     res.redirect('/')
     });
-    if(!result){res.redirect('/login');return}
 
 /*
   db.collection('users').findOne({"login.username":uname}, function(err, result) {
