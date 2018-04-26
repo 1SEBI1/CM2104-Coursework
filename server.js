@@ -31,7 +31,7 @@ app.get('/account', function(req, res) {
   res.render('pages/account');
 });
 app.get('/login', function(req, res) {
-  res.render('pages/account');
+  res.render('pages/login');
 });
 app.get('/newaccount', function(req, res) {
   res.render('pages/newaccount');
