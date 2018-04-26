@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="../CSS/header.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/main.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/footer.css">
+  <!---this code allows us to use our code throughout--->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!---creating the title--->
+
+
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.1/handlebars.min.js"></script>
+
+</head>
+
+
+
+
+<body>
+
+  <main id="mainbody">
+
+      		<section id="grid_title">
+      			<div class="grid-container_t">
+      						<h2>log in</h2>
+      			</div>
+      		</section>
+
+        <section id="grid_box">
+            <div class="grid-container">
+              <form action="/dologin" method="POST">
+                <input type="text" placeholder="username" name="username">
+                <input type="password" placeholder="password" name="password">
+
+              <div class="grid-container">
+                <button type="submit">Submit</button>
+              </div>
+
+              </form>
+            </div>
+
+
+    				<div class="grid-container">
+    						<h3>Don't have an account? <a id="newaccount" href="/newaccount">Create one here!</a></h3>
+            </div>
+        </section>
+
+  </main>
+
+</body>
+
+
+
+</html>

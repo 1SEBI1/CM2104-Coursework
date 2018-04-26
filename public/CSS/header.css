@@ -28,6 +28,7 @@ body {
 /*Nav bar that is used throughout */
 nav{
     background-color: #BA5A31;
+    box-shadow: 1px 1px 1px 1px #888888;
     padding: 10px;
     padding-bottom: 70px;
     min-width: 340px;
