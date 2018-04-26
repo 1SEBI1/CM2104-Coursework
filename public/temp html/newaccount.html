@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="../CSS/header.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/main.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/footer.css">
+  <!---this code allows us to use our code throughout--->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!---creating the title--->
+
+
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.1/handlebars.min.js"></script>
+
+  <title>create account - cookie jar</title>
+
+</head>
+
+
+<header>
+  <nav>
+    <!---putting the logo image on the filter page--->
+    <section id="homelogo">
+      <a href="/" id = "homelogo" name="submit" alt="submit">
+      <img src="../images/logo_cookie.png" height="120px" alt="submit" ></a>
+    </section>
+
+    <!---nav bar code, with dropdown menu--->
+    <div class="navbar">
+      <section id = "tabs">
+        <a id="home" href="/">home</a>
+        <a id="saved" href="/saved">saved</a>
+        <a id="account" href="/account">account</a>
+        <a id="logoutbutton" href="/logout">logout</a>
+    </div>
+  </nav>
+</header>
+
+<body>
+
+
+  <main id="mainbody">
+
+      <section id="grid_title">
+        <div class="grid-container">
+              <h3> create an account </h3>
+        </div>
+      </section>
+
+    <section id="grid_box">
+      <form action="/createaccount" method="POST">
+
+          <div class="grid-container">
+              <label> first name </label>
+              <input type="text" placeholder=" first name " name="first">
+              <label> surname </label>
+              <input type="text" placeholder=" surname "  name="last">
+              <label> username </label>
+              <input type="text" placeholder=" username " name="username">
+              <label> password </label>
+              <input type="password" placeholder=" password " name="password">
+              <label> email address </label>
+              <input type="email" placeholder=" email@example.com " name="email">
+              <label> date of birth </label>
+              <input type="datetime" placeholder=" date of birth " name="dob">
+
+              <div class="grid-container">
+                <button type="submit">Submit</button>
+              </div>
+          </div>
+      </form>
+
+
+  </main>
+
+
+
+</body>
+
+
+
+
+  <footer>
+    <div id="footer">
+        <a href="/"> <h3>home</h3></a>
+        <a href="/saved"> <h3>saved</h3></a>
+        <a href="/account"> <h3>account</h3></a>
+        <div style="clear: both"></div>
+    </div>
+  </footer>
+
+</body>
+
+
+
+</html>
