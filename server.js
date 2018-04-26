@@ -73,7 +73,7 @@ app.post('/dologin', function(req, res) {
     else{
       console.log("wrong password fucko");
       res.redirect('/login')}
-  });
+  });*/
 });
 
 
