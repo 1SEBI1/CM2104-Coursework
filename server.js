@@ -91,7 +91,7 @@ var newuserdata = {
 
 
 //once created we just run the data string against the database and all our new data will be saved/
-  db.collection('user').save(newuserdata, function(err, result) {
+  db.collection('users').save(newuserdata, function(err, result) {
     if (err) throw err;
     console.log('saved to database')
     //when complete redirect to the index
