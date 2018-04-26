@@ -43,7 +43,7 @@ app.post('/dologin', function(req, res) {
   var uname = req.body.username;
   var pword = req.body.password;
 
-  db.collection('users').find().toArray(function(err, result) {
+  db.collection('users').find({"login.username":uname}).toArray(function(err, result) {
     if (err) throw err;
     //the result of the query is sent to the users page as the "users" array
     console.log("results : " + JSON.stringify(result));
