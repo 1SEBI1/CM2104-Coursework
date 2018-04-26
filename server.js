@@ -74,18 +74,18 @@ app.post('/dologin', function(req, res) {
 });
 
 
-app.get('/adduser', function(req, res) {
+app.get('/newaccount', function(req, res) {
   if(!req.session.loggedin){res.redirect('/login');return;}
   res.render('pages/adduser')
 });
 
-app.post('/adduser', function(req, res) {
+app.post('/createaccount', function(req, res) {
   //check we are logged in
-  if(!req.session.loggedin){res.redirect('/login');return;}
+  //if(!req.session.loggedin){res.redirect('/login');return;}
 
   //we create the data string from the form components that have been passed in
 
-var datatostore = {
+var newuserdata = {
 "name":{"first":req.body.first,"last":req.body.last},
 "login":{"username":req.body.username,"password":req.body.password},
 "email":req.body.email,
@@ -93,7 +93,7 @@ var datatostore = {
 
 
 //once created we just run the data string against the database and all our new data will be saved/
-  db.collection('people').save(datatostore, function(err, result) {
+  db.collection('user').save(newuserdata, function(err, result) {
     if (err) throw err;
     console.log('saved to database')
     //when complete redirect to the index
