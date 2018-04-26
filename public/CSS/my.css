@@ -10,30 +10,3 @@
 
 
 /*MAINBODY*/
-
-#mainbody{
-  /*background-color: yellow;*/
-  /*margin-top: 100px;*/
-  margin 25%;
-  padding: 0px 10% 0px 10%;
-}
-
-/*COOKIE JAR CSS*//*
-section.cookiejar{
-  width: 59%
-}
-aside{
-  width: 38%;
-  float: right;
-}*/
-
-
-  #mainbody{
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-}
-
-.box{
-  border: 2px dashed blue;
-}
