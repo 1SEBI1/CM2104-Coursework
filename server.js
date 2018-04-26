@@ -43,7 +43,7 @@ app.post('/dologin', function(req, res) {
   var uname = req.body.username;
   var pword = req.body.password;
 
-  db.collection('cookie_jar_users').findOne({"login.username":uname}, function(err, result) {
+  db.collection('users').findOne({"login.username":uname}, function(err, result) {
     if (err) throw err;//if there is an error, throw the error
     //if there is no result, redirect the user back to the login system as that username must not exist
     if(!result){res.redirect('/login');return}
@@ -52,7 +52,7 @@ app.post('/dologin', function(req, res) {
       req.session.loggedin = true;
       req.session.username = uname;
       res.redirect('/')
-      console.log("successfully logged in")}
+      console.log("successfully logged in");}
     //otherwise send them back to login
     else{res.redirect('/login')}
   });
