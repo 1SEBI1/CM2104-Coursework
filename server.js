@@ -23,12 +23,15 @@ MongoClient.connect(url, function(err, database) {
 
 
 app.get('/', function(req, res) {
+  if(!req.session.loggedin){res.redirect('/login');return;}
   res.render('pages/home');
 });
 app.get('/saved', function(req, res) {
+  if(!req.session.loggedin){res.redirect('/login');return;}
   res.render('pages/saved');
 });
 app.get('/account', function(req, res) {
+  if(!req.session.loggedin){res.redirect('/login');return;}
   res.render('pages/account');
 });
 app.get('/login', function(req, res) {
@@ -65,6 +68,12 @@ app.post('/dologin', function(req, res) {
   });
 });
 
+app.get('/logout', function(req, res) {
+  req.session.loggedin = false;
+  req.session.destroy();
+  res.redirect('/');
+});
+
 
 app.get('/newaccount', function(req, res) {
   if(!req.session.loggedin){res.redirect('/login');return;}
@@ -72,11 +81,6 @@ app.get('/newaccount', function(req, res) {
 });
 
 app.post('/createaccount', function(req, res) {
-  //check we are logged in
-  //if(!req.session.loggedin){res.redirect('/login');return;}
-
-  //we create the data string from the form components that have been passed in
-
 var newuserdata = {
 "name":{"first":req.body.first,"last":req.body.last},
 "login":{"username":req.body.username,"password":req.body.password},
