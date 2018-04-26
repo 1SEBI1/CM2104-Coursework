@@ -33,3 +33,7 @@ aside{
     margin-right: 0px;
   }
 }
+
+.box{
+  border: 2px dashed blue;
+}
