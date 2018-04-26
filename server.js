@@ -42,9 +42,10 @@ app.post('/dologin', function(req, res) {
   console.log(JSON.stringify(req.body));
   var uname = req.body.username;
   var pword = req.body.password;
-
+  res.redirect('/');/*
   db.collection('users').findOne({"login.username":uname}, function(err, result) {
     if (err) throw err;//if there is an error, throw the error
+
     //if there is no result, redirect the user back to the login system as that username must not exist
     console.log("db password = " +result.login.password);
     console.log("db password = " +result.login.username);
@@ -57,7 +58,7 @@ app.post('/dologin', function(req, res) {
       res.redirect('/')
       console.log("successfully logged in");}
     //otherwise send them back to login
-    else{res.redirect('/login')}
+    else{res.redirect('/login')}*/
   });
 });
 
