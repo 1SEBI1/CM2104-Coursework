@@ -47,7 +47,9 @@ app.post('/dologin', function(req, res) {
     if (err) throw err;//if there is an error, throw the error
     //if there is no result, redirect the user back to the login system as that username must not exist
     console.log("database working");
-    if(!result){res.redirect('/login');return}
+    if(!result){
+      console.log("not match");
+      res.redirect('/login');return}
     console.log("user found");
     //if there is a result then check the password, if the password is correct set session loggedin to true and send the user to the index
     if(result.login.password == pword){
