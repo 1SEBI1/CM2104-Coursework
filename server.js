@@ -98,43 +98,27 @@ app.get('/edit', function(req,res) {
     res.render('pages/edit',{
       user: result
     })
-
-
   });
 });
-/*
-db.collection('people').find().toArray(function(err, result) {
-  if (err) throw err;
-  //the result of the query is sent to the users page as the "users" array
-  res.render('pages/users', {
-    users: result,
-    uname: uname
-  })
-});*/
 
 
 
-/*
+
+
 app.post('/doedit', function(req, res) {
   //check we are logged in
   //we create the data string from the form components that have been passed in
-var query ={"login.username":req.body.username}
 var newvalues = {$set:{
-"gender":req.body.newgender,
-"name":{"title":req.body.newtitle,"first":req.body.newfirst,"last":req.body.newlast},
-"location":{"street":req.body.newstreet,"city":req.body.newcity,"state":req.body.newstate,"postcode":req.body.newpostcode},
+"name":{"first":req.body.newfirst,"last":req.body.newlast},
 "email":req.body.newemail,
 "login":{"username":req.body.newusername,"password":req.body.newpassword},
-"dob":req.body.newdob,"registered":Date(),
-"picture":{"large":req.body.newlarge,"medium":req.body.newmedium,"thumbnail":req.body.newthumbnail},
-"nat":req.body.newnat}};
-
+"dob":req.body.newdob,"registered":Date()}};
 
 //once created we just run the data string against the database and all our new data will be saved/
-  db.collection('people').updateOne(query, newvalues, function(err, result) {
+  db.collection('users').updateOne(req.session.username, newvalues, function(err, result) {
     if (err) throw err;
     console.log('updated to database');
     //when complete redirect to the index
     res.redirect('/');
   });
-});*/
+});
