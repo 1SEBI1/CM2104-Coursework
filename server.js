@@ -1,5 +1,5 @@
 const MongoClient = require('mongodb').MongoClient;
-const url = "mongodb://localhost:27017/cookie_jar_users";
+const url = "mongodb://localhost:27017/star_wars_quotes";
 const express = require('express');
 const session = require('express-session');
 const bodyParser = require('body-parser');
@@ -39,40 +39,23 @@ app.get('/newaccount', function(req, res) {
 });
 
 app.post('/dologin', function(req, res) {
-  console.log(JSON.stringify(req.body));
+  console.log(JSON.stringify(req.body))
   var uname = req.body.username;
   var pword = req.body.password;
 
-  if(!result){res.redirect('/login');return}
-  db.collection('users').find().toArray(function(err, result) {
-    if (err) throw err;
-    //the result of the query is sent to the users page as the "users" array
-    if(!result){res.redirect('/login');return}
-    console.log("res: " + results);
-    res.redirect('/')
-    });
-
-/*
   db.collection('users').findOne({"login.username":uname}, function(err, result) {
     if (err) throw err;//if there is an error, throw the error
-
     //if there is no result, redirect the user back to the login system as that username must not exist
-    console.log("db password = " +result.login.password);
-    console.log("db password = " +result.login.username);
-    res.redirect('/');
-  });*/
-    /*
     if(!result){res.redirect('/login');return}
-
     //if there is a result then check the password, if the password is correct set session loggedin to true and send the user to the index
     if(result.login.password == pword){
-      //req.session.loggedin = true;
-      //req.session.username = uname;
+      req.session.loggedin = true;
+      req.session.username = uname;
       res.redirect('/')
       console.log("successfully logged in");}
     //otherwise send them back to login
     else{res.redirect('/login')}
-  });*/
+  });
 });
 
 /*
