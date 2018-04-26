@@ -51,20 +51,15 @@ app.post('/dologin', function(req, res) {
   db.collection('users').findOne({"login.username":uname}, function(err, result) {
     if (err) throw err;//if there is an error, throw the error
     //if there is no result, redirect the user back to the login system as that username must not exist
-    console.log("database working");
     if(!result){
-      console.log("not match");
       res.redirect('/login');return}
-    console.log("user found");
     //if there is a result then check the password, if the password is correct set session loggedin to true and send the user to the index
     if(result.login.password == pword){
       req.session.loggedin = true;
       req.session.username = uname;
-      res.redirect('/')
-      console.log("successfully logged in");}
+      res.redirect('/')}
     //otherwise send them back to login
     else{
-      console.log("wrong password fucko");
       res.redirect('/login')}
   });
 });
@@ -94,10 +89,30 @@ var newuserdata = {
 });
 
 app.get('/edit', function(req,res) {
-  res.render('pages/edit')
-  
+  if(!req.session.loggedin){res.redirect('/login');return;}
 
+  db.collection('users').findOne({"login.username":req.session.username}, function(err, result) {
+    if (err) throw err;//if there is an error, throw the error
+    //if(!result){res.redirect('/login');return}
+
+    res.render('pages/edit',{
+      user: result
+    })
+
+
+  });
 });
+/*
+db.collection('people').find().toArray(function(err, result) {
+  if (err) throw err;
+  //the result of the query is sent to the users page as the "users" array
+  res.render('pages/users', {
+    users: result,
+    uname: uname
+  })
+});*/
+
+
 
 /*
 app.post('/doedit', function(req, res) {
