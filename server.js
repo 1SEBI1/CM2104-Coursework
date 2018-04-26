@@ -47,7 +47,7 @@ app.post('/dologin', function(req, res) {
     if (err) throw err;
     //the result of the query is sent to the users page as the "users" array
     console.log("results = " + result);
-    res.redirect('/')}
+    res.redirect('/')
 
   });
 
