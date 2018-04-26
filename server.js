@@ -43,7 +43,7 @@ app.post('/dologin', function(req, res) {
   var uname = req.body.username;
   var pword = req.body.password;
 
-  db.collection('users').find("login.username":uname).toArray(function(err, result) {
+  db.collection('users').find(uname).toArray(function(err, result) {
     if(!result){
       console.log("not match");}
 
