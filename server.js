@@ -124,22 +124,26 @@ var newvalues = {$set:{
   });
 });
 
-app.post('/delete', function(req, res) {
+app.get('/delete', function(req, res) {
   //check we are logged in.
   if(!req.session.loggedin){res.redirect('/login');return;}
-  function myFunction() {
+
+
+  function deletefunction() {
     var txt;
     var r = confirm("Are you sure you want to delete your account ?");
-    if (r == true) {
+    if (r == true) {/*
       db.collection('users').deleteOne({"login.username":req.session.username}, function(err, result) {
-        if (err) throw err;
+        if (err) throw err;*/
         //when complete redirect to the index
         res.redirect('/login');
       });
     } else {
         return;
     }
-  }
+
+    delete function
+  });
 
   //check for the username added in the form, if one exists then you can delete that doccument
 
