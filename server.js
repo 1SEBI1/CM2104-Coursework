@@ -137,14 +137,14 @@ app.get('/delete', function(req, res) {
         if (err) throw err;*/
         //when complete redirect to the index
         res.redirect('/login');
-      });
+
     } else {
         return;
     }
 
-    delete function
-  });
 
+  }
+  deletefunction();
   //check for the username added in the form, if one exists then you can delete that doccument
 
 });
