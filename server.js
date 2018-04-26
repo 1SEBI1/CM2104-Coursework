@@ -115,7 +115,7 @@ var newvalues = {$set:{
 "dob":req.body.newdob,"registered":Date()}};
 
 //once created we just run the data string against the database and all our new data will be saved/
-  db.collection('users').updateOne(req.session.username, newvalues, function(err, result) {
+  db.collection('users').updateOne({"login.username":req.session.username}, newvalues, function(err, result) {
     if (err) throw err;
     console.log('updated to database');
     //when complete redirect to the index
