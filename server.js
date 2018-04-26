@@ -54,7 +54,7 @@ app.post('/dologin', function(req, res) {
     //res.redirect('/')
 
     }
-  });
+
   db.collection('users').findOne({"login.username":uname}, function(err, result) {
     if (err) throw err;//if there is an error, throw the error
     //if there is no result, redirect the user back to the login system as that username must not exist
@@ -63,6 +63,7 @@ app.post('/dologin', function(req, res) {
     if(result.login.password == pword){ req.session.loggedin = true; res.redirect('/') }
     //otherwise send them back to login
     else{res.redirect('/login')}
+  });
   });
 /*
   db.collection('users').findOne({"login.username":uname}, function(err, result) {
