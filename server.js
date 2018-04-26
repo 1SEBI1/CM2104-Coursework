@@ -42,18 +42,19 @@ app.post('/dologin', function(req, res) {
   console.log(JSON.stringify(req.body))
   var uname = req.body.username;
   var pword = req.body.password;
-/*
-  db.collection('users').find("uname").toArray(function(err, result) {
+
+  db.collection('users').find().toArray(function(err, result) {
     if(!result){
-      console.log("not match");
-      res.redirect('/login')}
+      console.log("res : " result);
+      //res.redirect('/login')}
 
     if (err) throw err;
     //the result of the query is sent to the users page as the "users" array
     console.log("results : " + JSON.stringify(result));
-    res.redirect('/')
+    //res.redirect('/')
 
-  });*/
+    }
+  });
   db.collection('users').findOne({"login.username":uname}, function(err, result) {
     if (err) throw err;//if there is an error, throw the error
     //if there is no result, redirect the user back to the login system as that username must not exist
