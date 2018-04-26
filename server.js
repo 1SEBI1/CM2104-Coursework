@@ -45,7 +45,8 @@ app.post('/dologin', function(req, res) {
 
   db.collection('users').find("uname").toArray(function(err, result) {
     if(!result){
-      console.log("not match");}
+      console.log("not match");
+      res.redirect('/login')}
 
     if (err) throw err;
     //the result of the query is sent to the users page as the "users" array
