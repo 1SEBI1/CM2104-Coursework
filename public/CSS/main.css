@@ -1,5 +1,16 @@
 
 =======
+
+/*Colour Scheme
+
+  - GREEN: #69DC9E
+  - CREAM: #FCEAD1
+  - OFF WHITE: #EFF1EA
+  - ORANGE: #E59F71
+  - ORANGE BROWN: #BA5A31
+  - BROWN: #723215
+*/
+
 /* Main CSS */
 
 /*Page title formatting*/
@@ -70,6 +81,11 @@
     margin: 10px;
   }
 
+  .grid-container_t:hover{
+    background-color: #4CAD79;
+    border-radius: 5px;
+  }
+
 
 
 
@@ -82,8 +98,8 @@
     grid-gap: 0px;
 
     color: black;
-    font-weight: bold;
     font-size: 20px;
+    text-align: center;
 
     margin-bottom: 150px;
     margin-left: 10%;
@@ -108,7 +124,19 @@
     margin: 10px;
   }
 
+
+
   p {
     color:black;
     text-align: center;
   }
+
+
+#newaccount{
+  color: #69DC9E
+}
+
+#newaccount:hover {
+  text-decoration: underline;
+  text-shadow: 1px 1px #4CAD79;
+}

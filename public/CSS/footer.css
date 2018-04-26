@@ -25,6 +25,11 @@
 
 }
 
+#footer h3:hover{
+  background-color: #E59F71;
+  border-radius: 5px;
+}
+
 #footer h3 {
   padding-left: 80px;
   padding-right: 80px;
