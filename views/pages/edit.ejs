@@ -19,13 +19,13 @@
       <h3>Modify your profile</h3>
       <form action="/doedit" method="POST">
         <label>Name</label>
-        <input type="text" placeholder="new firstname" value="<%= user.name.first %>" name="first">
-        <input type="text" placeholder="new lastname" value="<%= user.name.last %>"  name="last">
+        <input type="text" placeholder="new firstname" value="<%= user.name.first %>" name="newfirst">
+        <input type="text" placeholder="new lastname" value="<%= user.name.last %>"  name="newlast">
       </br><label>Login Details</label>
-        <input type="text" placeholder="new username" value="<%= user.login.username %>"     name="username">
+        <input type="text" placeholder="new username" value="<%= user.login.username %>"     name="newusername">
       </br><label>Extra Details</label>
-        <input type="email" placeholder="new email" value="<%= user.email %>"    name="email">
-        <input type="datetime" placeholder="new birthdate" value="<%= user.dob %>"    name="dob">
+        <input type="email" placeholder="new email" value="<%= user.email %>"    name="newemail">
+        <input type="datetime" placeholder="new birthdate" value="<%= user.dob %>"    name="newdob">
       </br><button type="submit">Submit</button>
       </form>
       <button onclick="window.location.href='/account'">Cancel</button>
