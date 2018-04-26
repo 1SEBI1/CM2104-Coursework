@@ -58,8 +58,8 @@ app.post('/dologin', function(req, res) {
       res.redirect('/')
       console.log("successfully logged in");}
     //otherwise send them back to login
-    else{res.redirect('/login')}*/
-  });
+    else{res.redirect('/login')}
+  });*/
 });
 
 /*
