@@ -92,3 +92,34 @@ var newuserdata = {
     res.redirect('/')
   })
 });
+
+app.get('/edit', function(req,res) {
+  res.render('pages/edit')
+  
+
+});
+
+/*
+app.post('/doedit', function(req, res) {
+  //check we are logged in
+  //we create the data string from the form components that have been passed in
+var query ={"login.username":req.body.username}
+var newvalues = {$set:{
+"gender":req.body.newgender,
+"name":{"title":req.body.newtitle,"first":req.body.newfirst,"last":req.body.newlast},
+"location":{"street":req.body.newstreet,"city":req.body.newcity,"state":req.body.newstate,"postcode":req.body.newpostcode},
+"email":req.body.newemail,
+"login":{"username":req.body.newusername,"password":req.body.newpassword},
+"dob":req.body.newdob,"registered":Date(),
+"picture":{"large":req.body.newlarge,"medium":req.body.newmedium,"thumbnail":req.body.newthumbnail},
+"nat":req.body.newnat}};
+
+
+//once created we just run the data string against the database and all our new data will be saved/
+  db.collection('people').updateOne(query, newvalues, function(err, result) {
+    if (err) throw err;
+    console.log('updated to database');
+    //when complete redirect to the index
+    res.redirect('/');
+  });
+});*/
