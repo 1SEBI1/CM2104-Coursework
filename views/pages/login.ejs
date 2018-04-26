@@ -10,19 +10,32 @@
 <body>
 
   <main id="mainbody">
-    <div class="box">
 
-      <h2>Login</h2>
-      <!-- simple login form, submits to our /dologin route -->
-      <form action="/dologin" method="POST">
-        <input type="text" placeholder="username" name="username">
-        <input type="password" placeholder="password" name="password">
-        <button type="submit">Submit</button>
-      </form>
-      <h3>Don't have an account <a id="newaccount" href="/newaccount">Create one here!</a></h3>
+      		<section id="grid_title">
+      			<div class="grid-container_t">
+      						<h2>log in</h2>
+      			</div>
+      		</section>
+
+        <section id="grid_box">
+            <div class="grid-container">
+              <form action="/dologin" method="POST">
+                <input type="text" placeholder="username" name="username">
+                <input type="password" placeholder="password" name="password">
+
+              <div class="grid-container">
+                <button type="submit">Submit</button>
+              </div>
+
+              </form>
+            </div>
 
 
-    </div>
+    				<div class="grid-container">
+    						<h3>Don't have an account? <a id="newaccount" href="/newaccount">Create one here!</a></h3>
+            </div>
+        </section>
+
   </main>
 
 </body>
