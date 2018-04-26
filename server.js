@@ -111,8 +111,8 @@ app.post('/doedit', function(req, res) {
 var newvalues = {$set:{
 "name":{"first":req.body.newfirst,"last":req.body.newlast},
 "email":req.body.newemail,
-"login":{"username":req.body.newusername,"password":req.body.newpassword},
-"dob":req.body.newdob,"registered":Date()}};
+"login":{"username":req.body.newusername},
+"dob":req.body.newdob}};
 
 //once created we just run the data string against the database and all our new data will be saved/
   db.collection('users').updateOne({"login.username":req.session.username}, newvalues, function(err, result) {
