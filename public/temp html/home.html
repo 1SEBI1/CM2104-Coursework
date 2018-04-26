@@ -1,197 +1,165 @@
 <!doctype html>
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="../css/bars.css">
-	<link rel="stylesheet" type="text/css" href="../css/navbar.css">
-	<link rel="stylesheet" type="text/css" href="../css/home.css">
-	<link rel="stylesheet" type="text/css" href="../css/footer.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="../CSS/header.css">
+		<link rel="stylesheet" type="text/css" href="../CSS/searchbar.css">
+		<link rel="stylesheet" type="text/css" href="../CSS/main.css">
+		<link rel="stylesheet" type="text/css" href="../CSS/cookiejar.css">
+		<link rel="stylesheet" type="text/css" href="../CSS/footer.css">
+		<!---this code allows us to use our code throughout--->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!---creating the title--->
 
 
-	<title>Cookie Jar</title>
-</head>
-<body>
-	<!-- primary navigation area -->
-	<nav>
-		<section id="homelogo">
-			<a href="home.html" id = "homelogo" name="submit" alt="submit">
-				<img src="../images/logo_cookie.png" height="120px" alt="submit" ></a>
+		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.1/handlebars.min.js"></script>
+
+		<title>Home - Cookie Jar</title>
+
+	</head>
+
+
+
+	<body>
+
+    <header>
+			<nav>
+			  <!---putting the logo image on the filter page--->
+			  <section id="homelogo">
+			    <a href="/" id = "homelogo" name="submit" alt="submit">
+			    <img src="../images/logo_cookie.png" height="120px" alt="submit" ></a>
+			  </section>
+
+			  <!---nav bar code, with dropdown menu--->
+			  <div class="navbar">
+			    <section id = "tabs">
+			      <a id="home" href="/">Home</a>
+			      <a id="saved" href="/saved">Saved</a>
+			      <a id="account" href="/account">Account</a>
+			      <a id="logoutbutton" href="/logout">Logout</a>
+			  </div>
+			</nav>
+    </header>
+
+		<!---this code implements the cookie image and text search bar--->
+		<section id="search">
+				<input type="text" id="searchbar" name="searchbar" placeholder=" search here " onsubmit="" autocomplete="off"></input>
+				<input type="submit" value="search" id="submitbutton">
 			</section>
 
-			<div class="navbar">
-				<section id = "tabs">
-					<a id="navbutton" href="home.html">home</a>
 
 
-
-					<!-- Button to open the modal login form -->
-					<a id="loginbutton" href="#" class="login" onclick="document.getElementById('login-popup').style.display='block'">log in</a>
-					<!-- The Modal -->
-					<div id="login-popup" class="modal">
-						<span onclick="document.getElementById('login-popup').style.display='block'"
-
-						<!-- Modal Content -->
-						<form class="modal-content animate" action="/action_page.php">
-
-							<div class="log-container">
-								<label for="uname"><b>username</b></label>
-								<input type="text" placeholder="Username" name="uname" required>
-
-								<label for="psw"><b>password</b></label>
-								<input type="password" placeholder="Password" name="psw" required>
-
-								<button type="submit">log in</button>
-							</div>
-
-							<div class="login-container" style="background-color:#f1f1f1">
-								<button id="cancelbutton" type="button" class="cancelbtn">cancel</button>
-								<span class="psw"> <a href="#" onclick="document.getElementById('forgotpass-popup').style.display='block'";"document.getElementById('login-popup').style.display='none'">forgot password?</a></span>
-							</div>
-						</form>
-					</div>
-
-
-
-
-
-
-
-
-					<div id="forgotpass-popup" class="modal">
-						<span onclick="document.getElementById('forgotpass-popup').style.display='block'"
-
-						<!-- Modal Content -->
-						<form class="modal-content animate" action="/action_page.php">
-
-							<div class="forgotpass-container">
-								<label for="uname"><b>username</b></label>
-								<input type="text" placeholder="Username" name="uname" required>
-
-								<label for="emaail"><b>email</b></label>
-								<input type="email" placeholder="Email" name="email" required>
-
-								<button type="submit">send email</button>
-							</div>
-
-							<div class="forgotpassword-container" style="background-color:#f1f1f1">
-								<button id="cancelbutton3" type="button" class="cancelbtn">cancel</button>
-							</div>
-						</form>
-					</div>
-
-
-
-
-
-
-
-
-					<!-- Button to open the modal login form -->
-					<a id="signupbutton" href="#" class="signup" onclick="document.getElementById('signup-popup').style.display='block'">sign up</a>
-					<!-- The Modal -->
-					<div id="signup-popup" class="modal">
-						<span onclick="document.getElementById('signup-popup').style.display='block'"
-
-						<!-- Modal Content -->
-						<form class="modal-content animate" action="/action_page.php">
-
-							<div class="sign-container">
-								<label for="uname"><b>username</b></label>
-								<input type="text" placeholder="Username" name="uname" required>
-
-								<label for="psw"><b>password</b></label>
-								<input type="password" placeholder="Password" name="psw" required>
-
-								<label for="pswcheck"><b>confirm password</b></label>
-								<input type="password" placeholder="Password" name="pswcheck" required>
-
-								<label for="emaail"><b>email</b></label>
-								<input type="email" placeholder="Email" name="email" required>
-
-								<button type="submit">sign up</button>
-							</div>
-
-							<div class="signup-container" style="background-color:#f1f1f1">
-								<button id="cancelbutton2" type="button" class="cancelbtn">cancel</button>
-							</div>
-						</form>
-					</div>
-
-
-
-					<script src="../js/popup_close.js"></script>
-
+		<main id="mainbody">
+			<section class="cookiejar "href="#" id="C1">
+				<p class="lid"> imgur </p>
+				<div class="container" id=imgurContainer>
+					<div class="row">
+	  				<div class="column">
+							<!--<h1 class="label" id=contents>cookie jar 1</h1>-->
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+						</div>
+						<div class="column">
+							<!--<h1 class="label" id=contents>cookie jar 1</h1>-->
+              <img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+						</div>
+						<div class="column">
+							<!--<h1 class="label" id=contents>cookie jar 1</h1>-->
+              <img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+						</div>
+						<div class="column">
+							<!--<h1 class="label" id=contents>cookie jar 1</h1>-->
+              <img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+              <img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+              <img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+              <img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+              <img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+              <img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+						</div>
 				</div>
+			</section>
+
+
+			<aside class="cookiejar" href="#" id="C2">
+				<p class="lid">reddit</p>
+				<div class="container" id=redditContainer>
+					<div class="row">
+	  				<div class="column">
+							<!--<h1 class="label" id=contents>cookie jar 1</h1>-->
+              <img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+              <img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+              <img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+              <img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+              <img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+              <img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+						</div>
+						<div class="column">
+							<!--<h1 class="label" id=contents>cookie jar 1</h1>-->
+              <img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+						</div>
+						<div class="column">
+							<!--<h1 class="label" id=contents>cookie jar 1</h1>-->
+              <img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+						</div>
+						<div class="column">
+							<!--<h1 class="label" id=contents>cookie jar 1</h1>-->
+              <img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+							<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg" style="width:100%">
+						</div>
+				</div>
+			</section>
+
+		</main>
+
+
+
+		<!--footer section-->
+
+
+    <footer>
+			<div id="footer">
+			    <a href="/"> <h3>home</h3></a>
+			    <a href="/saved"> <h3>saved</h3></a>
+			    <a href="/account"> <h3>account</h3></a>
+			    <div style="clear: both"></div>
 			</div>
-		</section>
-	</div>
-</nav>
+    </footer>
 
 
+	</body>
 
-<section id="search">
-		<input type="text" id="searchbar" name="searchbar" placeholder=" search here " onsubmit="" autocomplete="off"></input>
-		<input type="submit" value="Search" id="submitbutton">
-	</section>
+	<script src="../js/imgur.js"></script>
+	<script src="../js/reddit.js"></script>
 
-
-
-
-	<main id="mainbody">
-		<section class="cookiejar "href="#" id="C1">
-			<p class="lid"> imgur </p>
-			<div class="container">
-				<h1 class="label"></h1>
-				<img src="../images/cookie.jpg" src2="../images/cookie.jpg" src3="../images/cookie.jpg" alt="cookie1" class="cookieimg">
-				<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
-				<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
-				<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
-				<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
-				<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
-			</div>
-		</section>
-
-
-		<aside class="cookiejar" href="#" id="C2">
-			<p class="lid"> pinterest </p>
-			<div class="container">
-				<h1 class="label"></h1>
-				<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
-				<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
-				<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
-				<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
-				<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
-				<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
-			</div>
-		</aside>
-		<section class="cookiejar" href="#" id="C3">
-			<p class="lid"> google </p>
-			<div class="container">
-				<h1 class="label">cookie jar 3</h1>
-				<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
-				<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
-				<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
-				<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
-				<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
-				<img src="../images/cookie.jpg" alt="cookie1" class="cookieimg">
-			</div>
-		</section>
-
-	</main>
-
-
-	<!--footer section-->
-
-	<div id="footer">
-			<a href="home.html"> <h3 class="home">home</h3></a>
-			<h3 class="cookie">cookie jar</h3>
-			<a href="account.html"> <h3 class="account">account</h3></a>
-			<div style="clear: both"></div>
-	</div>
-
-
-
-</body>
 </html>
