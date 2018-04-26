@@ -17,19 +17,18 @@
 
       <!-- form with entry box for each bit of inomfrtaion we want from our user. -->
       <h3>Modify your profile</h3>
-      <form action="/edit" method="POST">
+      <form action="/doedit" method="POST">
         <label>Name</label>
-        <input type="text" placeholder="first" name="first">
-        <input type="text" placeholder="last"  name="last">
+        <input type="text" placeholder="new firstname" value="<%= user.name.first %>" name="first">
+        <input type="text" placeholder="new lastname" value="<%= user.name.last %>"  name="last">
       </br><label>Login Details</label>
-        <input type="text" placeholder="username"     name="username">
-        <input type="password" placeholder="password"  name="password">
+        <input type="text" placeholder="new username" value="<%= user.login.username %>"     name="username">
       </br><label>Extra Details</label>
-        <input type="email" placeholder="me@example.com"    name="email">
-        <input type="datetime" placeholder="date of birth"    name="dob">
-        </br><button type="submit">Submit</button>
+        <input type="email" placeholder="new email" value="<%= user.email %>"    name="email">
+        <input type="datetime" placeholder="new birthdate" value="<%= user.dob %>"    name="dob">
+      </br><button type="submit">Submit</button>
       </form>
-
+      <button onclick="window.location.href='/account'">Cancel</button>
 
 
     </div>

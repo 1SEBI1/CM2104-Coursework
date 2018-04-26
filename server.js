@@ -51,20 +51,15 @@ app.post('/dologin', function(req, res) {
   db.collection('users').findOne({"login.username":uname}, function(err, result) {
     if (err) throw err;//if there is an error, throw the error
     //if there is no result, redirect the user back to the login system as that username must not exist
-    console.log("database working");
     if(!result){
-      console.log("not match");
       res.redirect('/login');return}
-    console.log("user found");
     //if there is a result then check the password, if the password is correct set session loggedin to true and send the user to the index
     if(result.login.password == pword){
       req.session.loggedin = true;
       req.session.username = uname;
-      res.redirect('/')
-      console.log("successfully logged in");}
+      res.redirect('/')}
     //otherwise send them back to login
     else{
-      console.log("wrong password fucko");
       res.redirect('/login')}
   });
 });
@@ -94,32 +89,36 @@ var newuserdata = {
 });
 
 app.get('/edit', function(req,res) {
-  res.render('pages/edit')
-  
+  if(!req.session.loggedin){res.redirect('/login');return;}
 
+  db.collection('users').findOne({"login.username":req.session.username}, function(err, result) {
+    if (err) throw err;//if there is an error, throw the error
+    //if(!result){res.redirect('/login');return}
+
+    res.render('pages/edit',{
+      user: result
+    })
+  });
 });
 
-/*
+
+
+
+
 app.post('/doedit', function(req, res) {
   //check we are logged in
   //we create the data string from the form components that have been passed in
-var query ={"login.username":req.body.username}
 var newvalues = {$set:{
-"gender":req.body.newgender,
-"name":{"title":req.body.newtitle,"first":req.body.newfirst,"last":req.body.newlast},
-"location":{"street":req.body.newstreet,"city":req.body.newcity,"state":req.body.newstate,"postcode":req.body.newpostcode},
+"name":{"first":req.body.newfirst,"last":req.body.newlast},
 "email":req.body.newemail,
 "login":{"username":req.body.newusername,"password":req.body.newpassword},
-"dob":req.body.newdob,"registered":Date(),
-"picture":{"large":req.body.newlarge,"medium":req.body.newmedium,"thumbnail":req.body.newthumbnail},
-"nat":req.body.newnat}};
-
+"dob":req.body.newdob,"registered":Date()}};
 
 //once created we just run the data string against the database and all our new data will be saved/
-  db.collection('people').updateOne(query, newvalues, function(err, result) {
+  db.collection('users').updateOne(req.session.username, newvalues, function(err, result) {
     if (err) throw err;
     console.log('updated to database');
     //when complete redirect to the index
     res.redirect('/');
   });
-});*/
+});
