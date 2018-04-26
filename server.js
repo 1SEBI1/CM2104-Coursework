@@ -73,7 +73,7 @@ app.post('/dologin', function(req, res) {
   });*/
 });
 
-/*
+
 app.get('/adduser', function(req, res) {
   if(!req.session.loggedin){res.redirect('/login');return;}
   res.render('pages/adduser')
@@ -99,4 +99,4 @@ var datatostore = {
     //when complete redirect to the index
     res.redirect('/')
   })
-});*/
+});
