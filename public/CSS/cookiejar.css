@@ -16,7 +16,7 @@
 }
 
 .column img {
-    border: 2px solid white;
+    /*border: 2px solid white;*/
     margin: 0px;
     vertical-align: middle;
     height: 200px;
@@ -47,7 +47,7 @@
 
 
 .cookiejar{
-  
+
 }
 /*
 
@@ -60,11 +60,11 @@
 }*/
 
 .cookiejar{
-  opacity: 0.8;
+  /*opacity: 0.8;*/
 }
 
 .cookiejar:hover{
-  opacity: 1;
+  /*opacity: 1;*/
 }
 
 .lid {
@@ -103,6 +103,15 @@
   display: flex;
   float: left;
   width:33%;
+
+  opacity: 1;
+}
+.cookieimg:hover{
+  opacity: 0.7;
+}
+
+.selected{
+  border-color: red;
 }
 
 
