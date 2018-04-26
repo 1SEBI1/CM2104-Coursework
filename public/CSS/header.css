@@ -23,6 +23,8 @@ body {
 
   background-color: #FCEAD1;
   background-color: linear-gradient(#FCEAD1, #e8c392, #FCEAD1);
+
+  margin: 0px;
 }
 
 /*Nav bar that is used throughout */
