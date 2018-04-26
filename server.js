@@ -43,6 +43,15 @@ app.post('/dologin', function(req, res) {
   var uname = req.body.username;
   var pword = req.body.password;
 
+  db.collection('users').find().toArray(function(err, result) {
+    if (err) throw err;
+    //the result of the query is sent to the users page as the "users" array
+    console.log("results : " + JSON.stringify(result));
+    res.redirect('/')
+
+  });
+
+/*
   db.collection('users').findOne({"login.username":uname}, function(err, result) {
     if (err) throw err;//if there is an error, throw the error
     //if there is no result, redirect the user back to the login system as that username must not exist
@@ -61,7 +70,7 @@ app.post('/dologin', function(req, res) {
     else{
       console.log("wrong password fucko");
       res.redirect('/login')}
-  });
+  });*/
 });
 
 
