@@ -1,3 +1,5 @@
+
+
 .row {
     display: -ms-flexbox; /* IE10 */
     display: flex;
@@ -45,27 +47,6 @@
     }
 }
 
-
-.cookiejar{
-
-}
-/*
-
-.cookiejar{
-  float: left;
-  margin: auto;
-  margin-bottom: 10px;
-  padding: 0px;
-  border: 0px;
-}*/
-
-.cookiejar{
-  /*opacity: 0.8;*/
-}
-
-.cookiejar:hover{
-  /*opacity: 1;*/
-}
 
 .lid {
   text-align: center;
