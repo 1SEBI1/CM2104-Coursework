@@ -127,7 +127,7 @@ var newvalues = {$set:{
 app.get('/delete', function(req, res) {
   //check we are logged in.
   if(!req.session.loggedin){res.redirect('/login');return;}
-  function myFunction() {
+  $(function myFunction() {
     var txt;
     var r = confirm("Are you sure you want to delete your account ?");
     if (r == true) {
@@ -139,7 +139,7 @@ app.get('/delete', function(req, res) {
     } else {
         return;
     }
-  }
+  });
 
   //check for the username added in the form, if one exists then you can delete that doccument
 
