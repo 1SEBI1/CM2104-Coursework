@@ -13,25 +13,47 @@
   </header>
 
   <main id="mainbody">
-    <div class='box'>
 
-      <!-- form with entry box for each bit of inomfrtaion we want from our user. -->
-      <h3>Modify your profile</h3>
+      <section id="grid_title">
+        <div class="grid-container">
+              <h3> edit your profile </h3>
+        </div>
+      </section>
+
+    <section id="grid_box">
       <form action="/doedit" method="POST">
-        <label>Name</label>
-        <input type="text" placeholder="new firstname" value="<%= user.name.first %>" name="newfirst">
-        <input type="text" placeholder="new lastname" value="<%= user.name.last %>"  name="newlast">
-      </br><label>Login Details</label>
-        <input type="text" placeholder="new username" value="<%= user.login.username %>"     name="newusername">
-      </br><label>Extra Details</label>
-        <input type="email" placeholder="new email" value="<%= user.email %>"    name="newemail">
-        <input type="datetime" placeholder="new birthdate" value="<%= user.dob %>"    name="newdob">
-      </br><button type="submit">Submit</button>
-      </form>
-      <button onclick="window.location.href='/account'">Cancel</button>
+
+          <div class="grid-container">
+
+              <label> first name </label>
+              <input type="text" placeholder=" first name " value="<%= user.name.first %>" name="newfirst">
+
+              <label> surname </label>
+              <input type="text" placeholder=" surname " value="<%= user.name.last %>"  name="newlast">
+
+              <label> username </label>
+              <input type="text" placeholder=" username " value="<%= user.login.username %>"     name="newusername">
+
+              <label> email address </label>
+              <input type="email" placeholder=" email address " value="<%= user.email %>"    name="newemail">
+
+              <label> date of birth </label>
+              <input type="datetime" placeholder=" date of birth " value="<%= user.dob %>"    name="newdob">
+
+          </div>
+
+          <div class="grid-container">
+            <button type="submit">submit</button>
+
+        </form>
+
+          <button onclick="window.location.href='/account'"> cancel</button>
+        </div>
 
 
-    </div>
+      </section>
+
+
   </main>
   <footer>
     <% include ../partials/footer %>
