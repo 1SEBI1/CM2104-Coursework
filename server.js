@@ -123,3 +123,24 @@ var newvalues = {$set:{
     res.redirect('/');
   });
 });
+
+app.post('/delete', function(req, res) {
+  //check we are logged in.
+  if(!req.session.loggedin){res.redirect('/login');return;}
+  function myFunction() {
+    var txt;
+    var r = confirm("Are you sure you want to delete your account ?");
+    if (r == true) {
+      db.collection('users').deleteOne({"login.username":req.session.username}, function(err, result) {
+        if (err) throw err;
+        //when complete redirect to the index
+        res.redirect('/login');
+      });
+    } else {
+        return;
+    }
+  }
+
+  //check for the username added in the form, if one exists then you can delete that doccument
+
+});
