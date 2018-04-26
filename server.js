@@ -113,7 +113,7 @@ var newvalues = {$set:{
 "email":req.body.newemail,
 "login":{"username":req.body.newusername},
 "dob":req.body.newdob}};
-  console.log("first" :req.body.newfirst);
+  console.log("first :" +req.body.newfirst);
 
 //once created we just run the data string against the database and all our new data will be saved/
   db.collection('users').updateOne({"login.username":req.session.username}, newvalues, function(err, result) {
