@@ -47,6 +47,7 @@ app.post('/dologin', function(req, res) {
   db.collection('users').find().toArray(function(err, result) {
     if (err) throw err;
     //the result of the query is sent to the users page as the "users" array
+    if(!result){res.redirect('/login');return}
     console.log("res: " + results);
     res.redirect('/')
     });
