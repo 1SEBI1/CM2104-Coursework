@@ -3,29 +3,44 @@
 
 <head>
   <% include ../partials/head %>
-  <title>New account - Cookie Jar</title>
+  <title>create account: cookie jar</title>
 </head>
 
 <body>
 
 
   <main id="mainbody">
-    <div class='box'>
 
-      <!-- form with entry box for each bit of inomfrtaion we want from our user. -->
-      <h3>Create your profile</h3>
+      <section id="grid_title">
+        <div class="grid-container">
+              <h3> create an account </h3>
+        </div>
+      </section>
+
+    <section id="grid_box">
       <form action="/createaccount" method="POST">
-        <label>Name</label>
-        <input type="text" placeholder="first" name="first">
-        <input type="text" placeholder="last"  name="last">
-      </br><label>Login Details</label>
-        <input type="text" placeholder="username"     name="username">
-        <input type="password" placeholder="password"  name="password">
-      </br><label>Extra Details</label>
-        <input type="email" placeholder="me@example.com"    name="email">
-        <input type="datetime" placeholder="date of birth"    name="dob">
-        </br><button type="submit">Submit</button>
+
+          <div class="grid-container">
+              <label> first name </label>
+              <input type="text" placeholder=" first name " name="first">
+              <label> surname </label>
+              <input type="text" placeholder=" surname "  name="last">
+              <label> username </label>
+              <input type="text" placeholder=" username " name="username">
+              <label> password </label>
+              <input type="password" placeholder=" password " name="password">
+              <label> email address </label>
+              <input type="email" placeholder=" email@example.com " name="email">
+              <label> date of birth </label>
+              <input type="datetime" placeholder=" date of birth " name="dob">
+
+              <div class="grid-container">
+                <button type="submit">Submit</button>
+              </div>
+          </div>
       </form>
+
+  </main>
 
 
 

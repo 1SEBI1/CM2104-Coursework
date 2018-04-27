@@ -2,9 +2,8 @@
 <html>
 
 	<head>
-    <% include ../partials/head %>
-		<title>My account - Cookie Jar</title>
-
+		<% include ../partials/head %>
+		<title>account: cookie jar</title>
 	</head>
 
 
@@ -19,19 +18,16 @@
 
 		<main id="mainbody">
 
-
 			<h1>account page</h1>
 
-		<section id="grid_title">
-			<div class="grid-container_t">
-						<div><a href="/edit">edit account</a></div>
-			</div>
-			<div class="grid-container_t">
-						<div><a href="/delete" onclick="delmessage()">delete account</a></div>
-			</div>
-		</section>
-
-
+			<section id="grid_title">
+				<div class="grid-container_t">
+							<div><a href="#">edit account</a></div>
+				</div>
+				<div class="grid-container_t">
+						<div><a href="#">delete account</a></div>
+		  	</div>
+			</section>
 
 			<section id="grid_box">
 				<div class="grid-container">
@@ -41,24 +37,11 @@
 							<p>Here you can delete your account from cookie jar.</p>
 				</div>
 			</section>
-			<script>
-			function delmessage() {
-				if (confirm("Press a button!")) {
-						console.log("You pressed OK!");
-				} else {
-						console.log("You pressed Cancel!");
-				}
-			}
-			</script>
-
 
 		</main>
 
 
-
 		<!--footer section-->
-
-
     <footer>
       <% include ../partials/footer %>
     </footer>
