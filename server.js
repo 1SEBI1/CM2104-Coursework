@@ -20,12 +20,11 @@ MongoClient.connect(url, function(err, database) {
   console.log('listening');
 });
 
-
-
 app.get('/', function(req, res) {
-  if(!req.session.loggedin){res.redirect('/login');return;}
-  res.render('pages/home');
+    if(!req.session.loggedin){res.redirect('/login');return;}
+    res.render('pages/home');
 });
+
 app.get('/saved', function(req, res) {
   if(!req.session.loggedin){res.redirect('/login');return;}
   res.render('pages/saved');
@@ -134,3 +133,4 @@ app.get('/delete', function(req, res) {
     res.redirect('/logout');
   });
 });
+

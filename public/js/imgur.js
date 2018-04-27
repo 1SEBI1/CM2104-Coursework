@@ -39,7 +39,7 @@ for(var i = 0; i < 4; i++) {
   for(var y = 0; y < 3; ) {
     var imglink;
 
-    console.log("temp"+count+" = " +tempobject[count]);
+    //console.log("temp"+count+" = " +tempobject[count]);
     if(typeof arrays.data[imgcount] === 'undefined') {break; } //if image data array undefined break
     if(typeof arrays.data[imgcount].images === 'undefined') {
         jars[imgcount] = arrays.data[imgcount].link;
@@ -87,15 +87,34 @@ for(var i = 0; i < 4; i++) {
 
     }
     if (count >50) { break; }
-    console.log("count : " + count);
+    //console.log("count : " + count);
     }
     htmlstring +="</div>"
 
   }
   htmlstring +="</div>"
-  console.log("imgtemp length" + tempobject.length);
+  //console.log("imgtemp length" + tempobject.length);
   $('#imgurContainer').html(htmlstring);
-  //return jars;
+  
+}
+
+
+function flickrToJars(arrays) {
+    var htmlstring ="";
+    var image = "";
+   
+        htmlstring +="<div class='row'>";
+        for(var i = 0,x = 0; i < 4, x < 12; i++) {
+            htmlstring +="<div class='column'>";
+        for(var j = 0; j < 3; j++) {
+            image = arrays.items[x].media.m;
+            htmlstring +="<img src='" + image + "' alt='cookie1' class='cookieimg' style='width:100%'>";
+            x++;
+    }
+            htmlstring +="</div>"
+  }
+        htmlstring +="</div>"
+  $('#redditContainer').html(htmlstring);
 }
 
 
@@ -126,4 +145,15 @@ function searchbar(query) {
 			console.log(response);
 		}
 	});
+
+        $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
+        {
+          tags: $(query).val(),
+          tagmode: "any",
+          format: "json"
+        },
+        function(data) {
+          console.log(flickrToJars(data));
+        });
+     
 }
