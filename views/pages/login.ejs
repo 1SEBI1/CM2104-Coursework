@@ -3,11 +3,12 @@
 
 <head>
   <% include ../partials/head %>
-  <title>Login - Cookie Jar</title>
+  <title>log in: cookie jar</title>
 </head>
 
 
 <body>
+
 
   <main id="mainbody">
 
@@ -21,23 +22,25 @@
             <div class="grid-container">
               <form action="/dologin" method="POST">
                 <input type="text" placeholder="username" name="username">
+                </br>
                 <input type="password" placeholder="password" name="password">
-
-              <div class="grid-container">
+              </br></br></br>
                 <button type="submit">Submit</button>
-              </div>
 
               </form>
             </div>
 
 
     				<div class="grid-container">
-    						<h3>Don't have an account? <a id="newaccount" href="/newaccount">Create one here!</a></h3>
+    						<p>Don't have an account? <a id="newaccount" href="/newaccount">Create one here!</a></p>
             </div>
+
         </section>
 
   </main>
 
+
 </body>
+
 
 </html>

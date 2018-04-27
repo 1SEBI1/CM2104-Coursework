@@ -3,7 +3,7 @@
 
 <head>
   <% include ../partials/head %>
-  <title>Edit account - Cookie Jar</title>
+  <title>edit account: cookie jar</title>
 </head>
 
 <body>
@@ -16,13 +16,13 @@
 
       <section id="grid_title">
         <div class="grid-container">
-              <h3> edit your profile </h3>
+              <h2> edit your profile </h2>
         </div>
       </section>
 
     <section id="grid_box">
+      <!---creates a form where the user can edit their account details--->
       <form action="/doedit" method="POST">
-
           <div class="grid-container">
 
               <label> first name </label>
@@ -40,25 +40,23 @@
               <label> date of birth </label>
               <input type="datetime" placeholder=" date of birth " value="<%= user.dob %>"    name="newdob">
 
-          </div>
-
-          <div class="grid-container">
             <button type="submit">submit</button>
-          </div>
+
         </form>
 
           <button onclick="window.location.href='/account'"> cancel</button>
-
-
-
+        </div>
       </section>
 
-
   </main>
+
+
   <footer>
     <% include ../partials/footer %>
   </footer>
 
+
 </body>
+
 
 </html>
