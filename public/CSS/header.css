@@ -16,7 +16,8 @@ nav{
     box-shadow: 1px 1px 1px 1px #888888;
     padding: 10px;
     padding-bottom: 70px;
-    min-width: 340px;
+
+    min-width: 392px;
 
 }
 
@@ -41,21 +42,13 @@ ul {
   padding: 0px;
 }
 
-/*tab formatting*/
-li {
-    float: left;
-    background-color: #BA5A31;
-    margin: 5px;
-}
-
 
 /*tab formatting*/
 li a, .navbar button {
     display: block;
     color: #EFF1EA;
     text-align: center;
-    padding: 15px 20px;
-    text-decoration: none;
+    padding: 15px ;
 }
 
 /*account button hover formatting colour*/
