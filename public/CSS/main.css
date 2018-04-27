@@ -12,6 +12,25 @@
 
 /* Main CSS */
 
+/*Font that will be used through the whole website*/
+* {
+      font-family: 'Montserrat', serif;
+
+
+    }
+
+/*Body colour that will be used through the whole wesbite*/
+body {
+  background: url("../images/cookie_wallpaper.png");
+  background-position: auto;
+  background-size: cover;
+
+  background-color: #FCEAD1;
+  background-color: linear-gradient(#FCEAD1, #e8c392, #FCEAD1);
+
+  margin: 0px;
+}
+
 /*Page title formatting*/
 
 
@@ -39,10 +58,8 @@
   #grid_title {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto ;
     grid-gap: 10px;
-    grid-template-rows: auto auto ;
-    grid-gap: 0px;
 
     color: #EFF1EA;
     font-weight: bold;
@@ -84,9 +101,8 @@
   #grid_box{
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto;
     grid-gap: 10px;
-    grid-gap: 0px;
 
     color: black;
     font-size: 20px;

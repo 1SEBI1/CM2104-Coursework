@@ -1,0 +1,74 @@
+
+
+/*Colour Scheme
+
+  - GREEN: #69DC9E
+  - CREAM: #FCEAD1
+  - OFF WHITE: #EFF1EA
+  - ORANGE: #E59F71
+  - ORANGE BROWN: #BA5A31
+  - BROWN: #723215
+*/
+
+/*
+  Desktop: >1024px
+  Tablet: <1024px but >480px
+  Mobile: <480px
+/*
+
+
+
+/*Page formatting*/
+
+    /* For mobile */
+@media only screen and (max-width: 480px) {
+
+
+  body{
+    background-color: green;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #homelogo {
+    display: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  h1 {
+    margin: 0px;
+    padding: 0px;
+
+    border: solid;
+  }
+
+
+  .grid-container_t{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+  }
+
+
+  .grid-container {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+  }
+
+  #footer{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto ;
+    grid-gap: 10px;
+  }
+
+   h3 {
+    border: solid;
+  }
+
+
+
+
+}
