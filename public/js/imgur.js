@@ -148,7 +148,7 @@ function searchbar(query) {
 
         $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
         {
-          tags: $(query).val(),
+          tags: query,
           tagmode: "any",
           format: "json"
         },
