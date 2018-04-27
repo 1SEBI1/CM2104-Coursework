@@ -1,0 +1,58 @@
+
+/*
+  Desktop: >1024px
+  Tablet: <1024px but >480px
+  Mobile: <480px
+/*
+
+
+/*Page formatting*/
+
+    /* For mobile */
+@media only screen and (max-width: 480px) {
+
+
+  body{
+    background-color: green;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #homelogo {
+    display: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  h1 {
+    margin: 0px;
+    padding: 0px;
+
+    border: solid;
+  }
+
+  .grid-container_t{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+  }
+
+  .grid-container {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+  }
+
+
+  h2 {
+   font-size: 24px;
+ }
+
+   h3 {
+    font-size: 18px;
+  }
+
+
+
+
+}
