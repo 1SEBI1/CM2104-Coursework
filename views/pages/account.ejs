@@ -22,10 +22,10 @@
 
 			<section id="grid_title">
 				<div class="grid-container_t">
-							<div><a href="#">edit account</a></div>
+							<div><a href="/edit">edit account</a></div>
 				</div>
 				<div class="grid-container_t">
-						<div><a href="#">delete account</a></div>
+						<div><a onclick="delmessage()">delete account</a></div>
 		  	</div>
 			</section>
 
@@ -38,14 +38,15 @@
 				</div>
 			</section>
 			<script>
-			function delmessage() {
-				if (confirm("Are you sure you want to delete your account ?")) {
-						window.location.href="/saved";
-				} else {
-						return;
+				function delmessage() {
+					console.log("workin");
+					if (confirm("Are you sure you want to delete your account ?")) {
+							window.location.href="/saved";
+					} else {
+							console.log("return");
+					}
 				}
-			}
-			</script>
+		</script>
 
 
 		</main>
